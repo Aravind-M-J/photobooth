@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('layout', function () {
-    return view('backend.layouts.layout');
+    return view('backend.blog.new_blog');
 });
 Route::auth();
 

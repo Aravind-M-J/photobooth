@@ -20,6 +20,7 @@
 <script src="dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script src="dist/js/bootstrap-filestyle.min.js"></script>
 @yield('page_scripts')
 </body>
 </html>
