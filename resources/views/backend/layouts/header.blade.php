@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Blank Page</title>
+  <title>@yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -25,7 +25,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green-light sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -58,27 +58,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                
 
-                <p>
-                  
-                  <small></small>
-                </p>
-              </li>
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#"></a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#"></a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#"></a>
-                  </div>
-                </div>
-                <!-- /.row -->
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -95,7 +75,3 @@
       </div>
     </nav>
   </header>
- </div>
-</body>
-</html>
-
