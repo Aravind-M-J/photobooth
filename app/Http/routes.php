@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('layout', function () {
     return view('backend.layouts.blank');
 });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
