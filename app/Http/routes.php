@@ -17,7 +17,7 @@ Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store
 
 
 Route::get('layout',function () {
-    return view('backend.blog.new_blog');
+    return view('backend.event_gallery.upload_images');
 });
 Route::get('/',function () {
     return view('index');

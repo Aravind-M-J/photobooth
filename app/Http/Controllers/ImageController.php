@@ -17,7 +17,7 @@ class ImageController extends Controller {
      */
     public function create()
     {
-        return view( 'backend.eventgallery.upload_images');
+        return view( 'backend.event_gallery.upload_images');
     }
 
     /**
