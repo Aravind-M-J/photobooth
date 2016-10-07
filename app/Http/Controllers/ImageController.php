@@ -12,14 +12,17 @@ use Illuminate\Filesystem\Filesystem;
 class ImageController extends Controller {
 
     /**
-     * @return \Illuminate\View\View
+     * Show Page to Upload Images for gallery
+     * @return View
      */
     public function create()
     {
-        return view( 'image.create' );
+        return view( 'backend.eventgallery.upload_images');
     }
 
     /**
+     * Function to upload images and populate database via XMLHTTPRequest
+     *
      * @param Storage $storage
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|string
@@ -50,11 +53,7 @@ class ImageController extends Controller {
      * @param $image
      * @param $imageFullName
      * @param $storage
-    
-
-
-
-	* @return mixed
+     * @return mixed
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function uploadImage( $image, $imageFullName, $storage )
