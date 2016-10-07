@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -16,8 +17,12 @@ Route::get('/', function () {
 });
 
 Route::get('layout', function () {
-    return view('backend.blog.new_blog');
+    return view('backend.eventgallery.upload_images');
 });
+
+Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
+Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
