@@ -12,17 +12,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('layout', function () {
-    return view('backend.eventgallery.upload_images');
-});
-
 Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
 Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
+
+
+Route::get('layout',function () {
+    return view('backend.blog.new_blog');
+});
+Route::get('/',function () {
+    return view('index');
+});
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/blog/new', 'BlogController@new_blog');
+
+Route::group(['middleware'=>['auth']],function(){
+});
