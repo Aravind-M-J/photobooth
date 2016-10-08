@@ -29,5 +29,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/blog/new', 'BlogController@new_blog');
 
+Route::post('store','BlogController@store');
+
 Route::group(['middleware'=>['auth']],function(){
 });
