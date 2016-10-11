@@ -16,12 +16,17 @@ Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create
 Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
 
 
-Route::get('layout',function () {
-    return view('backend.event_gallery.upload_images');
+Route::get('/layout',function () {
+    return view('backend.event_gallery.');
 });
 Route::get('/',function () {
     return view('index');
 });
+Route::get('event/new','EventGalleryController@create');
+Route::post('event/new','EventGalleryController@store');
+
+Route::get('event/gallery','ImageController@create');
+Route::post('event/gallery','ImageController@store');
 
 Route::auth();
 
