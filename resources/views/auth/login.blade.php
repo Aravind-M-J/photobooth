@@ -1,4 +1,4 @@
-@extends('backend.layouts.layout')
+@extends('admin.layouts.layout')
 @section('title','Login')
 @section('small_title','')
 @section('body')
@@ -15,10 +15,10 @@
 				<input class="form-control" type="Password" name="pwd" placeholder="Enter Password">
 			</div>
 			<div class="form-group">
-				<input type="submit" value="LOGIN" class="btn btn-primary"></button>
+				<input type="submit" value="LOGIN" class="btn btn-primary" name="button"></button>
             </div>
             <div class="form-group">
-    			<input type="checkbox" checked="checked"> Remember Me				
+    			<input type="checkbox" checked="checked" name="remember"> Remember Me				
 			</div>
 		</form>
 	</div>

@@ -20,18 +20,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <!-- /css files -->
 </head>
-<body>
+<body><br><br><br><br><br><br><br><br>
 <!--<h1>Marvelous Contact Form</h1>-->
 <div class="content-w3ls">
-	<form action="#" method="post" class="form-agileits">
+	<form action="{{ url('login')}}" method="post" class="form-agileits">
+	{{ csrf_field() }}
 		<div class="form-w3ls">
-			<center><h2>LOGIN</h2></center>
-			<!--<button type="submit" class="sign-in" value="Sign In"><img src="images/mail2.png" alt="w3layouts"></button>
-			<div class="clear"></div>-->
+			<h2>LOGIN</h2><br>
+			<!--<button type="submit" class="sign-in" value="Sign In"><img src="images/mail2.png" alt="w3layouts"></button>-->
+			<div class="clear"></div>
 		</div>
 		<input type="email" name="email" value="E-mail ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail ID';}">
-		<input type="password" name="pwd" ;}">
-		<input type="submit" class="sign-in" value="LOGIN">
+		<input type="password" name="pwd" placeholder="Password" ;}">
+		<input type="submit" class="sign-in" value="LOGIN" name="button" ><br><br><br>
+		<input type="checkbox" checked="checked" name="remember"><font color="red"><b>Remember Me</b></font>
 	</form>
 </div>
 </body>
