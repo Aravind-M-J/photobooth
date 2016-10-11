@@ -11,13 +11,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
-Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
+/*Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
+Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);*/
 
 
 Route::get('layout',function () {
-    return view('backend.event_gallery.upload_images');
+    return view('backend.blog.new_blog');
 });
 Route::get('/',function () {
     return view('index');
@@ -29,7 +28,11 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/blog/new', 'BlogController@new_blog');
 
-Route::post('store','BlogController@store');
+Route::post('/store','BlogController@store');
 
 Route::group(['middleware'=>['auth']],function(){
 });
+
+get('/auth/login', 'Auth\AuthController@getLogin');
+post('/auth/login', 'Auth\AuthController@postLogin');
+get('/auth/logout', 'Auth\AuthController@getLogout');
