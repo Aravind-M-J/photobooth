@@ -5,6 +5,7 @@
 <div class="box box-success">
 	<div class="box-body">
 		<form role="form" action="store" method="post">
+		{{csrf_field()}}
 			<div class="form-group">
 				<label for="title" class="control-label">Title</label>
 				<input class="form-control" type="text" name="blog_title">
