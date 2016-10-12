@@ -15,9 +15,12 @@
 Route::get('upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
 Route::post('upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
 Route::get('/', ['as' => 'admin', 'uses' => 'AdminController@index']);
+/*Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
+Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);*/
+
 
 Route::get('layout',function () {
-    return view('backend.event_gallery.upload_images');
+    return view('backend.blog.new_blog');
 });
 Route::get('/',function () {
     return view('index');
@@ -33,4 +36,4 @@ Route::post('blog/store','BlogController@store');
 
 Route::group(['middleware'=>['auth']],function(){
 });
-Route::resource('blog', 'BlogController');
+

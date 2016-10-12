@@ -20,17 +20,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <!-- /css files -->
 </head>
-<body>
+<body><br><br><br><br><br><br><br><br>
 <!--<h1>Marvelous Contact Form</h1>-->
 <div class="content-w3ls">
-	<form action="#" method="post" class="form-agileits">
+	<form action="log.php" method="post" class="form-agileits">
 		<div class="form-w3ls">
 			<center><h2>LOGIN</h2></center>
-			<!--<button type="submit" class="sign-in" value="Sign In"><img src="images/mail2.png" alt="w3layouts"></button>
-			<div class="clear"></div>-->
 		</div>
-		<input type="email" name="email" value="E-mail ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail ID';}">
-		<input type="password" name="pwd" ;}">
+		<input type="email"  placeholder="E-mail ID" name="email" required >
+		<input type="password" placeholder="Password" name="pwd" required >
 		<input type="submit" class="sign-in" value="LOGIN">
 	</form>
 </div>
