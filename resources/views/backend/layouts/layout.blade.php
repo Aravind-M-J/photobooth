@@ -18,6 +18,7 @@
 
     <!-- Main content -->
     <section class="content">
+      @include('flash')
       @yield('body')
     </section>
 	
