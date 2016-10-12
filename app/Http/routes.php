@@ -22,6 +22,12 @@ Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store
 Route::get('layout',function () {
     return view('backend.blog.new_blog');
 });
+
+Route::get('blog/list',function () {
+    return view('backend.blog.list_blog');
+});
+
+
 Route::get('/',function () {
     return view('index');
 });
@@ -29,6 +35,7 @@ Route::get('/',function () {
 Route::auth();
 
 Route::get('home', 'HomeController@index');
+
 
 Route::get('blog/new', 'BlogController@new_blog');
 

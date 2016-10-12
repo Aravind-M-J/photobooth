@@ -26,6 +26,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/min/dropzone.min.js"></script>
 <!-- Custom Drop zone js -->
 <script src="{{url('dist/js/imageupload.js')}}"></script>
+ 
+<script src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
 @yield('page_scripts')
 </body>
 </html>
