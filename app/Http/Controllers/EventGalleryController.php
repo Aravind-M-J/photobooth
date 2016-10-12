@@ -55,8 +55,10 @@ class EventGalleryController extends Controller
             {				
 		    $event->image  = $savedImageName;
             $event->save();
+			$event_id = $event->id;
 		
-		    return redirect('event/gallery');
+		    return redirect('event/gallery/'.$event_id);
+			//return view( 'backend.event_gallery.upload_images',['eventid'=>$event_id]);
             }
 			return "uploading failed";
 			
@@ -73,7 +75,7 @@ class EventGalleryController extends Controller
             */
             protected function getFormattedTimestamp()
             {
-            return str_replace( [' ', ':'], '', Carbon::now()->toDateTimeString() );
+            return str_replace( [' ', ':'], '-', Carbon::now()->toDateTimeString() );
             }
 	
 	        /**

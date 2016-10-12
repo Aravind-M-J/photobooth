@@ -11,36 +11,18 @@
     };
 
     function uploadSuccess(data, file) {
-		//$('.dz-success-mark').html('');
-		$('.dz-error-mark').html('');
-        var messageContainer    =   $('.dz-success-mark'),
-            message             =   $('<p></p>', {
-                'text' : 'Image Uploaded Successfully! Image Path is: '
-            }),
-            imagePath           =   $('<a></a>', {
-                'href'  :   JSON.parse(file).original_path,
-                'text'  :   JSON.parse(file).original_path,
-                'target':   '_blank'
-            })
 
-        //imagePath.appendTo(message);
-        //message.appendTo(messageContainer);
-        messageContainer.addClass('show');
     }
 
     function uploadCompleted(data) {
-        if(data.status != "success")
+        if(data.status == "success")
         {
-		$('.dz-success-mark').html('');
-		//$('.dz-error-mark').html('');
-            var error_message   =   $('.dz-error-mark'),
-                message         =   $('<p></p>', {
-                    'text' : 'Image Upload Failed'
-                });
-
-            //message.appendTo(error_message);
-            error_message.addClass('show');
+			//$('.dz-success-mark').html('');
+			$('.dz-error-mark').html('')
             return;
-        }
+        }else{
+			$('.dz-success-mark').html('');
+            return;
+		}
     }
 })();

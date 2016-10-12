@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Images;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
@@ -15,9 +16,10 @@ class ImageController extends Controller {
      * Show Page to Upload Images for gallery
      * @return View
      */
-    public function create()
+    public function create($eventid)
     {
-        return view( 'backend.event_gallery.upload_images');
+		
+        return view( 'backend.event_gallery.upload_images',['eventid'=>$eventid]);
     }
 
     /**
@@ -29,6 +31,9 @@ class ImageController extends Controller {
      */
 	  public function store( Storage $storage, Request $request )
     {
+		
+		$images= new Images;
+       
         if ( $request->isXmlHttpRequest() )
         {
             $image = $request->file( 'image' );
@@ -39,17 +44,17 @@ class ImageController extends Controller {
 
             if ( $imageUploaded )
             {
-                $data = [
-                    'original_path' => asset( '/images/' . $savedImageName )
-                ];
-                return json_encode( $data, JSON_UNESCAPED_SLASHES );
+				$images->event_id = $request->input('eventid');
+                $images->name = $savedImageName;
+				$images->save();
+				return 'Uploaded Succesfully';
             }
             return "uploading failed";
         }
 
-    }
-	
-	 /**
+    }	
+		
+     /**
      * @param $image
      * @param $imageFullName
      * @param $storage

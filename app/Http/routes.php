@@ -23,8 +23,8 @@ Route::get('/',function () {
 Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
 
-Route::get('event/gallery','ImageController@create');
-Route::post('event/gallery','ImageController@store');
+Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
+Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
 
 Route::auth();
 
@@ -37,6 +37,4 @@ Route::post('/store','BlogController@store');
 Route::group(['middleware'=>['auth']],function(){
 });
 
-get('/auth/login', 'Auth\AuthController@getLogin');
-post('/auth/login', 'Auth\AuthController@postLogin');
-get('/auth/logout', 'Auth\AuthController@getLogout');
+
