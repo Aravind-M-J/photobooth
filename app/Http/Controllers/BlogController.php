@@ -67,4 +67,25 @@ class BlogController extends Controller
     {
         return $timestamp . '-' . $image->getClientOriginalName();
     }
+
+public function show($id)
+    {
+        // get the nerd
+        $blog = Blog::find($id);
+
+        // show the view and pass the nerd to it
+        return View::make('blog.list')
+            ->with('blog', $blog);
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
