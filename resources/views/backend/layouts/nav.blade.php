@@ -39,6 +39,17 @@
                     <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                 </ul>
+                    <a href="#">
+                    <i class="fa fa-book"></i> <span>Blog</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                 <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-pencil-square-o"></i> Add Blog</a></li>
+                    <li><a href="#"><i class="fa fa-tasks"></i> Blog List</a></li>
+                </ul>
+
             </li>
                         <li class="treeview">
                 <a href="#">

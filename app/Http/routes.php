@@ -37,10 +37,26 @@ Route::auth();
 Route::get('home', 'HomeController@index');
 
 
+
 Route::get('blog/new', 'BlogController@new_blog');
 
 Route::post('blog/store','BlogController@store');
 
+Route::get('/blog/new', 'BlogController@new_blog');
+Route::get('/blog/list',function () {
+    return view('backend.blog.list_blog');
+});
+
+
+Route::post('/blog/store','BlogController@store');
+
+
 Route::group(['middleware'=>['auth']],function(){
 });
+
+
+
+//get('/auth/login', 'Auth\AuthController@getLogin');
+//post('/auth/login', 'Auth\AuthController@postLogin');
+//get('/auth/logout', 'Auth\AuthController@getLogout');
 

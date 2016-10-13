@@ -29,5 +29,6 @@
  
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
 @yield('page_scripts')
+<script src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
 </body>
 </html>
