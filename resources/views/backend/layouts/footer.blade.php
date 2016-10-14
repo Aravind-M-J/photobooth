@@ -28,7 +28,15 @@
 <script src="{{url('dist/js/imageupload.js')}}"></script>
  
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
-@yield('page_scripts')
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+<script>
+function confirmDelete(href){
+	var k = confirm('Are you sure to delete this?');
+	if(k){
+		window.location.href=href;
+	}
+}
+</script>
+@yield('page_scripts')
 </body>
 </html>

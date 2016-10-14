@@ -48,7 +48,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="#"><i class="fa fa-plus-square-o"></i>Add New Blog</a></li>
-                    <li><a href="#"><i class="fa fa-bars"></i>Blog list</a></li>
+                    <li><a href="{{URL::route('blog.index')}}"><i class="fa fa-bars"></i>Blog list</a></li>
                     </ul>
                     </li>
 

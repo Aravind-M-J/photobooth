@@ -36,7 +36,11 @@ Route::auth();
 
 Route::get('home', 'HomeController@index');
 
+Route::get('blog/list','BlogController@index');
+Route::get('blog/destroy/{id}','BlogController@destroy');
 
+Route::get('blog/edit/{id}','BlogController@edit');
+Route::post('blog/edit/{id}','BlogController@update');
 
 Route::get('blog/new', 'BlogController@new_blog');
 
@@ -49,14 +53,15 @@ Route::get('/blog/list',function () {
 
 
 Route::post('/blog/store','BlogController@store');
-
+ 
+Route::resource('blog', 'BlogController');
 
 Route::group(['middleware'=>['auth']],function(){
 });
 
 
 
-//get('/auth/login', 'Auth\AuthController@getLogin');
+//get('/auth/l ogin', 'Auth\AuthController@getLogin');
 //post('/auth/login', 'Auth\AuthController@postLogin');
 //get('/auth/logout', 'Auth\AuthController@getLogout');
 
