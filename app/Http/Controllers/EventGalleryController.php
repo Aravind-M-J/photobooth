@@ -12,6 +12,11 @@ use Illuminate\Filesystem\Filesystem;
 
 class EventGalleryController extends Controller
 {
+	
+	protected $event;
+	public function __construct(Event $event){
+		$this->event=$event;
+	}
     /**
      * Display a listing of the resource.
      *
@@ -19,6 +24,11 @@ class EventGalleryController extends Controller
      */
     public function index()
     {
+		$allevent = $this->event
+               ->get();
+			   //dd($event);
+			   
+		return view('backend.event_gallery.list_event',compact('allevent'));  
 		
     }
 
@@ -47,7 +57,6 @@ class EventGalleryController extends Controller
 		$image = $request->file( 'img' );
             $timestamp = $this->getFormattedTimestamp();
             $savedImageName = $this->getSavedImageName( $timestamp, $image );
-			$imageName = $savedImageName;
 			$savedImageName = 'event/'.$request->input('evtname').'/'.$savedImageName;
             $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
 
@@ -75,7 +84,7 @@ class EventGalleryController extends Controller
             */
             protected function getFormattedTimestamp()
             {
-            return str_replace( [' ', ':'], '-', Carbon::now()->toDateTimeString() );
+            return str_replace( [' ', ':'], '', Carbon::now()->toDateTimeString() );
             }
 	
 	        /**
@@ -87,4 +96,14 @@ class EventGalleryController extends Controller
             {
             return $timestamp . '-' . $image->getClientOriginalName();
             }
+			
+			
+		public function destroy($id) {
+			 $event= new Event;
+			 $event->find($id);
+			 unlink(public_path('images/'.$event->image));
+			 $event->delete();
+			 return redirect('event');
+    }
 }
+        

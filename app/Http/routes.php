@@ -12,8 +12,9 @@
 */
 
 
-Route::get('upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
-Route::post('upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
+Route::get('upload', ['as' => 'image.create','uses' => 'ImageController@create']);
+
+Route::post('upload', ['as' => 'image.store' ,'uses' => 'ImageController@store']);
 
 Route::get('layout',function () {
     return view('backend.blog.new_blog');
@@ -32,7 +33,14 @@ Route::get('login',function () {
 Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
 
+
 Route::get('event/gallery',['as'=>'image.create','uses'=>'ImageController@create']);
+
+Route::get('event','EventGalleryController@index');
+Route::get('event/destroy/{id}','EventGalleryController@destroy');
+
+Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
+
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
 
 Route::auth();
@@ -62,6 +70,7 @@ Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
 
 Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
+
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
 
 Route::get('blog/new', 'BlogController@new_blog');

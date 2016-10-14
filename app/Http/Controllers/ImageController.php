@@ -39,7 +39,8 @@ class ImageController extends Controller {
             $image = $request->file( 'image' );
             $timestamp = $this->getFormattedTimestamp();
             $savedImageName = $this->getSavedImageName( $timestamp, $image );
-
+			$evtname = 
+			$savedImageName = 'event/'.$evtname.'/'.$savedImageName;
             $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
 
             if ( $imageUploaded )
@@ -72,7 +73,7 @@ class ImageController extends Controller {
      */
     protected function getFormattedTimestamp()
     {
-        return str_replace( [' ', ':'], '-', Carbon::now()->toDateTimeString() );
+        return str_replace( [' ', ':'], '', Carbon::now()->toDateTimeString() );
     }
 	
 	 /**

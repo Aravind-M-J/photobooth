@@ -36,17 +36,37 @@ h1 {
 	padding:10px;	
 	width:25%;
 	float:left;
-	min-height:250px;
+	min-height:25px;
+	margin:10px;
 	
 }
 
+.dz-success-mark{
+	
+	background-color:#14C40B;
+}
+
+.dz-error-mark{
+	
+	background-color:#F6110A  
+	
+	
+}
 
 .dz-image {
     text-align: none;
+	width:100%;
     /*border: 1px solid #EB7260;*/
 }
+
 
 .dz-details {
     padding: 10px;
 }
 
+.dz-image-preview img{
+	
+	width:100%;
+	
+	
+}

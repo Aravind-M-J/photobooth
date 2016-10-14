@@ -11,43 +11,28 @@
 <table id="example2" class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Sl.No</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>CoverImage</th>
-					<th>Gallery</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th><center>Sl.No</center></th>
+                    <th><center>Name</center></th>
+                    <th><center>Description</center></th>
+                    <th><center>CoverImage</center></th>
+					<th><center>Gallery</center></th>
+                    <th><center>Edit</center></th>
+                    <th><center>Delete</center></th>
                 </tr>
             </thead>
             <tbody>
 			<?php $i=1 ?>
                 @foreach( $allevent as $event )
                 <tr>
-                    <td>{{ $i }}</td>
-                    <td>{!! $event->name !!}</td>
-                    <td>{{ $event->description }}</td>
-					<td><img src="{{ asset("images/$event->image") }}" alt="{{ $event->image }}" height="50px" width="100px" ></td>
-					<td>{{ $event->gallery }}</td>
-                    
-                
-     
-				<td class=center>
-                       
-                        <a href='Event/{{ $event->id }}/edit' class='btn btn-primary'>Edit</a>
-                    </td>
-                    
-                    <td class=center>
-                        {!! Form::open(['route' => ['EventGallery.destroy', $event->id], 'method' => 'POST', 'class' => 'delete']) !!}
-                        {!! csrf_field() !!}
-                        <input type="hidden" name="_method" value="delete">
-                        <input type="hidden" name="id" value="{{$event->id}}">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                        {!! Form::close() !!}
-                    </td>
-                </tr>
-                <?php $i++ ?>
-                @endforeach
+                    <td><center>{{ $i }}</center></td>
+                    <td><center>{!! $event->name !!}</center></td>
+                    <td><center>{{ $event->description }}</center></td>
+					<td><center><img src="{{ url('images/'.$event->image) }}" alt="{{ $event->image }}" height="50px" width="100px" ></center></td>
+					<td><center><input type="button" value="ViewGallery" class="btn btn-danger"></center></td>
+					<td><center><input type="button" value="Edit" class="btn btn-danger"></center> </td>
+                    <td><center><input type="button" value="Delete" onclick="confirmDelete('{{url('event/destroy/'.$event->id)}}')" class="btn btn-danger"></center></td>
+            <?php $i++ ?>   
+				@endforeach
             </tbody>
 
 
@@ -55,12 +40,4 @@
 </table>
 </div>
 </div>
-@stop
-@section('confirmDelete')
-<script>
-    $(".delete").on("submit", function(){
-        return confirm("Do you want to delete this item?");
-    });
-</script>
-@stop
 @endsection
