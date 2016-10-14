@@ -1,3 +1,9 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!doctype html>
 <html>
 <head>
@@ -9,34 +15,26 @@
 <!-- font files -->
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-<!-- Bootstrap 3.3.6 -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >
 <!-- /font files -->
 <!-- css files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <!-- /css files -->
 </head>
-<body>
-@include('flash');
-<br><br><br><br>
+<body><br><br><br><br><br><br><br><br>
 <!--<h1>Marvelous Contact Form</h1>-->
 <div class="content-w3ls">
-    <h2>LOGIN</h2><br>
-	<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-            {{ csrf_field() }}
-    			<div class="form-group">
-    				<input type="email" name="email" placeholder="Enter E-mail ID">
-    			</div>
-    			<div class="form-group">
-    				<input type="Password" name="password" placeholder="Enter Password">
-    			</div>
-    			<div class="form-group">
-    				<input type="submit" class="sign-in" value="LOGIN"></button>
-                </div>
-                <div class="form-group">
-        			<input type="checkbox" checked="checked"> Remember Me
-    			</div>
-    		</form>
+	<form action="{{ url('login')}}" method="post" class="form-agileits">
+	{{ csrf_field() }}
+		<div class="form-w3ls">
+			<h2>LOGIN</h2><br>
+			<!--<button type="submit" class="sign-in" value="Sign In"><img src="images/mail2.png" alt="w3layouts"></button>-->
+			<div class="clear"></div>
+		</div>
+		<input type="email" name="email" value="E-mail ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail ID';}">
+		<input type="password" name="pwd" placeholder="Password" ;}">
+		<input type="submit" class="sign-in" value="LOGIN" name="button" ><br><br><br>
+		<input type="checkbox" checked="checked" name="remember"><font color="red"><b>Remember Me</b></font>
+	</form>
 </div>
 </body>
 </html>

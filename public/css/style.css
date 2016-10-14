@@ -39,15 +39,15 @@ table {
 
 /*--- end reset code ---*/
 body {
-	background-color: white;
+	background-image: url("../css/image/img.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-attachment:center;
-	background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	-moz-background-size:100% 100%;
-	-o-background-size:100% 100%;
-	-ms-background-size:100% 100%;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
 	font-family: 'Noto Sans', sans-serif;
 }
 h1 {
@@ -61,10 +61,10 @@ h1 {
 }
 .content-w3ls {
     width: 30%;
-    margin: 0 auto;
+    margin-left:800px;
     background-color:black;
     opacity: 0.8;
-    background-color:rgba(143, 133, 131, 0.90);
+    background-color:rgba(204, 201, 201, 0.43);
     text-align: center;
     padding: 60px 40px;
 }
@@ -78,7 +78,7 @@ h2 {
     font-size: 33px;
     font-weight: 600;
     align-items: center;
-    color: #000;
+    color: #ffc31a;
 }
 button.sign-in {
     width: 125px;
@@ -140,8 +140,7 @@ input.sign-in {
     text-transform: uppercase;
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    background-color: red;
-    background-color: #cb8071;
+    background-color: #e52553;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -152,8 +151,7 @@ input.sign-in {
     cursor: pointer;
 }
 input.sign-in:hover {
-	background-color:#CD6155;
-	background-color:#db8071;
+	background-color:#ED557A;
 }
 ::-webkit-input-placeholder {
    color: #ab8071;
