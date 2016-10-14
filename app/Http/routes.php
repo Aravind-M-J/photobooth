@@ -22,20 +22,14 @@ Route::get('blog/list',function () {
     return view('backend.blog.list_blog');
 });
 
-
 Route::get('/',function () {
-    return view('index');
+    return view('backend.home');
 });
 Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
 
 Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
-
-Route::auth();
-
-Route::get('home', 'HomeController@index');
-
 
 Route::get('blog/new', 'BlogController@new_blog');
 
@@ -45,3 +39,7 @@ Route::group(['middleware'=>['auth']],function(){
 });
 Route::get('changePassword','Password@changePassword');
 Route::post('changePassword','Password@changePasswordProcess');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
