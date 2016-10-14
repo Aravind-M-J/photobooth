@@ -106,16 +106,20 @@
 						<div class="gal_text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 						</div>
+
 	<div class="col-md-12 col-sm-12 col-xs-12 new_img">
 	<div class="services wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+	@foreach($data as $row)
       <div class="col-md-3 col-sm-6">
-        <div class="ih-item circle effect2 left_to_right"><a href="#">
-        <div class="img"><img class="img_s" src="images/circ_img1.jpg" alt="img"></div>
+        <div class="ih-item circle effect2 left_to_right"><a href="{{url('Gallery/'.$row->id)}}">
+        <div class="img"><img class="img_s" src="{{url('images/'.$row->image)}}" alt="img"></div>
         <div class="info">
-          <h3>Wedding (10-11-2016)</h3>
+          <h3>{{$row->name}}</h3>
         </div></a></div>
       </div>
-      <div class="col-md-3 col-sm-6">
+	  @endforeach
+	  
+      <!--<div class="col-md-3 col-sm-6">
         <div class="ih-item circle effect2 left_to_right"><a href="#">
         <div class="img"><img class="img_s" src="images/circ_img2.jpg" alt="img"></div>
         <div class="info">
@@ -141,12 +145,12 @@
 
 
 
-					</div>
+					</div-->
 
 
-
+</div></div>
 				</div>
-			</div>
+			</div></div>
 			<div class="clearfix"> </div>
 		</div>
 

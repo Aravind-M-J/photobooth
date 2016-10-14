@@ -21,10 +21,11 @@
 	<div class="container">
 	  <div class="gallery-main">
 		<div class="gallery-bott">
+		@foreach($data as $col)
 			<div class="col-md-4 col1 gallery-grid">
 				    <a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
-							<img class="img-responsive" src="images/b1.jpg" alt="">
+							<img class="img-responsive" src="{{url('images/'.$col->image)}}" alt="">
 							<figcaption>
 								<h4 class="gal"> Nemo voluptatem</h4>
 								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
@@ -32,13 +33,14 @@
 						</figure>
 					</a>
 					</div>
-					<div class="col-md-4 col1 gallery-grid">
+					@endforeach
+					<!--<div class="col-md-4 col1 gallery-grid">
 						<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/b2.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -49,7 +51,7 @@
 							<img class="img-responsive" src="images/b3.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -60,7 +62,7 @@
 							<img class="img-responsive" src="images/b4.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 					</a>
@@ -71,7 +73,7 @@
 							<img class="img-responsive" src="images/b5.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -82,7 +84,7 @@
 							<img class="img-responsive" src="images/b6.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -93,7 +95,7 @@
 							<img class="img-responsive" src="images/b7.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -104,7 +106,7 @@
 							<img class="img-responsive" src="images/b8.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
@@ -115,11 +117,11 @@
 							<img class="img-responsive" src="images/b7.jpg" alt="">
 							<figcaption>
 								<h4 class="gal">Nemo voluptatem</h4>
-									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
+									<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p>
 							</figcaption>
 						</figure>
 						</a>
-					</div>
+					</div>-->
 			     <div class="clearfix"> </div>
 			</div>
 		</div>

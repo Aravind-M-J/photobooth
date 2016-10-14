@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Event;
+use App\Images;
 
 class HomeController extends Controller
 {
@@ -14,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -26,4 +28,14 @@ class HomeController extends Controller
     {
         return view('backend.home');
     }
+	
+	public function root(){
+		$data= Event::all();
+		return view('frontend.home')->with('data',$data);
+	}
+	
+	public function gallery(){
+		$data= Images::all();
+		return view('frontend.gallery')->with('data',$data);
+	}
 }

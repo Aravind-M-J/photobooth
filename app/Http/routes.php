@@ -24,9 +24,7 @@ Route::auth();
 
 # Front End Views Routes
 Route::get('/home', 'HomeController@index');
-Route::get('/',function () {
-    return view('frontend.home');
-});
+Route::get('/','HomeController@root');
 Route::get('aboutUs',function () {
     return view('frontend.about');
 });
@@ -57,3 +55,8 @@ Route::group(['middleware'=>['auth']],function(){
     Route::post('changePassword','Password@changePasswordProcess');
 });
 
+<<<<<<< Updated upstream
+=======
+//Route::get('/home', 'HomeController@index');
+Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
+>>>>>>> Stashed changes
