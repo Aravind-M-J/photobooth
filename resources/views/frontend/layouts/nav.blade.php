@@ -21,10 +21,10 @@
 					<nav class="menu menu--francisco">
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
-							<li class="menu__item"><a href="about.html" class="menu__link"><span class="menu__helper">About Us</span></a></li>
-							<li class="menu__item"><a href="gallery.html" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
-							<li class="menu__item"><a href="blog.html" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
-							<li class="menu__item"><a href="mail.html" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
+							<li class="menu__item"><a href="{{url('aboutUs')}}" class="menu__link"><span class="menu__helper">About Us</span></a></li>
+							<li class="menu__item"><a href="{{url('Event')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
+							<li class="menu__item"><a href="{{url('Blog')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
+							<li class="menu__item"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
 						</ul>
 					</nav>
 					<div class="phone">

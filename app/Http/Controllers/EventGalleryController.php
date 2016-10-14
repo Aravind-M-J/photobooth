@@ -26,7 +26,6 @@ class EventGalleryController extends Controller
     {
 		$allevent = $this->event
                ->get();
-			   //dd($event);
 			   
 		return view('backend.event_gallery.list_event',compact('allevent'));  
 		
@@ -84,7 +83,7 @@ class EventGalleryController extends Controller
             */
             protected function getFormattedTimestamp()
             {
-            return str_replace( [' ', ':'], '', Carbon::now()->toDateTimeString() );
+            return str_replace( [' ', ':','-'], '', Carbon::now()->toDateTimeString() );
             }
 	
 	        /**

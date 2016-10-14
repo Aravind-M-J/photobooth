@@ -11,42 +11,18 @@
 |
 */
 
-
-Route::get('upload', ['as' => 'image.create','uses' => 'ImageController@create']);
-
-Route::post('upload', ['as' => 'image.store' ,'uses' => 'ImageController@store']);
-
-Route::get('layout',function () {
-    return view('backend.blog.new_blog');
-});
-
-Route::get('blog/list',function () {
-    return view('backend.blog.list_blog');
-});
-
-
-Route::get('login',function () {
-    return view('blog/new');
-});
-
-
+# Event gallery Routes
 Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
-
-
-Route::get('event/gallery',['as'=>'image.create','uses'=>'ImageController@create']);
-
 Route::get('event','EventGalleryController@index');
 Route::get('event/destroy/{id}','EventGalleryController@destroy');
-
 Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
-
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
 
+# Authentication Route
 Route::auth();
 
-
-
+# Front End Views Routes
 Route::get('/home', 'HomeController@index');
 Route::get('/',function () {
     return view('frontend.home');
@@ -66,27 +42,18 @@ Route::get('Blog',function () {
 Route::get('Gallery',function () {
     return view('frontend.gallery');
 });
-Route::get('event/new','EventGalleryController@create');
-Route::post('event/new','EventGalleryController@store');
 
-Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
-
-Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
-
+# Blog Routes
 Route::get('blog/new', 'BlogController@new_blog');
-
-Route::post('/store','BlogController@store');
-
-Route::group(['middleware'=>['auth']],function(){
+Route::get('blog/list',function () {
+    return view('backend.blog.list_blog');
 });
-
 Route::post('blog/store','BlogController@store');
 
+# Routes that only admin can access
 Route::group(['middleware'=>['auth']],function(){
+    # Change password routes
+    Route::get('changePassword','Password@changePassword');
+    Route::post('changePassword','Password@changePasswordProcess');
 });
-Route::get('changePassword','Password@changePassword');
-Route::post('changePassword','Password@changePasswordProcess');
 
-Route::auth();
-
-//Route::get('/home', 'HomeController@index');

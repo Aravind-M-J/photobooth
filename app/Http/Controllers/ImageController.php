@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Images;
+use App\Event;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
@@ -36,16 +37,17 @@ class ImageController extends Controller {
        
         if ( $request->isXmlHttpRequest() )
         {
+            $id = $request->input('eventid');
             $image = $request->file( 'image' );
             $timestamp = $this->getFormattedTimestamp();
             $savedImageName = $this->getSavedImageName( $timestamp, $image );
-			$evtname = 
-			$savedImageName = 'event/'.$evtname.'/'.$savedImageName;
+			$evtname = Event::find($id);
+			$savedImageName = 'event/'.$evtname->name.'/'.$savedImageName;
             $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
 
             if ( $imageUploaded )
             {
-				$images->event_id = $request->input('eventid');
+				$images->event_id = $id;
                 $images->name = $savedImageName;
 				$images->save();
 				return 'Uploaded Succesfully';
@@ -73,7 +75,7 @@ class ImageController extends Controller {
      */
     protected function getFormattedTimestamp()
     {
-        return str_replace( [' ', ':'], '', Carbon::now()->toDateTimeString() );
+        return str_replace( [' ', ':','-'], '', Carbon::now()->toDateTimeString() );
     }
 	
 	 /**
