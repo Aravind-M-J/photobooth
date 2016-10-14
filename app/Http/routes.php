@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -44,3 +43,5 @@ Route::post('blog/store','BlogController@store');
 Route::group(['middleware'=>['auth']],function(){
 });
 
+Route::get('changePassword','Password@changePassword');
+Route::post('changePassword','Password@changePasswordProcess');
