@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -11,12 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-/*Route::get('/upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
-Route::post('/upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);*/
+
+Route::get('upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
+Route::post('upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
 
 Route::get('layout',function () {
     return view('backend.blog.new_blog');
 });
+
+Route::get('blog/list',function () {
+    return view('backend.blog.list_blog');
+});
+
+
 Route::get('/',function () {
     return view('index');
 });
@@ -28,13 +34,14 @@ Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store'
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
-Route::get('/blog/new', 'BlogController@new_blog');
 
-Route::post('/store','BlogController@store');
+Route::get('blog/new', 'BlogController@new_blog');
+
+Route::post('blog/store','BlogController@store');
 
 Route::group(['middleware'=>['auth']],function(){
 });
-
-
+Route::get('changePassword','Password@changePassword');
+Route::post('changePassword','Password@changePasswordProcess');
