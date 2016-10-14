@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -11,12 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+
+Route::get('upload', ['as' => 'image.create', 'uses' => 'ImageController@create']);
+Route::post('upload', ['as' => 'image.store' , 'uses' => 'ImageController@store']);
+
 Route::get('layout',function () {
     return view('backend.blog.new_blog');
 });
-Route::get('/',function () {
-    return view('index');
+
+Route::get('blog/list',function () {
+    return view('backend.blog.list_blog');
 });
+
 
 Route::get('login',function () {
     return view('blog/new');
@@ -34,10 +40,30 @@ Route::auth();
 
 
 Route::get('/home', 'HomeController@index');
+Route::get('/',function () {
+    return view('backend.home');
+});
+Route::get('event/new','EventGalleryController@create');
+Route::post('event/new','EventGalleryController@store');
 
-Route::get('/blog/new', 'BlogController@new_blog');
+Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
+Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
+
+Route::get('blog/new', 'BlogController@new_blog');
 
 Route::post('/store','BlogController@store');
 
 Route::group(['middleware'=>['auth']],function(){
 });
+
+Route::post('blog/store','BlogController@store');
+
+Route::group(['middleware'=>['auth']],function(){
+});
+Route::get('changePassword','Password@changePassword');
+Route::post('changePassword','Password@changePasswordProcess');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+

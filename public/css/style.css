@@ -36,49 +36,6 @@ table {
 }
 
 /* start editing from here */
-a {
-	text-decoration:none;
-}
-.txt-rt {
-	text-align:right;
-}/* text align right */
-.txt-lt {
-	text-align:left;
-}/* text align left */
-.txt-center {
-	text-align:center;
-/*-- W3Layouts --*/	
-}/* text align center */
-.float-rt {
-	float:right;
-}/* float right */
-.float-lt {
-	float:left;
-}/* float left */
-.clear {
-	clear:both;
-}/* clear float */
-.pos-relative {
-	position:relative;
-}/* Position Relative */
-.pos-absolute {
-	position:absolute;
-}/* Position Absolute */
-.vertical-base {	
-	vertical-align:baseline;
-}/* vertical align baseline */
-.vertical-top {	
-	vertical-align:top;
-}/* vertical align top */
-nav.vertical ul li {	
-	display:block;
-}/* vertical menu */
-nav.horizontal ul li {	
-	display: inline-block;
-}/* horizontal menu */
-img {
-	max-width:100%;
-}
 
 /*--- end reset code ---*/
 body {
@@ -107,6 +64,7 @@ h1 {
     margin: 0 auto;
     background-color:black;
     opacity: 0.8;
+    background-color:rgba(143, 133, 131, 0.90);
     text-align: center;
     padding: 60px 40px;
 }
@@ -120,21 +78,21 @@ h2 {
     font-size: 33px;
     font-weight: 600;
     align-items: center;
-    color: red;
+    color: #000;
 }
 button.sign-in {
     width: 125px;
     height: 60px;
     float: right;
     margin-right: -120px;
-	border:none;
-	background-color:#ab8071;
-	outline:none;
-	transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
-	-ms-transition:all 0.5s ease-in-out;
+    border:none;
+    background-color:#ab8071;
+    outline:none;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
 }
 ::-webkit-input-placeholder {
    color: #CD6155;
@@ -158,7 +116,7 @@ button.sign-in img {
 button.sign-in:hover img,button.sign-in:focus img {
 	opacity:1;
 }
-input[type="password"],input[type="email"],textarea {
+input[type="password"],input[type="email"] {
     width: 85%;
     padding: 10px;
     font-size: 16px;
@@ -166,9 +124,9 @@ input[type="password"],input[type="email"],textarea {
 	background-color:rgba(255, 255, 255, 0.75);
     font-weight: normal;
 	border-top-color:transparent;
-	border-left-color:transparent;
-	border-right-color:transparent;
-	border-bottom:2px solid #ab8071;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-bottom:3px solid #ab8071;
 	font-family: 'Noto Sans', sans-serif;
 	margin-bottom:30px;
 	outline:none;	
@@ -183,6 +141,7 @@ input.sign-in {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     background-color: red;
+    background-color: #cb8071;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -194,15 +153,28 @@ input.sign-in {
 }
 input.sign-in:hover {
 	background-color:#CD6155;
+	background-color:#db8071;
+}
+::-webkit-input-placeholder {
+   color: #ab8071;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ab8071;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ab8071;  
+}
+
+:-ms-input-placeholder {  
+   color: #ab8071;  
 }
 
 /*-- responsive design --*/
 @media (max-width:1440px) {
 	h1 {
 	padding:35px 0;	
-	}
-	p.copyright {
-	padding:50px 0 0;	
 	}
 }
 
@@ -236,7 +208,7 @@ button.sign-in {
     margin-bottom: 5px;
     margin-right: -109px;
 }
-input[type="password"], input[type="email"], textarea {
+input[type="password"], input[type="email"] {
 	font-size:14px;
 }
 }
