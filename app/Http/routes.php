@@ -41,7 +41,22 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/',function () {
-    return view('backend.home');
+    return view('frontend.home');
+});
+Route::get('aboutUs',function () {
+    return view('frontend.about');
+});
+Route::get('contactUs',function () {
+    return view('frontend.contact');
+});
+Route::get('Events',function () {
+    return view('frontend.events');
+});
+Route::get('Blog',function () {
+    return view('frontend.blog');
+});
+Route::get('Gallery',function () {
+    return view('frontend.gallery');
 });
 Route::get('event/new','EventGalleryController@create');
 Route::post('event/new','EventGalleryController@store');
@@ -65,5 +80,4 @@ Route::post('changePassword','Password@changePasswordProcess');
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
-
+//Route::get('/home', 'HomeController@index');
