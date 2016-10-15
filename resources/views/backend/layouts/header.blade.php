@@ -13,12 +13,12 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{url('dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{url('backend/dist/css/AdminLTE.min.css')}}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="{{url('dist/css/skins/skin-green-light.min.css')}}">
+  <link rel="stylesheet" href="{{url('backend/dist/css/skins/skin-green-light.min.css')}}">
   <!-- Even Gallery Image Upload -->
-  <link rel="stylesheet" href="{{url('dist/css/imageupload.css')}}">
+  <link rel="stylesheet" href="{{url('backend/dist/css/imageupload.css')}}">
 
   <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css"/>
 

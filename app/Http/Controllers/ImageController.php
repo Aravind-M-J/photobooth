@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Images;
+use App\Event;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
@@ -15,9 +17,10 @@ class ImageController extends Controller {
      * Show Page to Upload Images for gallery
      * @return View
      */
-    public function create()
+    public function create($eventid)
     {
-        return view( 'backend.event_gallery.upload_images');
+		
+        return view( 'backend.event_gallery.upload_images',['eventid'=>$eventid]);
     }
 
     /**
@@ -29,27 +32,32 @@ class ImageController extends Controller {
      */
 	  public function store( Storage $storage, Request $request )
     {
+		
+		$images= new Images;
+       
         if ( $request->isXmlHttpRequest() )
         {
+            $id = $request->input('eventid');
             $image = $request->file( 'image' );
             $timestamp = $this->getFormattedTimestamp();
             $savedImageName = $this->getSavedImageName( $timestamp, $image );
-
+			$evtname = Event::find($id);
+			$savedImageName = 'event/'.$evtname->name.'/'.$savedImageName;
             $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
 
             if ( $imageUploaded )
             {
-                $data = [
-                    'original_path' => asset( '/images/' . $savedImageName )
-                ];
-                return json_encode( $data, JSON_UNESCAPED_SLASHES );
+				$images->event_id = $id;
+                $images->name = $savedImageName;
+				$images->save();
+				return 'Uploaded Succesfully';
             }
             return "uploading failed";
         }
 
-    }
-	
-	 /**
+    }	
+		
+     /**
      * @param $image
      * @param $imageFullName
      * @param $storage
@@ -67,7 +75,7 @@ class ImageController extends Controller {
      */
     protected function getFormattedTimestamp()
     {
-        return str_replace( [' ', ':'], '-', Carbon::now()->toDateTimeString() );
+        return str_replace( [' ', ':','-'], '', Carbon::now()->toDateTimeString() );
     }
 	
 	 /**

@@ -39,7 +39,7 @@ table {
 
 /*--- end reset code ---*/
 body {
-	background-color: black;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position:center;
 	background-attachment:center;
@@ -62,6 +62,8 @@ h1 {
 .content-w3ls {
     width: 30%;
     margin: 0 auto;
+    background-color:black;
+    opacity: 0.8;
     background-color:rgba(143, 133, 131, 0.90);
     text-align: center;
     padding: 60px 40px;
@@ -75,6 +77,7 @@ h2 {
     text-transform: uppercase;
     font-size: 33px;
     font-weight: 600;
+    align-items: center;
     color: #000;
 }
 button.sign-in {
@@ -91,6 +94,21 @@ button.sign-in {
     -o-transition:all 0.5s ease-in-out;
     -ms-transition:all 0.5s ease-in-out;
 }
+::-webkit-input-placeholder {
+   color: #CD6155;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #CD6155;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #CD6155;  
+}
+
+:-ms-input-placeholder {  
+   color: #CD6155;  
+}
 button.sign-in img {
 	width:55px;
 	opacity:0.8;
@@ -102,7 +120,7 @@ input[type="password"],input[type="email"] {
     width: 85%;
     padding: 10px;
     font-size: 16px;
-	color:#ab8071;
+	color:#CD6155;
 	background-color:rgba(255, 255, 255, 0.75);
     font-weight: normal;
 	border-top-color:transparent;
@@ -122,6 +140,7 @@ input.sign-in {
     text-transform: uppercase;
     color: #fff;
     font-family: 'Nunito', sans-serif;
+    background-color: red;
     background-color: #cb8071;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -133,6 +152,7 @@ input.sign-in {
     cursor: pointer;
 }
 input.sign-in:hover {
+	background-color:#CD6155;
 	background-color:#db8071;
 }
 ::-webkit-input-placeholder {
@@ -289,7 +309,7 @@ button.sign-in {
     height: 40px;
 	margin-right: -50px;
 }
-input[type="password"], input[type="email"] {
+input[type="password"], input[type="email"], textarea {
 	margin-bottom:17px;
 }
 }
@@ -320,7 +340,7 @@ button.sign-in {
     width: 89%;
     margin: 0 auto 10px;
 }
-input[type="password"], input[type="email"] {
+input[type="password"], input[type="email"], textarea {
 	padding:7px;
 	margin-bottom:14px;
 }
