@@ -8,16 +8,16 @@ class ContactFormRequest extends Request {
 
   public function authorize()
   {
-    return true;
+     return true;
   }
 
   public function rules()
   {
     return [
-    'Name' => 'required',
-    'Email' => 'required|email',
-    'Subject' => 'required',
-    'Message' => 'required',
+    'name' => 'required|regex:/^[(a-zA-Z )]+$/u',
+    'email' => 'required|email',
+    'subject' => 'required',
+    'message' => 'required',
   ];
   }
 
