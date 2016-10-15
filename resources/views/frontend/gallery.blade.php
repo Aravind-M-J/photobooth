@@ -1,4 +1,5 @@
 @extends('frontend.layouts.layout')
+@section('Events','menu__item--current')
 @section('body')
 <!-- banner -->
 	<div class="banner1">

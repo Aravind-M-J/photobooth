@@ -1,4 +1,5 @@
 @extends('frontend.layouts.layout')
+@section('aboutUs','menu__item--current')
 @section('body')
 
 <!-- banner -->

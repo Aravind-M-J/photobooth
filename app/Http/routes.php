@@ -29,6 +29,9 @@ Route::get('Blog/{id}','BlogController@show');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 Route::get('contactUs','AboutController@create');
 Route::post('contactUs','AboutController@store');
+Route::get('Services',function(){
+    return view('frontend.service');
+});
 
 # Routes that only admin can access
 Route::group(['middleware'=>['auth']],function(){

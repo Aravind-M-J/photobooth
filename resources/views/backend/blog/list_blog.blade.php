@@ -1,7 +1,7 @@
 @extends('backend.layouts.layout')
 @section('title','Blog')
 @section('small_title','list')
-@section('content')
+@section('event','active')
 @section('body')
 
 <div class="box box-success">

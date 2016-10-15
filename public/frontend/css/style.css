@@ -2838,3 +2838,37 @@ p.fugiat{
 		left: 105%;
 	}
 }
+
+.testimonial_style {
+    border:2px solid;
+    text-align:justify;
+    font-style:italic;
+}
+.testimonial_style blockquote:hover{
+    color:#F00;
+}
+.testimonial-person {
+    height:30px;
+    width:30px;
+    border-radius:100%;
+}
+.steps_service{
+    background-color:#b0b0a8;
+    padding:40px 0px 96px 0px;
+    margin:0px 0px 0px 0px;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+}
+.steps_other_service{
+    background-color:#efecec;
+    padding:40px 0px 96px 0px;
+    margin:0px 0px 0px 0px;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+}

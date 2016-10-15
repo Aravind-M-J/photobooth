@@ -1,6 +1,7 @@
 @extends('backend.layouts.layout')
 @section('title','Gallery')
 @section('small_title','Upload')
+@section('event','active')
 @section('body')
 <div class="box box-success">
 	<div class="box-body">			

@@ -1,4 +1,5 @@
 @extends('frontend.layouts.layout')
+@section('Blogs','menu__item--current')
 @section('body')
     <div class="mail">
         <div class="container">

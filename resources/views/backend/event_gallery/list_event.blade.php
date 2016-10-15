@@ -1,6 +1,7 @@
 @extends('backend.layouts.layout')
 @section('title','ListEvent')
 @section('small_title','New')
+@section('event','active')
 @section('body')
 
 

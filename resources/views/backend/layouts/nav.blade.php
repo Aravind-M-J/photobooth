@@ -28,14 +28,11 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="treeview">
+            <li class="treeview @yield('home')">
                 <a href="{{url('/home')}}">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
                 </a>
-                        <li class="treeview">
+                        <li class="treeview @yield('event')">
                             <a href="#">
                                 <i class="fa fa-pencil-square-o"></i> <span>Events</span>
                                 <span class="pull-right-container">
@@ -49,7 +46,7 @@
                         </li>
 
 
-                        <li class="treeview">
+                        <li class="treeview @yield('blog')">
                             <a href="#">
                                 <i class="fa fa-pencil-square-o"></i> <span>Blog</span>
                                 <span class="pull-right-container">
