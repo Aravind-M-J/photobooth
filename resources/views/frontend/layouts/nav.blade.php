@@ -28,7 +28,7 @@
 						</ul>
 					</nav>
 					<div class="phone">
-						<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>+0123 456 789</span></p>
+						<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>098951 90809</span></p>
 					</div>
 				</div>
 				<!-- /.navbar-collapse -->
