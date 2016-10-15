@@ -3,7 +3,7 @@
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
-			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="index.html">Home</a> / <span></span></h2>
+			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="index.html">Home</a> / <span>Gallery</span></h2>
 		</div>
 	</div>
 
@@ -16,6 +16,10 @@
 			$('.gallery-grid a').Chocolat();
 		});
 		</script>
+		<div class="text-center">
+		    <h2>{{$event->name}}</h2>
+		    <p>{{$event->description}}</p>
+		</div>
 
 <div class="gallery" id="gallery">
 	<div class="container">
@@ -23,13 +27,15 @@
 		<div class="gallery-bott">
 		@foreach($data as $col)
 			<div class="col-md-4 col1 gallery-grid">
-				    <a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
+				    <a href="{{url('images/'.$col->name)}}" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
-							<img class="img-responsive" src="{{url('images/'.$col->image)}}" alt="">
+							<img class="img-responsive" src="{{url('images/'.$col->name)}}" alt="">
+							@if($col->caption!=null)
 							<figcaption>
-								<h4 class="gal"> Nemo voluptatem</h4>
+								<h4 class="gal">{{$col->caption}}</h4>
 								<!--p class="gal1">In sit amet sapien eros Integer dolore magna aliqua</p-->
 							</figcaption>
+							@endif
 						</figure>
 					</a>
 					</div>

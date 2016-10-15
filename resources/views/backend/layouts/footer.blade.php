@@ -35,6 +35,9 @@ function confirmDelete(href){
 		window.location.href=href;
 	}
 }
+            $.ajaxSetup({
+               headers: { 'X-CSRF-Token' : $('meta[name=_token]').attr('content') }
+            });
 </script>
 @yield('page_scripts')
 </body>
