@@ -36,7 +36,7 @@ Route::get('contactUs',function () {
 });
 Route::get('Events','HomeController@events');
 Route::get('Blogs','HomeController@blogs');
-Route::get('Blog/{id}','HomeController@blog');
+Route::get('Blog/{id}','BlogController@show');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 Route::get('contactUs','AboutController@create');
 Route::post('contactUs','AboutController@store');
