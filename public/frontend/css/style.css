@@ -1517,7 +1517,7 @@ h2.typoh2{
 
 /*-- mail --*/
 .mail-grids{
-	margin:3em 0;
+	padding: 10px;
 }
 .mail-grid-left input[type="text"],.mail-grid-left input[type="email"],.mail-grid-left textarea{
 	outline: none;
@@ -1610,24 +1610,37 @@ ul.phone-mail {
 .single-grid-left-grid1-left{
 	float:right;
 }
+.blog_heading{
+    text-align:left;
+    color:#000;
+}
 .justify {
     text-align:justify;
     height:auto;
-    color:#fff;
+    color:#777;
 }
 .blogcontainer {
-    background-color:#6d6e71;
-    height:370px;
+    background-color:#efefef;
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-height:250px;
+    padding: 15px;
 }
 .read-more-button {
     float:left;
     color:#000;
 }
+.autoheight{
+    height: 120px;
+}
 .read-more-button-color {
     width:100px;
     color:#000;
 }
-.blog-grid-left input[type="submit"]{
+.blog-grid-left{
+    padding: 7px;
+}
+.blog-grid-left button{
     outline:none;
     border:none;
     background:#ffc31a;
@@ -1646,9 +1659,6 @@ ul.phone-mail {
 .blogdata {
 	height:auto;
 	padding-left:30px;
-}
-.autoheight {
-	height:auto;
 }
 .single-grid-left-grid1-left h3{
 	font-size:1em;
@@ -2505,9 +2515,6 @@ p.fugiat{
 	.textbox.textbox1 {
 		top: 66px;
 		height: 65.5%;
-	}
-	.mail-grids {
-		margin: 2em 0;
 	}
 	.mail-grid-right {
 		margin: 2em 0 0;

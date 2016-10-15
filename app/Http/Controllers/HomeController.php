@@ -48,4 +48,9 @@ class HomeController extends Controller
             ->get();
         return view('frontend.blogs')->with('data',$data);
     }
+    public function blog($id){
+        $blogs= new Blog;
+        $data = $blogs->find($id);
+        return view('frontend.blog')->with('data',$data);
+    }
 }

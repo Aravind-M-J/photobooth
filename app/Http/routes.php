@@ -36,7 +36,10 @@ Route::get('contactUs',function () {
 });
 Route::get('Events','HomeController@events');
 Route::get('Blogs','HomeController@blogs');
+Route::get('Blog/{id}','HomeController@blog');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
+Route::get('contactUs','AboutController@create');
+Route::post('contactUs','AboutController@store');
 
 # Blog Routes
 Route::get('blog', 'BlogController@new_blog');
@@ -57,16 +60,3 @@ Route::group(['middleware'=>['auth']],function(){
     Route::get('changePassword','Password@changePassword');
     Route::post('changePassword','Password@changePasswordProcess');
 });
-
-
-//Route::get('/home', 'HomeController@index');
-
-Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
-/*
-Route::get('contact', 
-  ['as' => 'contact', 'uses' => 'AboutController@create']);
-Route::post('contact', 
-  ['as' => 'contact_store', 'uses' => 'AboutController@store']);*/
-
-Route::get('contactUs','AboutController@create');
-Route::post('contactUs','AboutController@store');
