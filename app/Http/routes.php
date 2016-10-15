@@ -25,7 +25,6 @@ Route::post('caption/{id}','ImageController@caption');
 Route::auth();
 
 # Front End Views Routes
-Route::get('/home', 'HomeController@index');
 Route::get('/','HomeController@root');
 Route::get('aboutUs',function () {
     return view('frontend.about');
@@ -34,12 +33,7 @@ Route::get('contactUs',function () {
     return view('frontend.contact');
 });
 Route::get('Events','HomeController@events');
-Route::get('Blog',function () {
-    return view('frontend.blog');
-});
-Route::get('Gallery',function () {
-    return view('frontend.gallery');
-});
+Route::get('Blogs','HomeController@blogs');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 
 # Blog Routes
@@ -52,6 +46,9 @@ Route::post('blog/store','BlogController@store');
 
 # Routes that only admin can access
 Route::group(['middleware'=>['auth']],function(){
+    # Dashboard
+
+    Route::get('/home', 'HomeController@index');
     # Change password routes
     Route::get('changePassword','Password@changePassword');
     Route::post('changePassword','Password@changePasswordProcess');

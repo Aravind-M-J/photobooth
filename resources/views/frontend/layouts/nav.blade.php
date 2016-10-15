@@ -12,7 +12,7 @@
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<h1><a class="navbar-brand" href="index.html"><img class="img_logo1" src="images/Partycrooks-logo.png"></a></h1>
+						<h1><a class="navbar-brand" href="{{url('/')}}"><img class="img_logo1" src="{{url('images/Partycrooks-logo.png')}}"></a></h1>
 					</div>
 				</div>
 
@@ -22,8 +22,8 @@
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
 							<li class="menu__item"><a href="{{url('aboutUs')}}" class="menu__link"><span class="menu__helper">About Us</span></a></li>
-							<li class="menu__item"><a href="{{url('Event')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
-							<li class="menu__item"><a href="{{url('Blog')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
+							<li class="menu__item"><a href="{{url('Events')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
+							<li class="menu__item"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
 							<li class="menu__item"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
 						</ul>
 					</nav>

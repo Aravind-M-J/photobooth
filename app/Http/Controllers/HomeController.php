@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Event;
@@ -9,11 +10,6 @@ use App\Images;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         //$this->middleware('auth');
@@ -38,4 +34,18 @@ class HomeController extends Controller
 		$data= Images::all();
 		return view('frontend.gallery')->with('data',$data);
 	}
+    public function events(){
+        $events= new Event;
+        $data = $events
+            ->orderBy('created_at')
+            ->get();
+        return view('frontend.events')->with('data',$data);
+    }
+    public function blogs(){
+        $blogs= new Blog;
+        $data = $blogs
+            ->orderBy('created_at')
+            ->get();
+        return view('frontend.blogs')->with('data',$data);
+    }
 }
