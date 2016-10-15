@@ -1,4 +1,4 @@
-@if(\Illuminate\Support\Facades\Auth::check()))
+{{--@if(\Illuminate\Support\Facades\Auth::check()))--}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,6 +81,6 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
-@else
-<h1>Access Denied!!</h1>
-@endif
+{{--@else--}}
+{{--<h1>Access Denied!!</h1>--}}
+{{--@endif--}}

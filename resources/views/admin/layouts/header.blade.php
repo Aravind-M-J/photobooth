@@ -6,7 +6,6 @@
   <title>@yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <meta content="{{csrf_token()}}" name="_token">
   <!-- Bootstrap 3.3.6 -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >
   <!-- Font Awesome -->
@@ -14,13 +13,12 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{url('backend/dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{url('dist/css/AdminLTE.min.css')}}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="{{url('backend/dist/css/skins/skin-green-light.min.css')}}">
+  <link rel="stylesheet" href="{{url('dist/css/skins/skin-green-light.min.css')}}">
   <!-- Even Gallery Image Upload -->
-  <link rel="stylesheet" href="{{url('backend/dist/css/imageupload.css')}}">
-  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css"/>
+  <link rel="stylesheet" href="{{url('dist/css/imageupload.css')}}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,7 +68,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="{{url('logout')}}" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -78,32 +76,4 @@
         </ul>
       </div>
     </nav>
-  <style>
-
-.image {
-    position:relative;
-    display:inline-block;
-}
-.image img{
-    width:100%;
-    vertical-align: top;
-    height: 200px;
-}
-.overlay {
-    display:none;
-}
-.image:hover .overlay {
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.5);
-    position:absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-}
-  </style>
-
   </header>
