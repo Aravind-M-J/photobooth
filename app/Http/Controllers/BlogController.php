@@ -13,19 +13,18 @@ use Illuminate\Filesystem\Filesystem;
 
 class BlogController extends Controller
 {
-    public function new_blog()
-    {
-    	return view("backend.blog.new_blog");
+    public function new_blog() {
+	return view("backend.blog.new_blog");
 	}
-    public function index()
-    {
+	
+    
+    public function index(){
         $allblog = new Blog;
         $allblog = $allblog
                ->get();
-               
-        return view('backend.blog.list_blog',compact('allblog'));  
-        
-    }
+                return view('backend.blog.list_blog',compact('allblog'));  
+     }   
+  
 
 	public function store(Storage $storage,Request $request)
 	{
@@ -37,19 +36,18 @@ class BlogController extends Controller
         $savedImageName = $this->getSavedImageName( $timestamp, $image );
         $savedImageName = 'blog/'.$savedImageName;
         $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
-		
 		if ( $imageUploaded )
             {
 				$blog->blog_img = $savedImageName;
 				$blog->save();
 				return redirect('blog/new')
-				->withFlashMessage('Blog Added Succesfully')
-				->withType('success');
+				        ->withFlashMessage('Blog Added Succesfully')
+				        ->withType('success');
             }
 
-            return redirect('blog/new')
-				->withFlashMessage('Blog Addition Failed!')
-				->withType('danger');		
+                 return redirect('blog/new')
+				        ->withFlashMessage('Blog Addition Failed!')
+				        ->withType('danger');		
 	}
 
 	public function uploadImage( $image, $imageFullName, $storage )
@@ -90,22 +88,35 @@ class BlogController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function update($id, Request $request) {
+    public function update($id, Request $request,Storage $storage) {
         //update values in notice
         $blog=Blog::find($id);
         $blog->blog_title = $request->input('blog_title');
         $blog->blog_cont = $request->input('blog_cont');
-        $blog->blog_img = $request->input('blog_img');
+        if($request->file('blog_img')!=null){
+            $image = $request->file( 'blog_img' );
+            $timestamp = $this->getFormattedTimestamp();
+            $savedImageName = $this->getSavedImageName( $timestamp, $image );
+            $savedImageName = 'blog/'.$savedImageName;
+            $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );   
+            if ( $imageUploaded )
+            {
+                $blog->blog_img = $savedImageName;
+            }else{
+                return redirect('blog/list')
+                        ->withFlashMessage('Image upload failed!')
+                        ->withType('danger');
+            }      
+        }
         $blog->save();
-        return redirect('blog/new')
+        return redirect('blog/list')
                         ->withFlashMessage('Blog Updated successfully!')
                         ->withType('success');
     }
 
 public function show($id)
     {
-        $blog = new Blog;
-        $blog = $blog->find($id);
+        $blog = Blog::find($id);
         $date= date_create($blog->created_at);
         $month=date_format($date,'M');
         $day=date_format($date,'d');
@@ -122,7 +133,7 @@ public function show($id)
       $blog=Blog::find($id);
       unlink(public_path('images/'.$blog->blog_img));
       $blog->delete();
-     return redirect('blog/list')
+      return redirect('blog/list')
                 ->withFlashMessage('Blog deleted successfully!')
                 ->withType('success');
     }

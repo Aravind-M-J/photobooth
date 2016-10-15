@@ -16,7 +16,7 @@
 			</div>
 			<div class="form-group">
 				<label for="cont" class="control-label">Content</label>
-				<textarea class="form-control" name="blog_cont"></textarea>
+				<textarea class="form-control" name="blog_cont"></textarea> 
 			</div>
 			<div class="form-group">
 				<label for="img" class="control-label">Featured image</label>

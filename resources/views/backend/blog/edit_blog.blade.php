@@ -16,11 +16,11 @@
 			</div>
 			<div class="form-group">
 				<label for="cont" class="control-label">Content</label>
-				<input class="form-control" type="text area" name="blog_cont" value="{{$blog->blog_cont}}">
+				<textarea> class="form-control" type="text area" name="blog_cont" value="{{$blog->blog_cont}}"></textarea>
 			</div>
 			<div class="form-group">
 				<label for="img" class="control-label">Featured image</label>
-				<input id="img" name="blog_img" type="file" class="filestyle" value="{{$blog->blog_img}}">				
+				<input id="img" name="blog_img" type="file" class="filestyle">				
 			</div>
 			<input type="hidden" name="_token" value="{{csrf_token()}}">
 			<input type="submit" value="Submit" class="btn btn-primary">

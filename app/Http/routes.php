@@ -20,6 +20,8 @@ Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageControl
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
 Route::post('toggle/{id}','ImageController@toggle');
 Route::post('caption/{id}','ImageController@caption');
+Route::get('event/edit/{id}','EventGalleryController@edit');
+Route::post('event/edit/{id}','EventGalleryController@update');
 
 # Authentication Route
 Route::auth();
@@ -37,6 +39,7 @@ Route::get('Blogs','HomeController@blogs');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 
 # Blog Routes
+Route::get('blog', 'BlogController@new_blog');
 Route::get('blog/new', 'BlogController@new_blog');
 Route::get('blog/list','BlogController@index');
 Route::get('blog/{id}', 'BlogController@show');
