@@ -44,11 +44,12 @@ Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 
 # Blog Routes
 Route::get('blog/new', 'BlogController@new_blog');
+Route::get('blog/list','BlogController@index');
 Route::get('blog/{id}', 'BlogController@show');
-Route::get('blog/list',function () {
-    return view('backend.blog.list_blog');
-});
 Route::post('blog/store','BlogController@store');
+Route::get('blog/destroy/{id}','BlogController@destroy');
+Route::get('blog/edit/{id}','BlogController@edit');
+Route::post('blog/edit/{id}','BlogController@update');
 
 # Routes that only admin can access
 Route::group(['middleware'=>['auth']],function(){

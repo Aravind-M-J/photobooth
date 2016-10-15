@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="{{url('backend/dist/css/skins/skin-green-light.min.css')}}">
   <!-- Even Gallery Image Upload -->
   <link rel="stylesheet" href="{{url('backend/dist/css/imageupload.css')}}">
-
   <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css"/>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
