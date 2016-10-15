@@ -1660,6 +1660,9 @@ ul.phone-mail {
 	height:auto;
 	padding-left:30px;
 }
+.autoheight {
+	height:auto;
+}
 .single-grid-left-grid1-left h3{
 	font-size:1em;
 	color:#212121;
