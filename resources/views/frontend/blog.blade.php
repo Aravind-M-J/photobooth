@@ -14,27 +14,23 @@
 				<div class="col-md-8 single-grid-left">
 					<div class="flex-slider-single animated wow slideInLeft" data-wow-delay=".5s">
 										<div class="single-grid-left-grid">
-											<img src="images/13.jpg" alt=" " class="img-responsive" />
+											<img src="{{url('images/'.$blog->blog_img)}}" alt=" " class="img-responsive" />
 											<div class="single-grid-left-grid1">
 												<div class="single-grid-left-grid1-left">
-													<h3>30 <span>May</span></h3>
+													<h3>{{$day}} <span>{{$month}}</span></h3>
 												</div>
 												<div class="single-grid-left-grid1-right blog_heading">
-													<h4>vel illum qui dolorem eum fugiat</h4>
-													<p>By: Jan Mark </p>
+													<h4>{{$blog->blog_title}}</h4>
+													
 												</div>
 												<div class="clearfix"> </div>
-												<p class="fugiat">Nam libero tempore, cum soluta nobis est eligendi optio
-													cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-													voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
-													et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-													voluptates repudiandae sint et molestiae non recusandae. t</p>
-												<ul>
+												<p class="fugiat">{{$blog->blog_cont}}</p>
+												<!--<ul>
 													<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Jan Mark</a></li>
 													<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 20</a></li>
 													<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 5</a></li>
 													<li><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Voluptatibus</li>
-												</ul>
+												</ul>-->
 											</div>
 										</div>
 

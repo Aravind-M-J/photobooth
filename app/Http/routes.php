@@ -43,6 +43,7 @@ Route::get('Gallery',function () {
 
 # Blog Routes
 Route::get('blog/new', 'BlogController@new_blog');
+Route::get('blog/{id}', 'BlogController@show');
 Route::get('blog/list',function () {
     return view('backend.blog.list_blog');
 });
@@ -55,8 +56,7 @@ Route::group(['middleware'=>['auth']],function(){
     Route::post('changePassword','Password@changePasswordProcess');
 });
 
-<<<<<<< Updated upstream
-=======
+
 //Route::get('/home', 'HomeController@index');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
->>>>>>> Stashed changes
+
