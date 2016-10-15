@@ -25,7 +25,7 @@
 						<input type="text" name="name" placeholder="Name" required="">
 						<input type="email" name="email" placeholder="Email" required="">
 						<input type="text" name="subject" placeholder="Subject" required="">
-						<textarea name="message" placeholder="message" required="">Message...</textarea>
+						<textarea name="message" placeholder="Message" required=""></textarea>
 						<input type="submit" value="Submit Now">
 					</form>
 				</div>

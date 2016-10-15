@@ -1611,9 +1611,32 @@ ul.phone-mail {
 	float:right;
 }
 .justify {
-	text-align:justify;
-	height:auto;
+    text-align:justify;
+    height:auto;
+    color:#fff;
 }
+.blogcontainer {
+    background-color:#6d6e71;
+    height:370px;
+}
+.read-more-button {
+    float:left;
+    color:#000;
+}
+.read-more-button-color {
+    width:100px;
+    color:#000;
+}
+.blog-grid-left input[type="submit"]{
+    outline:none;
+    border:none;
+    background:#ffc31a;
+    font-size:1em;
+    color:#fff;
+    padding:10px 0;
+    width:30%;
+}
+
 .paddingbutton {
 	position:fixed;
 	left:0;
