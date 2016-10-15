@@ -40,6 +40,18 @@
                     <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                 </ul>
             </li>
+			<li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Events</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{url('event/new')}}"><i class="fa fa-circle-o"></i> Add event</a></li>
+                    <li><a href="{{url('event')}}"><i class="fa fa-circle-o"></i> List event</a></li>
+                </ul>
+            </li>
             <li class="header">Settings</li>
             <li><a href="#"><i class="fa fa-circle-o text-orange"></i> <span>Change Password</span></a></li>
         </ul>
