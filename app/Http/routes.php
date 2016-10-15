@@ -18,6 +18,8 @@ Route::get('event','EventGalleryController@index');
 Route::get('event/destroy/{id}','EventGalleryController@destroy');
 Route::get('event/gallery/{eventid}',['as'=>'image.create','uses'=>'ImageController@create']);
 Route::post('event/gallery',['as'=>'image.store','uses'=>'ImageController@store']);
+Route::post('toggle/{id}','ImageController@toggle');
+Route::post('caption/{id}','ImageController@caption');
 
 # Authentication Route
 Route::auth();
@@ -31,15 +33,14 @@ Route::get('aboutUs',function () {
 Route::get('contactUs',function () {
     return view('frontend.contact');
 });
-Route::get('Events',function () {
-    return view('frontend.events');
-});
+Route::get('Events','HomeController@events');
 Route::get('Blog',function () {
     return view('frontend.blog');
 });
 Route::get('Gallery',function () {
     return view('frontend.gallery');
 });
+Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 
 # Blog Routes
 Route::get('blog/new', 'BlogController@new_blog');
@@ -57,6 +58,5 @@ Route::group(['middleware'=>['auth']],function(){
 });
 
 
-//Route::get('/home', 'HomeController@index');
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
 

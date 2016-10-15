@@ -19,8 +19,10 @@ class ImageController extends Controller {
      */
     public function create($eventid)
     {
-		
-        return view( 'backend.event_gallery.upload_images',['eventid'=>$eventid]);
+		$images = new Images;
+        $images = $images->where('event_id',$eventid)->get();
+
+        return view( 'backend.event_gallery.upload_images',['eventid'=>$eventid,'images'=>$images]);
     }
 
     /**
@@ -86,5 +88,28 @@ class ImageController extends Controller {
     protected function getSavedImageName( $timestamp, $image )
     {
         return $timestamp . '-' . $image->getClientOriginalName();
+    }
+
+    public function toggle($id,Request $request){
+        $image = new Images;
+        $image = $image->find($id);
+        if($request->input('status')=='Disable'){
+            $image->deleted_at = date('Y-m-d h:i:s');
+            $status = 'Enable';
+        }else{
+            $image->deleted_at = null;
+            $status = 'Disable';
+        }
+        $image->save();
+        return $status;
+    }
+    public function caption($id,Request $request){
+        $image = new Images;
+        $image = $image->find($id);
+        $image->caption = $request->input('caption');
+        $image->save();
+        return redirect('event/gallery/'.$request->input('event_id'))
+            ->withFlashMessage('Caption Updated SuccessFully!')
+            ->withtype('success');
     }
 }

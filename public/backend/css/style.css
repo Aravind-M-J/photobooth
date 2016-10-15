@@ -150,7 +150,6 @@ input.sign-in:hover {
 :-ms-input-placeholder {  
    color: #ab8071;  
 }
-
 /*-- responsive design --*/
 @media (max-width:1440px) {
 	h1 {

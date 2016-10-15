@@ -28,8 +28,8 @@
                     <td><center>{!! $event->name !!}</center></td>
                     <td><center>{{ $event->description }}</center></td>
 					<td><center><img src="{{ url('images/'.$event->image) }}" alt="{{ $event->image }}" height="50px" width="100px" ></center></td>
-					<td><center><input type="button" value="ViewGallery" class="btn btn-danger"></center></td>
-					<td><center><input type="button" value="Edit" class="btn btn-danger"></center> </td>
+					<td><center><input type="button" value="ViewGallery" class="btn btn-primary" onclick="window.location.href='{{url('event/gallery/'.$event->id)}}'"></center></td>
+					<td><center><input type="button" value="Edit" class="btn btn-warning"></center> </td>
                     <td><center><input type="button" value="Delete" onclick="confirmDelete('{{url('event/destroy/'.$event->id)}}')" class="btn btn-danger"></center></td>
             <?php $i++ ?>   
 				@endforeach
