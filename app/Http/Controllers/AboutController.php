@@ -21,19 +21,25 @@ class AboutController extends Controller {
 
   public function store(ContactFormRequest $request)
   {
-  	    $name   = $request->input('name');
-        $email  = $request->input('email');
+      $name   = $request->input('name');
+      $email  = $request->input('email');
+      $subject= $request->input('subject');
+      $bodymessage= $request->input('message');
+      $this->subject = $subject;
+      $this->name    = ucwords($name);
+      $this->email   = $email;
 
-  	    Mail::send('email.aboutmail', ['name' => $name, 'email' => $email], function ($message)
-        {
-            $message->from('me@gmail.com');
-            $message->to('chippymerinmathew05@gmail.com');
-        });
+      Mail::send('email.aboutmail', ['name' => $name, 'email' => $email, 'subject' => $subject, 'bodymessage' => $bodymessage],  function ($message)
+      {
+          $message->from($this->email, 'Party Crooks - ' . $this->name);
+          $message->to('chippymerinmathew05@gmail.com');
+          $message->subject($this->subject);
+      });
 
 
-        return redirect('contactUs')
-        ->withFlashMessage('Thanks for contacting us!')
-        ->withType('success');
+      return redirect('contactUs')
+          ->withFlashMessage('Thanks for contacting us!')
+          ->withType('success');
 
   }
 
