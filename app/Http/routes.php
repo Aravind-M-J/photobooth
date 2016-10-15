@@ -55,8 +55,11 @@ Route::group(['middleware'=>['auth']],function(){
     Route::post('changePassword','Password@changePasswordProcess');
 });
 
-<<<<<<< Updated upstream
-=======
 //Route::get('/home', 'HomeController@index');
+
 Route::get('Gallery/{id}',['uses'=>'HomeController@gallery']);
->>>>>>> Stashed changes
+
+Route::get('contact', 
+  ['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::post('contact', 
+  ['as' => 'contact_store', 'uses' => 'AboutController@store']);

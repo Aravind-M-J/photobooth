@@ -1,5 +1,10 @@
 @extends('frontend.layouts.layout')
 @section('body')
+<ul>
+    @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+    @endforeach
+</ul>
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
