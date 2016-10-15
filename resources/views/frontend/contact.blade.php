@@ -1,10 +1,6 @@
-@extends('frontend.layouts.layout')
+    @extends('frontend.layouts.layout')
 @section('body')
-<ul>
-    @foreach($errors->all() as $error)
-        <li>{{ $error }}</li>
-    @endforeach
-</ul>
+
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
@@ -24,12 +20,13 @@
 					</div>
 			<div class="mail-grids">
 				<div class="col-md-8 mail-grid-left animated wow slideInLeft" data-wow-delay=".5s">
-					<form action="#" method="post">
-						<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-						<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-						<input type="text" name="Subject" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-						<textarea type="text"  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-						<input type="submit" value="Submit Now" >
+					<form action="{{url('contactUs')}}" method="post">
+						{{csrf_field()}}
+						<input type="text" name="name" placeholder="Name" required="">
+						<input type="email" name="email" placeholder="Email" required="">
+						<input type="text" name="subject" placeholder="Subject" required="">
+						<textarea name="message" placeholder="message" required="">Message...</textarea>
+						<input type="submit" value="Submit Now">
 					</form>
 				</div>
 				<div class="col-md-4 mail-grid-right animated wow slideInRight" data-wow-delay=".5s">
