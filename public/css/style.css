@@ -1,12 +1,4 @@
-/*--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 
-
-/*--- reset code ---*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	margin:0;
 	padding:0;
@@ -49,6 +41,7 @@ body {
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	font-family: 'Noto Sans', sans-serif;
+	height: 800px;
 }
 h1 {
 	font-size: 40px;
@@ -67,6 +60,7 @@ h1 {
     background-color:rgba(204, 201, 201, 0.43);
     text-align: center;
     padding: 60px 40px;
+	margin-top: 80px;
 }
 .form-w3ls {
     width: 89%;
@@ -242,7 +236,7 @@ button.sign-in {
     margin-right: -100px;
 }
 .content-w3ls {
-    width: 60%;
+    width: 40%;
 }
 p.copyright {
 	font-size:15px;
@@ -352,4 +346,27 @@ p.copyright {
 	padding:20px 10px;
 }
 }
+
 /*-- /responsive design --*/
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+.content-w3ls {
+    margin-left: 600px;
+}
+}
+@media only screen and (min-width: 771px) and (max-width: 991px) {
+.content-w3ls {
+    margin-left:40%;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+.content-w3ls {
+    margin-left:30% !important;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.content-w3ls {
+    margin-left: 150px !important;
+}
+}
