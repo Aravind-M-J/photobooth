@@ -41,7 +41,8 @@ body {
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	font-family: 'Noto Sans', sans-serif;
-	height: 800px;
+	min-height: 900px;
+	max-height:1300px;
 }
 h1 {
 	font-size: 40px;
@@ -53,8 +54,9 @@ h1 {
 	font-family: 'Nunito', sans-serif;
 }
 .content-w3ls {
-    width: 27%;
-    margin-left:800px;
+    width: 30%;
+    margin-left:900px;
+    background-color:black;
     opacity: 0.8;
     background-color:rgba(204, 201, 201, 0.43);
     text-align: center;
@@ -363,6 +365,9 @@ p.copyright {
 .content-w3ls {
     margin-left:40%;
 }
+body {
+height:1500px;
+}
 }
 @media only screen and (min-width: 481px) and (max-width: 770px) {
 .content-w3ls {
@@ -372,6 +377,6 @@ p.copyright {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 .content-w3ls {
-    margin-left: 150px !important;
+    margin-left: 50px !important;
 }
 }

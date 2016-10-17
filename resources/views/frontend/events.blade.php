@@ -14,6 +14,39 @@
 			<div class="col-md-12 col-sm-12 col-xs-12 galp">
 
 						<h2 class="galp_h">Events <span class="galp_h_col"> Gallery</span></h2>
+			</div>
+	    <div class="col-md-12 col-sm-12 col-xs-12 new_img">
+		<div class="services wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <div class="col-md-4 col-sm-6 col-xs-12 a">
+         <div class="view view-eighth">
+                    <img src="images/16.jpg" />
+                    <div class="mask">
+                        <h2>Hover Style #8</h2>
+                       
+                    </div>
+                </div>
+      </div>
+
+	      <div class="col-md-3 col-sm-6 a">
+       
+      </div>
+
+
+
+
+
+	</div>
+</div>
+
+
+	</div>
+</div>
+
+<!--div class="gallery">
+		<div class="container">
+			<div class="col-md-12 col-sm-12 col-xs-12 galp">
+
+						<h2 class="galp_h">Events <span class="galp_h_col"> Gallery</span></h2>
 					</div>
 	    <div class="col-md-12 col-sm-12 col-xs-12 new_img">
 		<div class="services wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
@@ -34,60 +67,7 @@
       </div>
       @endforeach
 
-      <!--div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right"><a href="#">
-        <div class="img"><a href="single-gallery.html"><img class="img_s" src="images/circ_img2.jpg" alt="img"></div>
-        </a></div>
-      </div>
 
-
-
-   <div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right">
-		<div class="eve_gal">
-			<h2>Engagement </h2>
-			<p>Photography </p>
-		</div>
-		</div>
-      </div>
-
-
-	</div>
-</div>
-    <div class="col-md-12 col-sm-12 col-xs-12 new_img">
-		<div class="services wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-
-      <div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right"><a href="#">
-        <div class="img"><img class="img_s" src="images/circ_img3.jpg" alt="img"></div>
-        </a></div>
-      </div>
-
-	      <div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right">
-		<div class="eve_gal">
-			<h2>Wedding Anniversary </h2>
-			<p>Photography </p>
-		</div>
-		</div>
-      </div>
-
-      <div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right"><a href="#">
-        <div class="img"><img class="img_s" src="images/circ_img4.jpg" alt="img"></div>
-        </a></div>
-      </div>
-
-
-
-   <div class="col-md-3 col-sm-6 a">
-        <div class="ih-item circle effect2 left_to_right">
-		<div class="eve_gal">
-			<h2>Engagement </h2>
-			<p>Photography </p>
-		</div>
-		</div>
-      </div-->
 
 
 	</div>
@@ -95,6 +75,6 @@
 
 
 	</div>
-</div>
+</div-->
 
 @endsection
