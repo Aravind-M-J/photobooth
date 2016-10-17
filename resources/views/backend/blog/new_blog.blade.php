@@ -21,7 +21,7 @@
 			</div>
 			<div class="form-group">
 				<label for="img" class="control-label">Featured image</label>
-				<input id="img" name="blog_img" type="file" class="filestyle">				
+				<input id="img" name="featured_image" type="file" class="filestyle">
 			</div>
 			<input type="hidden" name="_token" value="{{csrf_token()}}">
 			<input type="submit" value="Submit" class="btn btn-primary">
