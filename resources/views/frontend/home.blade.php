@@ -44,7 +44,7 @@
 							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</div></br>
 							<div class="more">
-						<a href="single.html" class="hvr-shutter-in-vertical">Read More</a>
+						{{--<a href="single.html" class="hvr-shutter-in-vertical">Read More</a>--}}
 					</div>
 
 					</div>
