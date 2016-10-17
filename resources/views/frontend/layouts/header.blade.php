@@ -14,6 +14,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="{{url('frontend/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
 <link href="{{url('frontend/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <link href="{{url('frontend/css/style1.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url('frontend/css/style_events.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script type="text/javascript" src="{{url('frontend/js/jquery-2.1.4.min.js')}}"></script>
 <!-- //js -->
