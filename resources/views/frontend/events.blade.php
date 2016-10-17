@@ -25,7 +25,7 @@
    		  <div class="view view-eighth">
                    <img class="img-responsive img_size1" src="{{url('images/'.$event->image)}}" />
                    <div class="mask">
-                        <a href="single-gallery.html"> <h2>{{$event->name}}</h2> </a>
+                        <a href="{{url('Gallery/'.$event->id)}}"> <h2>{{$event->name}}</h2> </a>
                    </div>
                </div>
    		</div>

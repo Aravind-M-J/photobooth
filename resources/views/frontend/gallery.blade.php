@@ -17,10 +17,10 @@
 			$('.gallery-grid a').Chocolat();
 		});
 		</script>
-		<div class="text-center">
-		    <h2>{{$event->name}}</h2>
-		    <p>{{$event->description}}</p>
+		<div class="col-md-12 col-sm-12 col-xs-12 galp">
+        	<h2 class="galp_h">{{$event->name}}</h2>
 		</div>
+		<p class="text-center container">{{$event->description}}</p>
 
 <div class="gallery" id="gallery">
 	<div class="container">

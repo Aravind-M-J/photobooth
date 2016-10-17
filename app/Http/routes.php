@@ -11,9 +11,11 @@
 |
 */
 
-
+#Redirect if logged in
+Route::group(['middleware'=>['guest']],function() {
 # Authentication Route
-Route::auth();
+    Route::auth();
+});
 
 # Front End Views Routes
 Route::get('/','HomeController@root');
