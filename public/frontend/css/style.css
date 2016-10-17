@@ -1610,22 +1610,7 @@ ul.phone-mail {
 .single-grid-left-grid1-left{
 	float:right;
 }
-.blog_heading{
-    text-align:left;
-    color:#000;
-}
-.justify {
-    text-align:justify;
-    height:auto;
-    color:#777;
-}
-.blogcontainer {
-    background-color:#efefef;
-    border: 1px solid #000;
-    border-radius: 10px;
-    min-height:250px;
-    padding: 15px;
-}
+
 .read-more-button {
     float:left;
     color:#000;
@@ -1683,6 +1668,7 @@ ul.phone-mail {
 
 }
 .blog_heading h4{
+    font-family: 'Open Sans', sans-serif;
 
 }
 .single-grid-left-grid1-right p{
@@ -2871,4 +2857,27 @@ p.fugiat{
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
+}
+
+.blog_heading{
+    text-align:left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    color: #e52252;
+    padding: 6px 2px 5px 2px;
+}
+.justify {
+    text-align:justify;
+    height:auto;
+    color:#999;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 6px 2px 5px 2px;
+}
+.blogcontainer {
+    background-color:#fcfcfc;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    min-height:250px;
+    padding: 15px;
 }

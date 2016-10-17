@@ -26,8 +26,8 @@
 	<div class="container">
 		<div class="col-md-6 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
 			<center><b><h2>The Party crooks Services</h2></b></center><br>
-			<p class="justify_service animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">The VIP Open Style Photo Booth services any event. Great entertainment and fun for all ages. Why hide the fun behind a curtain, our open photo booth shares all the fun with everyone! It captures more than just head shots and fits more people so theres more smiles!It’s all about the quality of your images and our lighting.</p><br>
-			<p class="justify_service animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">We take pride in the quality of your photos. Rest assured that in hiring our photo booth, you’ll agree with many past clients that the quality of your photos are some of the best in the business.We will ensure our services to you and your guests are on point at your event. Our team are friendly, helpful and cheerful just like your family and friends!</p>
+			<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">The VIP Open Style Photo Booth services any event. Great entertainment and fun for all ages. Why hide the fun behind a curtain, our open photo booth shares all the fun with everyone! It captures more than just head shots and fits more people so theres more smiles!It’s all about the quality of your images and our lighting.</p><br>
+			<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">We take pride in the quality of your photos. Rest assured that in hiring our photo booth, you’ll agree with many past clients that the quality of your photos are some of the best in the business.We will ensure our services to you and your guests are on point at your event. Our team are friendly, helpful and cheerful just like your family and friends!</p>
 		</div>
 		<div class="col-md-6 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
 			<img class="img_s" src="images/service.jpg" alt="img" style='max-height:100%, max-width:100%;'><br>
@@ -43,7 +43,7 @@
 				<center><b><h2>Custom designed prints</h2></b></center><br>
 			</div>
 			<div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
-				<p class="justify_service animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Your memory, your prints. Not only do you need a great photo, but a well crafted photo design that goes with it. Our team works with you in creating your photos to have their own style to specially suite your event theme. Remember the photo designs represent your event and your personality. Please view some samples of our designs below.</p><br>
+				<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Your memory, your prints. Not only do you need a great photo, but a well crafted photo design that goes with it. Our team works with you in creating your photos to have their own style to specially suite your event theme. Remember the photo designs represent your event and your personality. Please view some samples of our designs below.</p><br>
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-4 col1 gallery-grid">
