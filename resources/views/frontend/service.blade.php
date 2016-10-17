@@ -43,7 +43,7 @@
 				<center><b><h2>Custom designed prints</h2></b></center><br>
 			</div>
 			<div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
-				<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Your memory, your prints. Not only do you need a great photo, but a well crafted photo design that goes with it. Our team works with you in creating your photos to have their own style to specially suite your event theme. Remember the photo designs represent your event and your personality. Please view some samples of our designs below.</p><br>
+				<p class="ser_text justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">Your memory, your prints. Not only do you need a great photo, but a well crafted photo design that goes with it. Our team works with you in creating your photos to have their own style to specially suite your event theme. Remember the photo designs represent your event and your personality. Please view some samples of our designs below.</p><br>
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-4 col1 gallery-grid">
@@ -145,18 +145,7 @@
 	</div>
 	</div -->
 
-	<div class="container">
-			<div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s"><br><br><br>
-				<blockquote class="testimonial_style">
-						<div>
-							<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">" Thank you so much for everything on the wedding day, everyone including ourselves LOVED the photo booth! The setup, photo layout, friendly service and the lighting and the quality of the photos were fantastic! I was even told that this was the best photo booth people have ever seen! Thank you so much. "</p><br>
-						</div>
-						<div class="w-testimonial-person">
-							<p class="justify"><img class="testimonial-person" src="images/testimonial_couple.jpg" /> Anna & Tom</p>
-						</div>
-				</blockquote><br>
-			</div>
-	</div>
+
 
 <!-- //service -->
 @endsection
