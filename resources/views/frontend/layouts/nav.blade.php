@@ -29,7 +29,9 @@
 						</ul>
 					</nav>
 					<div class="phone">
-						<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>098951 90809</span></p>
+						<p>Call Us &nbsp; &nbsp;:&nbsp; <span class="phone_bold"> +0123 456 789</span> <br>
+							Email Us : &nbsp;<span class="phone_bold">  info@companyname.com </span>
+						</p>
 					</div>
 				</div>
 				<!-- /.navbar-collapse -->

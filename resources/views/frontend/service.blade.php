@@ -149,10 +149,10 @@
 			<div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s"><br><br><br>
 				<blockquote class="testimonial_style">
 						<div>
-							<p class="justify_service animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">" Thank you so much for everything on the wedding day, everyone including ourselves LOVED the photo booth! The setup, photo layout, friendly service and the lighting and the quality of the photos were fantastic! I was even told that this was the best photo booth people have ever seen! Thank you so much. "</p><br>
+							<p class="justify animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">" Thank you so much for everything on the wedding day, everyone including ourselves LOVED the photo booth! The setup, photo layout, friendly service and the lighting and the quality of the photos were fantastic! I was even told that this was the best photo booth people have ever seen! Thank you so much. "</p><br>
 						</div>
 						<div class="w-testimonial-person">
-							<img src="images/testimonial_couple.jpg" width="100px height="100px"/>  Anna & Tom
+							<p class="justify"><img class="testimonial-person" src="images/testimonial_couple.jpg" /> Anna & Tom</p>
 						</div>
 				</blockquote><br>
 			</div>
