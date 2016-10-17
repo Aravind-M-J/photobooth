@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Http\Requests\BlogRequest;
 use App\Http\Controllers\Controller;
 use App\Blog;
 use Illuminate\Support\Facades\ Input;
@@ -26,12 +27,12 @@ class BlogController extends Controller
      }   
   
 
-	public function store(Storage $storage,Request $request)
+	public function store(Storage $storage,BlogRequest $request)
 	{
 		$blog = new blog;
 		$blog->blog_title = $request->input('blog_title');
 		$blog->blog_cont = $request->input('blog_cont');
-		$image = $request->file( 'blog_img' );
+		$image = $request->file( 'featured_image' );
         $timestamp = $this->getFormattedTimestamp();
         $savedImageName = $this->getSavedImageName( $timestamp, $image );
         $savedImageName = 'blog/'.$savedImageName;

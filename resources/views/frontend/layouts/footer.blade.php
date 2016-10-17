@@ -7,21 +7,23 @@
 					<div class="col-md-2 col-sm-6 about_cont">
 					<h3>ABOUT US </h3>
 					<p>
-					<a href="index.html"><i class="fa icon1 fa-caret-right"></i>Home</a> <br>
-					<a href="about.html"><i class="fa icon1 fa-caret-right"></i>About Us </a><br>
-					<a href="gallery.html"><i class="fa icon1 fa-caret-right"></i>Events Gallery </a><br>
-					<a href="blog.html"><i class="fa icon1 fa-caret-right"></i>Blogs </a><br>
-					<a href="mail.html"><i class="fa icon1 fa-caret-right"></i>Contact Us </a> <br>
+					<a href="{{ url('/') }}"><i class="fa icon1 fa-caret-right"></i>Home</a> <br>
+					<a href="{{ url('/aboutUs') }}"><i class="fa icon1 fa-caret-right"></i>About Us </a><br>
+					<a href="{{ url('/Events') }}"><i class="fa icon1 fa-caret-right"></i>Events Gallery </a><br>
+					<a href="{{ url('/Blogs') }}"><i class="fa icon1 fa-caret-right"></i>Blogs </a><br>
+					<a href="{{ url('/contactUs') }}"><i class="fa icon1 fa-caret-right"></i>Contact Us </a> <br>
+					<a href="{{ url('/Services') }}"><i class="fa icon1 fa-caret-right"></i>Services </a> <br>
 					</p>
 					</div>
 					<div class="col-md-5 col-sm-6 con_cont foo-right">
 					<h3>CONTACT US</h3>
-					<form action="#" method="post">
-					<input type="text" name="Your email" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="text" name="Your email" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
-					<input type="text" name="Your email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
-					<input type="text" name="Your email" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">
-					<input type="submit" value="Subscribe">
+				<form action="{{url('contactUs')}}" method="post">
+				{{csrf_field()}}
+					<input type="text" name="name" placeholder="Name" required="">
+					<input type="text" name="email" placeholder="E-mail" required="">
+					<input type="text" name="subject" placeholder="Subject" required="">
+					<input type="text" name="message" placeholder="Message" required="">
+					<input type="submit" value="Submit">
 				</form>
 					</div>
 					<div class="col-md-3 col-sm-6 add_cont">
@@ -36,7 +38,7 @@
 					<h3>FOLLOW US</h3>
 					<div class="social">
 						<ul class="social-nav model-8">
-							<li><a href="#" class="facebook"><i></i></a></li>
+							<li><a href="https://www.facebook.com/partycrooks/" target="_blank" class="facebook"><i></i></a></li>
 							<li><a href="#" class="twitter"><i> </i></a></li>
 							<li><a href="#" class="g"><i></i></a></li>
 							<li><a href="#" class="p"><i></i></a></li>

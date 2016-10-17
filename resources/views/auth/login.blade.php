@@ -18,10 +18,11 @@
 </head>
 <body>
 @include('flash')
-<br><br><br><br>
+<br><br><br>
 <!--<h1>Marvelous Contact Form</h1>-->
 <div class="content-w3ls">
-    <h2>LOGIN</h2><br>
+    <h2>LOGIN</h2>
+    <div class="line"></div><br>
 	<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
             {{ csrf_field() }}
     			<div class="form-group">

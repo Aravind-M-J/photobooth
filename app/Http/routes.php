@@ -20,9 +20,6 @@ Route::get('/','HomeController@root');
 Route::get('aboutUs',function () {
     return view('frontend.about');
 });
-Route::get('contactUs',function () {
-    return view('frontend.contact');
-});
 Route::get('Events','HomeController@events');
 Route::get('Blogs','HomeController@blogs');
 Route::get('Blog/{id}','BlogController@show');
