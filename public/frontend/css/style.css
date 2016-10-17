@@ -2882,7 +2882,8 @@ p.fugiat{
 	margin-right:15px;
 }
 .ser_text{
-text-align: center!important;
+    text-align: center!important;
+    word-wrap: break-word;
 }
 .blogcontainer {
     background-color:#fcfcfc;

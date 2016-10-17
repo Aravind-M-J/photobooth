@@ -15,6 +15,9 @@
                 </div>
 				</form>
             </div>
+            <div class="col-md-2 col-md-offset-5" style="margin-top: 10px;">
+                <button class="btn btn-primary btn-block btn-lg" onclick="window.location.href='{{url('event')}}'">Finish</button>
+            </div>
 			@else
 			Event Id not Found
 			@endif

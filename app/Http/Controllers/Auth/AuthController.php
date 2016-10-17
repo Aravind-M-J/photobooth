@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -69,6 +70,11 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('/login');
     }
 
 }

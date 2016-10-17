@@ -5,7 +5,7 @@
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
-			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="index.html">Home</a> / <span>Events</span></h2>
+			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="{{url('/')}}">Home</a> / <span>Events</span></h2>
 		</div>
 	</div>
 <!-- //banner -->
@@ -23,11 +23,12 @@
       <div class="col-md-4 col-sm-6 a">
            <div class="ih-item circle effect2 left_to_right">
    		  <div class="view view-eighth">
-                   <img class="img-responsive img_size1" src="{{url('images/'.$event->image)}}" />
-                   <div class="mask">
-                        <a href="{{url('Gallery/'.$event->id)}}"> <h2>{{$event->name}}</h2> </a>
-                   </div>
-               </div>
+            <a href="{{url('Gallery/'.$event->id)}}">
+                <img class="img-responsive img_size1" src="{{url('images/'.$event->image)}}" />
+                <div class="mask"> <h2>{{$event->name}}</h2>
+                </div>
+            </a>
+          </div>
    		</div>
        </div>
       @endforeach

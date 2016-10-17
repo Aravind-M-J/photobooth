@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Http\Requests\EventRequest;
 use App\Http\Controllers\Controller;
 use App\Event;
 use Carbon\Carbon;
@@ -46,7 +47,7 @@ class EventGalleryController extends Controller
      *
      * @return Response
      */
-    public function store(Request $request,Storage $storage)
+    public function store(EventRequest $request,Storage $storage)
     {
 		
 		$event= new Event;
@@ -137,8 +138,7 @@ class EventGalleryController extends Controller
 			
 			
 		public function destroy($id) {
-			 $event= new Event;
-			 $event->find($id);
+			 $event= Event::find($id);
 			 unlink(public_path('images/'.$event->image));
 			 $event->delete();
 			 return redirect('event');
