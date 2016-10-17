@@ -663,22 +663,22 @@ color:#e42352;
 font-weight:500;
 }
 .steps{
-	 background:url(/images/service-3-col.jpg)no-repeat center fixed;
+	 background:url(/images/service-3-col.jpg)no-repeat center fixed; 
 		padding:40px 0px 96px 0px;
 		margin:0px 0px 0px 0px;
 		background-size: cover;
-	-webkit-background-size:cover;
+	-webkit-background-size:cover; 
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
 
 }
 .steps1{
-	 background:url(/images/footer-bg.jpg);
+	 background:url(/images/footer-bg.jpg); 
 		padding:40px 0px 56px 0px;
 		margin:30px 0px 0px 0px;
 		background-size: cover;
-	-webkit-background-size:cover;
+	-webkit-background-size:cover; 
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
@@ -686,7 +686,7 @@ font-weight:500;
 }
 .steps2{
 		padding:25px 0px 25px 0px;
-		background:#ffc917;
+		background:#ffc917;	
 }
 .steps2 p{
 		text-align:center;
@@ -710,7 +710,7 @@ padding:50px 0px;
 	padding:15px 0px;
 }
 .info h3:hover{
-color:#ffc917;
+color:#ffc917;	
 }
 .img-size {
 	border:1px solid #ccc;
@@ -776,8 +776,8 @@ text-align:center;
 }
 .img_s{
 text-align:center;
-width:100%;
-height:100%;
+width:250px;
+height:250px;
 }
 .a{
 padding-bottom:20px;
@@ -859,11 +859,11 @@ width:150px;
 }
 }
 
-@media (max-width: 568px){
+@media (max-width: 568px){	
 .img_logo1{
 width:150px;
  height:50px;
-}
+}	
 }
 @media (max-width: 480px){
 .img_logo1{
@@ -1040,7 +1040,7 @@ ul.footer-grid-list li a{
 ul.footer-grid-list li a:hover{
 	color:#fff;
 }
-ul.footer-grid-list li span{
+ul.footer-grid-list li span{	
 	display:block;
 	color:#fff;
 	margin:.5em 0 0;
@@ -1088,7 +1088,7 @@ ul.footer-grid-list li span{
 	bottom: 20px;
 	right: 2%;
 	overflow: hidden;
-	z-index: 999;
+	z-index: 999; 
 	width: 32px;
 	height: 32px;
 	border: none;
@@ -1329,7 +1329,7 @@ li.list-group-item1 {
 .label {
   font-weight: 300 !important;
   border-radius:4px;
-}
+}  
 .grid_5{
 	background:none;
 	padding:2em 0;
@@ -1517,7 +1517,7 @@ h2.typoh2{
 
 /*-- mail --*/
 .mail-grids{
-	padding: 10px;
+	margin:3em 0;
 }
 .mail-grid-left input[type="text"],.mail-grid-left input[type="email"],.mail-grid-left textarea{
 	outline: none;
@@ -1555,7 +1555,7 @@ h2.typoh2{
 .mail-grid-right1 img {
     margin: 0 auto;
     padding: .5em;
-
+   
     border-radius: 100%;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -1610,60 +1610,7 @@ ul.phone-mail {
 .single-grid-left-grid1-left{
 	float:right;
 }
-.blog_heading{
-    text-align:left;
-    color:#000;
-}
-.justify {
-    text-align:justify;
-    height:auto;
-    color:#777;
-}
-.blogcontainer {
-    background-color:#efefef;
-    border: 1px solid #000;
-    border-radius: 10px;
-    min-height:250px;
-    padding: 15px;
-}
-.read-more-button {
-    float:left;
-    color:#000;
-}
-.autoheight{
-    height: 120px;
-}
-.read-more-button-color {
-    width:100px;
-    color:#000;
-}
-.blog-grid-left{
-    padding: 7px;
-}
-.blog-grid-left button{
-    outline:none;
-    border:none;
-    background:#ffc31a;
-    font-size:1em;
-    color:#fff;
-    padding:10px 0;
-    width:30%;
-}
-
-.paddingbutton {
-	position:fixed;
-	left:0;
-	bottom:0;
-	margin: 0cm 11cm;
-}
-.blogdata {
-	height:auto;
-	padding-left:30px;
-}
-.autoheight {
-	height:auto;
-}
-.single-grid-left-grid1-left h3{
+.single-grid-left-grid1-left h3{ 
 	font-size:1em;
 	color:#212121;
 	text-transform:uppercase;
@@ -1680,7 +1627,7 @@ ul.phone-mail {
 	margin:0;
 }
 .single-grid-left-grid1-right{
-
+	
 }
 .blog_heading h4{
 
@@ -2519,6 +2466,9 @@ p.fugiat{
 		top: 66px;
 		height: 65.5%;
 	}
+	.mail-grids {
+		margin: 2em 0;
+	}
 	.mail-grid-right {
 		margin: 2em 0 0;
 	}
@@ -2530,7 +2480,6 @@ p.fugiat{
 	}
 	.mail-grid-left input[type="submit"] {
 		width: 100%;
-		float:left;
 	}
 }
 @media (max-width:414px){
@@ -2837,38 +2786,4 @@ p.fugiat{
 	.services-grids-left-grid1-pos, .services-grids-left-grid3-pos {
 		left: 105%;
 	}
-}
-
-.testimonial_style {
-    border:2px solid;
-    text-align:justify;
-    font-style:italic;
-}
-.testimonial_style blockquote:hover{
-    color:#F00;
-}
-.testimonial-person {
-    height:30px;
-    width:30px;
-    border-radius:100%;
-}
-.steps_service{
-    background-color:#b0b0a8;
-    padding:40px 0px 96px 0px;
-    margin:0px 0px 0px 0px;
-    background-size: cover;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
-}
-.steps_other_service{
-    background-color:#efecec;
-    padding:40px 0px 96px 0px;
-    margin:0px 0px 0px 0px;
-    background-size: cover;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    -ms-background-size:cover;
 }

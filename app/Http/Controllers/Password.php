@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ChangePassword;
+use Illuminate\Support\Facades\Hash;
 
 class Password extends Controller {
 
@@ -12,7 +13,11 @@ class Password extends Controller {
     }
 
     public function changePasswordProcess(ChangePassword $request){
-        $id = Auth::user()->getId();
-        dd($request);
+        $user = Auth::user();
+        $user->password = Hash::make($request->input('password'));
+        $user->save();
+        return redirect('changePassword')
+            ->withFlashMessage('Password Changed succesfully')
+            ->withType('success');
     }
 } 

@@ -95,6 +95,45 @@ class EventGalleryController extends Controller
             {
             return $timestamp . '-' . $image->getClientOriginalName();
             }
+
+        public function edit($id) {
+        $event=Event::find($id);
+        return View('backend.event_gallery.edit_event')
+                ->with('id',$id)
+                ->with('event',$event);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function update($id, Request $request,Storage $storage) {
+        //update values in notice
+        $event=Event::find($id);
+        $event->name = $request->input('evtname');
+        $event->description = $request->input('descrp');
+        if($request->file('img')!=null){
+            $image = $request->file( 'img' );
+            $timestamp = $this->getFormattedTimestamp();
+            $savedImageName = $this->getSavedImageName( $timestamp, $image );
+            $savedImageName = 'event/'.$savedImageName;
+            $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );   
+            if ( $imageUploaded )
+            {
+                $event->image = $savedImageName;
+            }else{
+                return redirect('event')
+                        ->withFlashMessage('Image upload failed!')
+                        ->withType('danger');
+            }      
+        }
+        $event->save();
+        return redirect('event')
+                        ->withFlashMessage('Event Updated successfully!')
+                        ->withType('success');
+    }
 			
 			
 		public function destroy($id) {

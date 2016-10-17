@@ -12,7 +12,7 @@
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<h1><a class="navbar-brand" href="index.html"><img class="img_logo1" src="images/Partycrooks-logo.png"></a></h1>
+						<h1><a class="navbar-brand" href="{{url('/')}}"><img class="img_logo1" src="{{url('images/Partycrooks-logo.png')}}"></a></h1>
 					</div>
 				</div>
 
@@ -20,15 +20,16 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--francisco">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
-							<li class="menu__item"><a href="{{url('aboutUs')}}" class="menu__link"><span class="menu__helper">About Us</span></a></li>
-							<li class="menu__item"><a href="{{url('Event')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
-							<li class="menu__item"><a href="{{url('Blog')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
-							<li class="menu__item"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
+							<li class="menu__item @yield('root')"><a href="{{url('/')}}" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item @yield('aboutUs')"><a href="{{url('aboutUs')}}" class="menu__link"><span class="menu__helper">About Us</span></a></li>
+							<li class="menu__item @yield('Events')"><a href="{{url('Events')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
+							<li class="menu__item @yield('Blogs')"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
+							<li class="menu__item @yield('contactUs')"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
+							<li class="menu__item @yield('Services')"><a href="{{url('Services')}}" class="menu__link"><span class="menu__helper">Services</span></a></li>
 						</ul>
 					</nav>
 					<div class="phone">
-						<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>+0123 456 789</span></p>
+						<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>098951 90809</span></p>
 					</div>
 				</div>
 				<!-- /.navbar-collapse -->

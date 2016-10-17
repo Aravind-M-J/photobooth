@@ -1,5 +1,7 @@
-@extends('frontend.layouts.layout')
+    @extends('frontend.layouts.layout')
+@section('contactUs','menu__item--current')
 @section('body')
+
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
@@ -19,12 +21,13 @@
 					</div>
 			<div class="mail-grids">
 				<div class="col-md-8 mail-grid-left animated wow slideInLeft" data-wow-delay=".5s">
-					<form action="#" method="post">
-						<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-						<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-						<input type="text" name="Subject" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-						<textarea type="text"  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-						<input type="submit" value="Submit Now" >
+					<form action="{{url('contactUs')}}" method="post">
+						{{csrf_field()}}
+						<input type="text" name="name" placeholder="Name" required="">
+						<input type="email" name="email" placeholder="Email" required="">
+						<input type="text" name="subject" placeholder="Subject" required="">
+						<textarea name="message" placeholder="Message" required=""></textarea>
+						<input type="submit" value="Submit Now">
 					</form>
 				</div>
 				<div class="col-md-4 mail-grid-right animated wow slideInRight" data-wow-delay=".5s">
@@ -32,24 +35,24 @@
 
 						<h4><span>Contact US</span></h4>
 						<ul class="phone-mail">
-							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address: Address Line1, Address Line2,<br>
-																								Quis autem vel eum iure	<br>
-																								Country - 123456
+							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address: Beach Road<br>
+																								Kollam(Quilon)	<br>
+																								pin - 691016
 																									</li>
-							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +1234 567 893</li>
-							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: 098951 90809</li>
+							{{--<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: </li>--}}
 						</ul>
 						<ul class="social-nav model-8">
-							<li><a href="#" class="facebook"><i></i></a></li>
-							<li><a href="#" class="twitter"><i> </i></a></li>
-							<li><a href="#" class="g"><i></i></a></li>
-							<li><a href="#" class="p"><i></i></a></li>
+							<li><a href="https://www.facebook.com/partycrooks/" target="_blank" class="facebook"><i></i></a></li>
+							{{--<li><a href="#" class="twitter"><i> </i></a></li>--}}
+							{{--<li><a href="#" class="g"><i></i></a></li>--}}
+							{{--<li><a href="#" class="p"><i></i></a></li>--}}
 						</ul>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<iframe class="animated wow slideInLeft" data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.7638135888296!2d-77.47669308468912!3d39.04350424592369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63eb3bc8da92b%3A0x78c8e09ab1cabc90!2sShopping+Plaza%2C+Ashburn%2C+VA+20147%2C+USA!5e0!3m2!1sen!2sin!4v1457602090579" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe class="animated wow slideInLeft" data-wow-delay=".5s" src="https://wego.here.com/india/thiruvananthapuram/street-square/party-crooks--loc-dmVyc2lvbj0xO3RpdGxlPVBhcnR5K0Nyb29rcztsYXQ9OC4zOTgwNztsb249NzYuOTgyMTQ7c3RyZWV0PUJlYWNoK1JvYWQ7Y2l0eT1UaGlydXZhbmFudGhhcHVyYW07cG9zdGFsQ29kZT02OTU1Mjc7Y291bnRyeT1JTkQ7ZGlzdHJpY3Q9S292YWxhbTtzdGF0ZUNvZGU9S0w7Y291bnR5PVRoaXJ1dmFuYW50aGFwdXJhbTtjYXRlZ29yeUlkPXN0cmVldC1zcXVhcmU7c291cmNlU3lzdGVtPWludGVybmFs?map=8.3972,76.98229,17,normal&fb_locale=en_US" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</div>
 <!-- //mail -->

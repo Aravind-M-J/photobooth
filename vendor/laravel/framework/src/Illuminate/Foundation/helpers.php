@@ -106,6 +106,21 @@ if (! function_exists('app')) {
     }
 }
 
+if (!function_exists('action')) {
+    /**
+     * Generate a URL to a controller action.
+     *
+     * @param  string  $name
+     * @param  array   $parameters
+     * @param  bool    $absolute
+     * @return string
+     */
+    function action($name, $parameters = [], $absolute = true)
+    {
+        return app('url')->action($name, $parameters, $absolute);
+    }
+}
+
 if (! function_exists('app_path')) {
     /**
      * Get the path to the application folder.

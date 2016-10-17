@@ -1,4 +1,5 @@
 @extends('frontend.layouts.layout')
+@section('aboutUs','menu__item--current')
 @section('body')
 
 <!-- banner -->
@@ -18,10 +19,9 @@
 
 			<div class="team-grids">
 				<div class="clearfix"> </div>
-				<p class="animated wow slideInUp" data-wow-delay=".5s">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-					molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-					molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-					molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+				<p class="animated wow slideInUp" data-wow-delay=".5s">Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images 
+				to cherish for a lifetime. And while photography continues to change in its style and technology, we stay focused on what really matters... Capturing the essence of your moment and your spirit... 
+				Professional Photo booth service for all party occasions!</p>
 			</div>
 		</div>
 	</div>
@@ -41,16 +41,15 @@
 							<div class="panel-heading panel-heading-sub" role="tab" id="headingOne">
 							  <h4 class="panel-title asd">
 								<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>assumenda est cliche repreh
+								  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>About Us
 								</a>
 							  </h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 							  <div class="panel-body panel_text">
-									Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-									eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum
-									rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-									consequatur aut perferendis doloribus asperiores repellat.
+									Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images 
+				                    to cherish for a lifetime. And while photography continues to change in its style and technology, we stay focused on what really matters... Capturing the essence of your moment and your spirit... 
+									Professional Photo booth service for all party occasions!
 							  </div>
 							</div>
 						</div>

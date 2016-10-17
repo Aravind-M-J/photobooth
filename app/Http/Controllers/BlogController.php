@@ -13,24 +13,18 @@ use Illuminate\Filesystem\Filesystem;
 
 class BlogController extends Controller
 {
+    public function new_blog() {
+	return view("backend.blog.new_blog");
+	}
 	
-
-    public function new_blog(){
-		return view("backend.blog.new_blog");
-	}
-
-	public function store(Request $request){
-		$blog = new blog;
-		$blog->blog_title = $request->input('blog_title');
-		$blog->blog_cont = $request->input('blog_cont');
-		$blog->blog_img = $request->input('blog_img');
-		$blog->save();
-		return ("data form saved into database laravel 5.2");				
-
-    public function new_blog()
-    {
-    	return view("backend.blog.new_blog");
-	}
+    
+    public function index(){
+        $allblog = new Blog;
+        $allblog = $allblog
+               ->get();
+                return view('backend.blog.list_blog',compact('allblog'));  
+     }   
+  
 
 	public function store(Storage $storage,Request $request)
 	{
@@ -42,19 +36,18 @@ class BlogController extends Controller
         $savedImageName = $this->getSavedImageName( $timestamp, $image );
         $savedImageName = 'blog/'.$savedImageName;
         $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );
-		
 		if ( $imageUploaded )
             {
 				$blog->blog_img = $savedImageName;
 				$blog->save();
 				return redirect('blog/new')
-				->withFlashMessage('Blog Added Succesfully')
-				->withType('success');
+				        ->withFlashMessage('Blog Added Succesfully')
+				        ->withType('success');
             }
 
-            return redirect('blog/new')
-				->withFlashMessage('Blog Addition Failed!')
-				->withType('danger');		
+                 return redirect('blog/new')
+				        ->withFlashMessage('Blog Addition Failed!')
+				        ->withType('danger');		
 	}
 
 	public function uploadImage( $image, $imageFullName, $storage )
@@ -81,14 +74,68 @@ class BlogController extends Controller
         return $timestamp . '-' . $image->getClientOriginalName();
     }
 
+
+    public function edit($id) {
+        $blog=Blog::find($id);
+        return View('backend.blog.edit_blog')
+        ->with('id',$id)
+        ->with('blog',$blog);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function update($id, Request $request,Storage $storage) {
+        //update values in notice
+        $blog=Blog::find($id);
+        $blog->blog_title = $request->input('blog_title');
+        $blog->blog_cont = $request->input('blog_cont');
+        if($request->file('blog_img')!=null){
+            $image = $request->file( 'blog_img' );
+            $timestamp = $this->getFormattedTimestamp();
+            $savedImageName = $this->getSavedImageName( $timestamp, $image );
+            $savedImageName = 'blog/'.$savedImageName;
+            $imageUploaded = $this->uploadImage( $image, $savedImageName, $storage );   
+            if ( $imageUploaded )
+            {
+                $blog->blog_img = $savedImageName;
+            }else{
+                return redirect('blog/list')
+                        ->withFlashMessage('Image upload failed!')
+                        ->withType('danger');
+            }      
+        }
+        $blog->save();
+        return redirect('blog/list')
+                        ->withFlashMessage('Blog Updated successfully!')
+                        ->withType('success');
+    }
+
 public function show($id)
     {
-        // get the nerd
         $blog = Blog::find($id);
+        $date= date_create($blog->created_at);
+        $month=date_format($date,'M');
+        $day=date_format($date,'d');
+    
+        return \View::make('frontend.blog')
+            ->with('blog', $blog)
+            ->with('month', $month)
+            ->with('day',$day);
+    }
 
-        // show the view and pass the nerd to it
-        return View::make('blog.list')
-            ->with('blog', $blog);
+
+    public function destroy($id) {
+      $blog= new Blog;
+      $blog=Blog::find($id);
+      unlink(public_path('images/'.$blog->blog_img));
+      $blog->delete();
+      return redirect('blog/list')
+                ->withFlashMessage('Blog deleted successfully!')
+                ->withType('success');
     }
 
 }
