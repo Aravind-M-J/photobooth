@@ -26,10 +26,10 @@
 	<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
             {{ csrf_field() }}
     			<div class="form-group">
-    				<input type="email" name="email" placeholder="Enter E-mail ID">
+    				<input type="email" name="email" placeholder="E-mail ID">
     			</div>
     			<div class="form-group">
-    				<input type="Password" name="password" placeholder="Enter Password">
+    				<input type="Password" name="password" placeholder="Password">
     			</div>
     			<div class="form-group">
     				<input type="submit" class="sign-in" value="LOGIN"></button>
