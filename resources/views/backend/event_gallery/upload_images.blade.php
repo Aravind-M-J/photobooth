@@ -29,15 +29,14 @@
 
                         <div class="overlay text-center"><br>
 
-
-                            <button class="btn_lg btn toggle_button_{{$col->id}} <?php if($col->deleted_at==null){echo 'btn-warning';}else{echo 'btn-success';} ?>" onclick="toggle({{$col->id}})">
+                            <button class="btn-lg btn toggle_button_{{$col->id}} <?php if($col->deleted_at==null){echo 'btn-warning';}else{echo 'btn-lg btn-success';} ?>" onclick="toggle({{$col->id}})">
                             <?php if($col->deleted_at==null){echo 'Disable';}else{echo 'Enable';} ?>
-                            </button>
+                            </button><br>
                             <form id="capt" action="{{url('caption/'.$col->id)}}" method="post">
                                 {{csrf_field()}}
                                 <input type="hidden" value="{{$eventid}}" name="event_id">
                                 <input type="text" class="form-control" value="{{$col->caption}}" name="caption"> <br>
-                                <input type="submit" value="Update Caption" class="btn btn-primary">
+                                <input type="submit" value="Update Caption" class="btn-lg btn-primary">
                             </form>
                         </div>
                     </div>
