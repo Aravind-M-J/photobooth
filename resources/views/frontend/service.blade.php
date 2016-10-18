@@ -65,7 +65,7 @@
 			</div>
 			</div>
 			<div class="col-md-12 ser_border blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
-				<h2> Themes
+				<h2> Events</h2>
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-3 col1 gallery-grid">
@@ -73,7 +73,7 @@
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/service1.jpg" height="200px" alt="">
 						</figure>
-						<center> Birthday parties </center>
+						<center> Birthday Parties</center>
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
@@ -81,7 +81,7 @@
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
 						</figure>
-						<center> Get together </center>
+						<center> Get Together </center>
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
@@ -89,13 +89,178 @@
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/service3.jpg" height="200px" alt="">
 						</figure>
+						<center> Marriage Reception </center>
 					</a>
 				</div>
+
 				<div class="col-md-3 col1 gallery-grid">
 					<a href="images/b3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/service3.jpg" height="200px" alt="">
 						</figure>
+						<center> Product Launch </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Anniversaries </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Bachelor Parties </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Farewell </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Thanksgiving </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Movie Launches </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Alumni Meet </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Halloween </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Festivals </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Sport Events </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Award Functions </center>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-12 ser_border blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
+				<h2> Themes</h2>
+			</div>
+			<div class="gallery-bott">
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service1.jpg" height="200px" alt="">
+						</figure>
+						<center> Micky Mouse </center>
+					</a>
+				</div>
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Avengers </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service1.jpg" height="200px" alt="">
+						</figure>
+						<center> Pirates </center>
+					</a>
+				</div>
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Sports </center>
+					</a>
+				</div>
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service1.jpg" height="200px" alt="">
+						</figure>
+						<center> Red Carpet </center>
+					</a>
+				</div>
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> Carnival  </center>
+					</a>
+				</div>
+
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b1.jpg" class="b-link-stripe b-animate-go  thickbox" rel="title">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service1.jpg" height="200px" alt="">
+						</figure>
+						<center> Horror </center>
+					</a>
+				</div>
+				<div class="col-md-3 col1 gallery-grid">
+					<a href="images/b2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="images/service2.jpg" height="200px" alt="">
+						</figure>
+						<center> College  </center>
 					</a>
 				</div>
 			</div>
