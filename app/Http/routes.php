@@ -65,4 +65,3 @@ Route::group(['middleware'=>['auth']],function(){
 });
 Route::get('/logout','Auth\AuthController@logout');
 
-

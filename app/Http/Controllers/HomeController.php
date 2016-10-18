@@ -42,6 +42,7 @@ class HomeController extends Controller
             'deleted_at'=>null
         ])
             ->get();
+
         return view('frontend.gallery')->with('data',$data)->with('event',$event);
     }
     public function events(){

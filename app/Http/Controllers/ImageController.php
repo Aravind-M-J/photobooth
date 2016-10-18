@@ -89,6 +89,7 @@ class ImageController extends Controller {
     {
         return $timestamp . '-' . $image->getClientOriginalName();
     }
+
     public function toggle($id,Request $request){
         $image = new Images;
         $image = $image->find($id);
