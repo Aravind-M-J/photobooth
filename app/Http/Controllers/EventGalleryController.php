@@ -110,7 +110,7 @@ class EventGalleryController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function update($id, Request $request,Storage $storage) {
+    public function update($id, Requests\EventUpdateRequest $request,Storage $storage) {
         //update values in notice
         $event=Event::find($id);
         $event->name = $request->input('evtname');

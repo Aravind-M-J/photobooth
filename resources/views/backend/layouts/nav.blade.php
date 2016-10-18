@@ -31,7 +31,7 @@
             <li class="treeview @yield('home')">
                 <a href="{{url('/home')}}">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                </a>
+                </a></li>
                         <li class="treeview @yield('event')">
                             <a href="#">
                                 <i class="fa fa-pencil-square-o"></i> <span>Events</span>
