@@ -14,6 +14,7 @@
 			</div>
 			<div class="form-group">
 				<label for="cont" class="control-label">Description</label>
+
 				<textarea class="form-control" name="descrp">{{$event->description}}</textarea>	
 			</div>
 			<div class="form-group">
