@@ -28,9 +28,9 @@
                     </div>
                     <div class="read-more-button con_cont foo-right">
                         <br>
-                        <a href="{{url('Blog/'.$blog->id)}}">
-                        <button class="read-more-button-color" style='width:100px; color:#000;' >Read more</button>
-                        </a>
+                        <div class="more">
+                            <a href="{{url('Blog/'.$blog->id)}}" class="hvr-shutter-in-vertical">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>

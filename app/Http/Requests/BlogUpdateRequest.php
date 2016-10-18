@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class BlogRequest extends Request {
+class BlogUpdateRequest extends Request {
 
   public function authorize()
   {
@@ -14,9 +14,7 @@ class BlogRequest extends Request {
   public function rules()
   {
     return [
-    'blog_title' => 'required',
-    'blog_cont' => 'required',
-    'featured_image' => 'required|mimes:png,jpg,jpeg',
+    'featured_image' => 'mimes:png,jpg,jpeg',
   ];
   }
 

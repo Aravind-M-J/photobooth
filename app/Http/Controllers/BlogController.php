@@ -89,7 +89,7 @@ class BlogController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function update($id, Request $request,Storage $storage) {
+    public function update($id, Requests\BlogUpdateRequest $request,Storage $storage) {
         //update values in notice
         $blog=Blog::find($id);
         $blog->blog_title = $request->input('blog_title');
