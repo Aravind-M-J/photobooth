@@ -1638,10 +1638,21 @@ ul.phone-mail {
 .single-grid-left-grid1-left{
 	float:right;
 }
-
+.more1{
+font-size:14px;
+color:#e42352;
+padding-top:10px;
+}
+.more1 a{
+color:#e42352;
+}
+.more1 a:hover{
+color:#000;
+}
 .read-more-button {
     float:left;
     color:#000;
+	padding-top:28px;
 }
 .autoheight{
     height: 120px;
