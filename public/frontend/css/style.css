@@ -2898,6 +2898,7 @@ p.fugiat{
     padding: 6px 2px 5px 2px;
 	line-height: 1.8em;
 	margin-right:15px;
+    word-wrap: break-word;
 }
 .ser_text{
     text-align: center!important;

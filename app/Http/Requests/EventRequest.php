@@ -16,7 +16,7 @@ class EventRequest extends Request {
     return [
     'evtname' => 'required',
     'descrp' => 'required',
-    'img' => 'required',
+    'img' => 'required|mimes:png,jpg,jpeg',
   ];
   }
 
