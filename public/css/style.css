@@ -41,8 +41,6 @@ body {
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	font-family: 'Noto Sans', sans-serif;
-
-
 	min-height: 900px;
 	max-height:1300px;
 
@@ -56,8 +54,22 @@ h1 {
     text-transform: uppercase;
 	font-family: 'Nunito', sans-serif;
 }
-.content-w3ls {
 
+.inner-addon { 
+    position: relative; 
+    color: #e52553;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 13px;
+  pointer-events: none;
+}
+
+.left-addon .glyphicon  { left:  40px;}
+.right-addon .glyphicon { right: 40px;}
+
+.content-w3ls {
 
     width: 30%;
     margin-left:900px;
@@ -73,16 +85,19 @@ h1 {
 	margin-top: 80px;
     border-top: solid 8px #e52553;
 }
+
 .line {
     border-top: solid 1px black;
     opacity: 0.2;
     width: 100%;
 }
+
 .form-w3ls {
     width: 89%;
     align-items: center;
     margin: 0 auto 15px;
 }
+
 h2 {
   
     font-size: 33px;
@@ -90,6 +105,7 @@ h2 {
     align-items: center;
     color: #ffc31a;
 }
+
 button.sign-in {
     width: 125px;
     height: 60px;
@@ -104,28 +120,16 @@ button.sign-in {
     -o-transition:all 0.5s ease-in-out;
     -ms-transition:all 0.5s ease-in-out;
 }
-::-webkit-input-placeholder {
-   color: #CD6155;
-}
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #CD6155;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #CD6155;  
-}
-
-:-ms-input-placeholder {  
-   color: #CD6155;  
-}
 button.sign-in img {
 	width:55px;
 	opacity:0.8;
 }
+
 button.sign-in:hover img,button.sign-in:focus img {
 	opacity:1;
 }
+
 input[type="password"],input[type="email"] {
     width: 85%;
     padding: 10px;
@@ -140,6 +144,8 @@ input[type="password"],input[type="email"] {
 	font-family: 'Noto Sans', sans-serif;
 	margin-bottom:30px;
 	outline:none;	
+    
+}
 }
 
 input.sign-in {
@@ -165,18 +171,26 @@ input.sign-in:hover {
 }
 ::-webkit-input-placeholder {
    color: #ab8071;
+   padding-left:  40px;
+   padding-right: 0px; 
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #ab8071;  
+   color: #ab8071;
+   padding-left:  40px;
+   padding-right: 0px;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #ab8071;  
+   color: #ab8071; 
+   padding-left:  40px;
+   padding-right: 0px; 
 }
 
 :-ms-input-placeholder {  
    color: #ab8071;  
+   padding-left:  40px;
+   padding-right: 0px;
 }
 
 /*-- responsive design --*/

@@ -27,6 +27,7 @@
                     <div class="image col-lg-3 col-md-3 col-sm-6">
                         <img src="{{url('images/'.$col->name)}}" />
                         <div class="overlay text-center"><br>
+
                             <button class="btn_lg btn toggle_button_{{$col->id}} <?php if($col->deleted_at==null){echo 'btn-warning';}else{echo 'btn-success';} ?>" onclick="toggle({{$col->id}})">
                             <?php if($col->deleted_at==null){echo 'Disable';}else{echo 'Enable';} ?>
                             </button>
