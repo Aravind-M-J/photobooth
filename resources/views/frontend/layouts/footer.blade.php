@@ -28,11 +28,12 @@
 					</div>
 					<div class="col-md-3 col-sm-6 add_cont">
 					<h3>HAVE QUESTIONS?</h3>
-					<p>123-456-7890<br>
-					Info@companyname.com <br>
-					Address Line-1, Address Line-2<br>
-					Lorem Ipsum is simply dummy<br>
-					Country -123456 </p>
+					<p>Phone: +91 9895190809<br>
+					Email: info@partycrooks.com<br>
+					Address: H.O – Lionmarks<br>
+ 					Beach Road<br>
+					Kollam(Quilon)<br>
+					PIN - 691016
 					</div>
 					<div class="col-md-2 col-sm-6 fol_cont">
 					<h3>FOLLOW US</h3>

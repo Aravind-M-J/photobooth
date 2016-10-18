@@ -35,12 +35,14 @@
 
 						<h4><span>Contact US</span></h4>
 						<ul class="phone-mail">
-							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address: Beach Road<br>
-																								Kollam(Quilon)	<br>
-																								pin - 691016
+							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address: Party Crooks<br>
+																								H.O – Lionmarks<br>
+ 																								Beach Road<br>
+																								Kollam(Quilon)<br>
+																								PIN - 691016
 																									</li>
-							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: 098951 90809</li>
-							{{--<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: </li>--}}
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +91 9895190809</li>
+							{{--<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: info@partycrooks.com </li>--}}
 						</ul>
 						<ul class="social-nav model-8">
 							<li><a href="https://www.facebook.com/partycrooks/" target="_blank" class="facebook"><i></i></a></li>

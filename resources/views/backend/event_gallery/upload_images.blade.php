@@ -26,6 +26,7 @@
                 @foreach($images as $col)
                     <div class="image col-lg-3 col-md-3 col-sm-6">
                         <img src="{{url('images/'.$col->name)}}" />
+
                         <div class="overlay text-center"><br>
 
 
@@ -62,3 +63,4 @@
     }
 </script>
 @endsection
+

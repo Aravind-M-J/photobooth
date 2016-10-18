@@ -29,8 +29,8 @@
 					</nav>
 
 					<div class="phone">
-						<p class="phone_right">Call Us &nbsp; &nbsp;:&nbsp; <span class="phone_bold"> +0123 456 789</span> <br>
-							Email Us : &nbsp;<span class="phone_bold">  info@companyname.com </span>
+						<p class="phone_right">Call Us &nbsp; &nbsp;:&nbsp; <span class="phone_bold">+91 9895190809 </span> <br>
+							Email Us : &nbsp;<span class="phone_bold">info@partycrooks.com </span>
 						</p>
 					</div>
 					{{--<div class="phone">--}}

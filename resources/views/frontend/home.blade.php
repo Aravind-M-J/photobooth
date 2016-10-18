@@ -38,10 +38,17 @@
 						<h2 class="wel_h"> Welcome to <span class="wel_h_col"> Party Crooks</span></h2>
 					</div>
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="wel_text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<div class="wel_text"><br>
+							<span class="home_text"><b>Yes! We steal the show in a party....</b><br></span>
+							From the house of lionmarks, we bring to you a new way of celebration. If you’re
+							ready to have a party that stands out from the same old thing that everyone else 
+							does, then impress your guests with the creativity of party crooks. Party crooks 
+							are a fun and creative way for everyone to loosen up and interact. Party crooks 
+							create an atmosphere constantly surrounded by people who are laughing and creating 
+							positive memories at your event, and of course each guest walks away with a tangible 
+							photograph in their hand. We develop a unique way to create and capture photographic 
+							memories. We aim at celebrating your moments according to your dreams.<br>
+							<span class="home_text"><b>PARTY CROOKS a complete package of fun and entertainment. </b></span>
 						</div></br>
 							<div class="more">
 						{{--<a href="single.html" class="hvr-shutter-in-vertical">Read More</a>--}}
