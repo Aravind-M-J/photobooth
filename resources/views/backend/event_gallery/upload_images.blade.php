@@ -26,14 +26,14 @@
                 @foreach($images as $col)
                     <div class="image col-lg-3 col-md-3 col-sm-6">
                         <img src="{{url('images/'.$col->name)}}" />
-                        <div class="overlay text-center">
+                        <div class="overlay text-center"><br>
                             <button class="btn toggle_button_{{$col->id}} <?php if($col->deleted_at==null){echo 'btn-warning';}else{echo 'btn-success';} ?>" onclick="toggle({{$col->id}})">
                             <?php if($col->deleted_at==null){echo 'Disable';}else{echo 'Enable';} ?>
                             </button>
-                            <form action="{{url('caption/'.$col->id)}}" method="post">
+                            <form id="capt" action="{{url('caption/'.$col->id)}}" method="post">
                                 {{csrf_field()}}
                                 <input type="hidden" value="{{$eventid}}" name="event_id">
-                                <input type="text" class="form-control" value="{{$col->caption}}" name="caption">
+                                <input type="text" class="form-control" value="{{$col->caption}}" name="caption"> <br>
                                 <input type="submit" value="Update Caption" class="btn btn-primary">
                             </form>
                         </div>
@@ -55,6 +55,7 @@
                 }else{
                     alert('Failed to Update database!');
                 }
+
             });
     }
 </script>
