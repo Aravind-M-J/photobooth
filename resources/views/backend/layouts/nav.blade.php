@@ -59,6 +59,10 @@
                             </ul>
                         </li>
 
+                        <li class="treeview @yield('banner')">
+                                        <a href="{{url('/banner')}}">
+                                            <i class="fa fa-image"></i> <span>Banner</span>
+                                        </a></li>
 
 
             <li class="header">Settings</li>

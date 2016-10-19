@@ -17,7 +17,9 @@ class Password extends Controller {
         $user->password = Hash::make($request->input('password'));
         $user->save();
         return redirect('changePassword')
-            ->withFlashMessage('Password Changed succesfully')
-            ->withType('success');
+            ->withFlashMessage('Password Changed succesfully! You will be Logged out now.')
+            ->withType('success')
+            ->withLogout('true');
+
     }
 } 

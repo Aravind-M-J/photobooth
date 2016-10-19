@@ -21,7 +21,7 @@
 				{{csrf_field()}}
 					<input type="text" name="name" placeholder="Name" required="">
 					<input type="text" name="email" placeholder="E-mail" required="">
-					<input type="text" name="subject" placeholder="Subject" required="">
+					<input type="text" name="phone" placeholder="Phone" required="">
 					<input type="text" name="message" placeholder="Message" required="">
 					<input type="submit" value="Submit">
 				</form>
@@ -58,7 +58,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">	
-				<p>Copy Right @ 2016 PartyCrooks. All Rights Reserved </p>
+				<p>&copy; 2016 Party Crooks. All Rights Reserved </p>
 					</div>
 				</div>
 			</div>

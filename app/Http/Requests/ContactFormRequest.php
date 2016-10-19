@@ -16,7 +16,7 @@ class ContactFormRequest extends Request {
     return [
     'name' => 'required|regex:/^[(a-zA-Z )]+$/u',
     'email' => 'required|email',
-    'subject' => 'required',
+    'phone' =>  'required|regex:/^[0-9]{10}$/',
     'message' => 'required',
   ];
   }

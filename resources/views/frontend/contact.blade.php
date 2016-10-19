@@ -5,7 +5,7 @@
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
-			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="{{url('/')}}">Home</a> / <span>Mail Us</span></h2>
+			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="{{url('/')}}">Home</a> / <span>Contact Us</span></h2>
 		</div>
 	</div>
 <!-- //banner -->
@@ -25,7 +25,7 @@
 						{{csrf_field()}}
 						<input type="text" name="name" placeholder="Name" required="">
 						<input type="email" name="email" placeholder="Email" required="">
-						<input type="text" name="subject" placeholder="Subject" required="">
+						<input type="text" name="phone" placeholder="Phone Number" required="">
 						<textarea name="message" placeholder="Message" required=""></textarea>
 						<input type="submit" value="Submit Now">
 					</form>

@@ -31,6 +31,9 @@ Route::post('contactUs','AboutController@store');
 Route::get('Services',function(){
     return view('frontend.service');
 });
+Route::get('Packages',function(){
+    return view('frontend.packages');
+});
 
 # Routes that only admin can access
 Route::group(['middleware'=>['auth']],function(){
@@ -58,6 +61,11 @@ Route::group(['middleware'=>['auth']],function(){
     Route::get('blog/destroy/{id}','BlogController@destroy');
     Route::get('blog/edit/{id}','BlogController@edit');
     Route::post('blog/edit/{id}','BlogController@update');
+
+    # Banner Routes
+    Route::get('banner','BannerController@edit');
+    Route::post('banner','BannerController@update');
+    Route::get('banner/{id}','BannerController@destroy');
 
     # Change password routes
     Route::get('changePassword','Password@changePassword');
