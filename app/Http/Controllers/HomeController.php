@@ -30,7 +30,7 @@ class HomeController extends Controller
         $banner = new Banner;
         $banner = $banner->get();
         $data= new Event;
-        $data = $data->orderBy('created_at')
+        $data = $data->orderBy('created_at','DESC')
             ->limit(4)
             ->get();
         return view('frontend.home')->with('data',$data)->with('banner',$banner);
@@ -51,14 +51,14 @@ class HomeController extends Controller
     public function events(){
         $events= new Event;
         $data = $events
-            ->orderBy('created_at')
+            ->orderBy('created_at','DESC')
             ->get();
         return view('frontend.events')->with('data',$data);
     }
     public function blogs(){
         $blogs= new Blog;
         $data = $blogs
-            ->orderBy('created_at')
+            ->orderBy('created_at','DESC')
             ->get();
         return view('frontend.blogs')->with('data',$data);
     }
