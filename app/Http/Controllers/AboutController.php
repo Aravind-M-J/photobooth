@@ -23,17 +23,17 @@ class AboutController extends Controller {
   {
       $name   = $request->input('name');
       $email  = $request->input('email');
-      $subject= $request->input('subject');
-      $bodymessage= $request->input('message');
-      $this->subject = $subject;
+      $phone  = $request->input('phone');
+      $bodymessage = $request->input('message');
+      $this->phone   = $phone;
       $this->name    = ucwords($name);
       $this->email   = $email;
 
-      Mail::send('email.aboutmail', ['name' => $name, 'email' => $email, 'subject' => $subject, 'bodymessage' => $bodymessage],  function ($message)
+      Mail::send('email.aboutmail', ['name' => $name, 'email' => $email, 'phone' => $phone, 'bodymessage' => $bodymessage],  function ($message)
       {
           $message->from($this->email, 'Party Crooks - ' . $this->name);
           $message->to('chippymerinmathew05@gmail.com');
-          $message->subject($this->subject);
+         
       });
 
 
