@@ -33,6 +33,7 @@ Route::get('Services',function(){
 });
 Route::get('Packages',function(){
     return view('frontend.packages');
+});
 Route::get('Register',function(){
     return view('frontend.register');
 });
@@ -73,5 +74,4 @@ Route::group(['middleware'=>['auth']],function(){
     Route::get('changePassword','Password@changePassword');
     Route::post('changePassword','Password@changePasswordProcess');
 });
-Route::get('/logout','Auth\AuthController@logout');
-
+Route::get('/logout','Auth/AuthController@logout');

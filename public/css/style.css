@@ -44,6 +44,7 @@ body {
 	min-height: 900px;
 	max-height:1300px;
 
+	height: 800px;
 }
 h1 {
 	font-size: 40px;
@@ -78,6 +79,8 @@ h1 {
     width: 27%;
     margin-left:800px;
 
+    width: 27%;
+    margin-left:800px;
     opacity: 0.8;
     background-color:rgba(204, 201, 201, 0.43);
     text-align: center;
@@ -403,12 +406,8 @@ height:1500px;
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 .content-w3ls {
 
-
     margin-left: 50px !important;
 
-    
-
     margin-left: 150px !important;
-
 }
 }

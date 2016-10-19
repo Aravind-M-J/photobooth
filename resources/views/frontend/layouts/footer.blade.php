@@ -21,7 +21,9 @@
 				{{csrf_field()}}
 					<input type="text" name="name" placeholder="Name" required="">
 					<input type="text" name="email" placeholder="E-mail" required="">
+
 					<input type="text" name="phone" placeholder="Phone" required="">
+
 					<input type="text" name="message" placeholder="Message" required="">
 					<input type="submit" value="Submit">
 				</form>
