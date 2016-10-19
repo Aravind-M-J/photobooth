@@ -33,6 +33,8 @@ Route::get('Services',function(){
 });
 Route::get('Packages',function(){
     return view('frontend.packages');
+Route::get('Register',function(){
+    return view('frontend.register');
 });
 
 # Routes that only admin can access
