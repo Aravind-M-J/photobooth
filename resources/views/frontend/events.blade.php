@@ -12,8 +12,7 @@
 
 <div class="gallery">
 		<div class="container">
-			<div class="col-md-12 col-sm-12 col-xs-12 galp">
-
+			<div class="col-md-12 col-sm-12 col-xs-12 galp"><br>
 						<h2 class="galp_h">Events <span class="galp_h_col"> Gallery</span></h2>
 					</div>
 	   <div class="col-md-12 col-sm-12 col-xs-12 new_img">
