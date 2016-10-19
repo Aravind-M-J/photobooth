@@ -15,8 +15,7 @@
 				<div class="col-md-12 single-grid-left">
 					<div class="flex-slider-single animated wow slideInLeft" data-wow-delay=".5s">
 										<div class="single-grid-left-grid">
-											<img src="{{url('images/'.$blog->blog_img)}}" class="img-responsive" style="margin: auto; padding: 10px;"/>
-											<div class="single-grid-left-grid1">
+											<img src="{{url('images/'.$blog->blog_img)}}" class="img-responsive" style="margin: auto; padding: 10px;"/>					<div class="single-grid-left-grid1">
 												<div class="single-grid-left-grid1-left">
 													<h3>{{$day}} <span>{{$month}}</span></h3>
 												</div>

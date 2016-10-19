@@ -57,7 +57,6 @@
                 }else{
                     alert('Failed to Update database!');
                 }
-
             });
     }
 </script>

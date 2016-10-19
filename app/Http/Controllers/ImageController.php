@@ -93,6 +93,7 @@ class ImageController extends Controller {
     public function toggle($id,Request $request){
         $image = new Images;
         $image = $image->find($id);
+
         $stat = trim($request->input('status'));
 
         if($stat=='Disable'){

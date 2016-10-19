@@ -5,7 +5,7 @@
 	<div class="banner1">
 		<div class="container">
 			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="{{url('/')}}">Home</a> / <span>Gallery</span></h2>
-		</div>
+        </div>
 	</div>
 
 
