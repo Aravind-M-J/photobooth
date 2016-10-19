@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Photobooth</title>
+<title>Party Crooks</title>
+  <link rel="icon"
+        type="image/png"
+        href="{{url('images/fav_icon.png')}}">
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

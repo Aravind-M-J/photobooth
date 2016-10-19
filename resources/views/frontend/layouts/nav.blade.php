@@ -21,18 +21,18 @@
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item @yield('root')"><a href="{{url('/')}}" class="menu__link"><span class="menu__helper">Home</span></a></li>
 							<li class="menu__item @yield('aboutUs')"><a href="{{url('aboutUs')}}" class="menu__link"><span class="menu__helper">About Us</span></a></li>
-							<li class="menu__item @yield('Events')"><a href="{{url('Events')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
-							<li class="menu__item @yield('Blogs')"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
-							<li class="menu__item @yield('contactUs')"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Mail Us</span></a></li>
 							<li class="menu__item @yield('Services')"><a href="{{url('Services')}}" class="menu__link"><span class="menu__helper">Services</span></a></li>
+							<li class="menu__item @yield('Packages')"><a href="{{url('Packages')}}" class="menu__link"><span class="menu__helper">Packages</span></a></li>
+							<li class="menu__item @yield('Events')"><a href="{{url('Events')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
+							<li class="menu__item @yield('contactUs')"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Contact Us</span></a></li>
+							<li class="menu__item @yield('Blogs')"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blog</span></a></li>
 						</ul>
 					</nav>
-
-					<div class="phone">
-						<p class="phone_right">Call Us &nbsp; &nbsp;:&nbsp; <span class="phone_bold">+91 9895190809 </span> <br>
-							Email Us : &nbsp;<span class="phone_bold">info@partycrooks.com </span>
-						</p>
-					</div>
+					{{--<div class="phone">--}}
+						{{--<p class="phone_right">Call Us &nbsp; &nbsp;:&nbsp; <span class="phone_bold">+91 9895190809 </span> <br>--}}
+							{{--Email Us : &nbsp;<span class="phone_bold">info@partycrooks.com </span>--}}
+						{{--</p>--}}
+					{{--</div>--}}
 					{{--<div class="phone">--}}
 						{{--<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Call- to -us <span>098951 90809</span></p>--}}
 					{{--</div>--}}

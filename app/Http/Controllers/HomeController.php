@@ -7,6 +7,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Event;
 use App\Images;
+use App\Banner;
 
 class HomeController extends Controller
 {
@@ -26,11 +27,13 @@ class HomeController extends Controller
     }
 
     public function root(){
+        $banner = new Banner;
+        $banner = $banner->get();
         $data= new Event;
         $data = $data->orderBy('created_at')
             ->limit(4)
             ->get();
-        return view('frontend.home')->with('data',$data);
+        return view('frontend.home')->with('data',$data)->with('banner',$banner);
     }
 
     public function gallery($id){

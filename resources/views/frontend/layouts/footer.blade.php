@@ -58,7 +58,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">	
-				<p>Copy Right @ 2016 PartyCrooks. All Rights Reserved </p>
+				<p>&copy; 2016 Party Crooks. All Rights Reserved </p>
 					</div>
 				</div>
 			</div>

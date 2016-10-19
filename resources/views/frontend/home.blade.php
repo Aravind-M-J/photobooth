@@ -4,23 +4,23 @@
 
 <!-- banner -->
 	<div class="example-animation">
-		<div data-lazy-background="images/banner.jpg" class="banner">
+	    @foreach($banner as $each_banner)
+		<div data-lazy-background="{{url('images/'.$each_banner->name)}}" class="banner">
 			<div class="container">
 				<div class="banner-info">
-					<h1 class="ban_heading">WE ARE PROFESSIONAL IN <br>
-						PHOTOGRAPHY</h1>
+					<h1 class="ban_heading">WE LIVEN UP YOUR PARTY!</h1>
 
 				</div>
 			</div>
 		</div>
-		<div data-lazy-background="images/banner1.jpg" class="banner">
-			<div class="container">
-				<div class="banner-info">
-					<h1 class="ban_heading">WE ARE PROFESSIONAL IN <br>
-						PHOTOGRAPHY</h1>
-				</div>
-			</div>
-		</div>
+		@endforeach
+		{{--<div data-lazy-background="images/banner1.jpg" class="banner">--}}
+			{{--<div class="container">--}}
+				{{--<div class="banner-info">--}}
+					{{--<h1 class="ban_heading">WE LIVEN UP YOUR PARTY!</h1>--}}
+				{{--</div>--}}
+			{{--</div>--}}
+		{{--</div>--}}
 
 	</div>
 			<script type="text/javascript">

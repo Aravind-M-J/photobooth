@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>@yield('title')</title>
+  <link rel="icon"
+        type="image/png"
+        href="{{url('images/fav_icon.png')}}">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <meta content="{{csrf_token()}}" name="_token">
@@ -51,26 +54,24 @@
         <span class="icon-bar"></span>
       </a>
 
+      <div class="navbar-custom-menu pull-left">
+              <ul class="nav navbar-nav">
+                <!-- User Account: style can be found in dropdown.less -->
+                <li class="dropdown user user-menu">
+                  <a href="{{url('/')}}" target="_blank">
+                   <i class="fa fa-forward"></i><span class="hidden-xs">To Site</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              
-              <span class="hidden-xs">Admin</span>
+            <a href="{{url('logout')}}">
+             <i class="fa fa-sign-out"></i><span class="hidden-xs">Logout</span>
             </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-right">
-                  <a href="{{url('logout')}}" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
@@ -100,6 +101,9 @@
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
+}
+textarea.form-control{
+    height: 400px !important;
 }
   </style>
   </header>
