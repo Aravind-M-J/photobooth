@@ -56,7 +56,7 @@ class RegisterController extends Controller {
           'package' => $package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayment' => $modepayment,
           'advance' => $advance, 'balance' => $balance], function ($message)
       {
-          $message->from($this->email, 'Party Crooks - ' . $this->clientname);
+          $message->from($this->email, 'Party Crooks - Register - ' . $this->clientname);
           $message->to('chippymerinmathew05@gmail.com');
          
       });
