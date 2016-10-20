@@ -92,7 +92,7 @@
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Mode of Payment</span>
-                    	<input type="text" name="mode_payement" placeholder="Mode of Payment" required="">
+                    	<input type="text" name="mode_payment" placeholder="Mode of Payment" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
