@@ -30,7 +30,7 @@
 <div class="gallery" id="gallery">
 	<div class="container">
 		<div class="gallery-main">
-			<form action="{{url('contactUs')}}" method="post">
+			<form action="{{url('Register')}}" method="post">
                                         {{csrf_field()}}
                 <div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
 					<div class="col-md-6 reg_form">
@@ -65,7 +65,7 @@
 
 					<div class="col-md-6">
                     	<span class="reg_form">Event Venue</span>
-                    	<input type="text" name="vent_venue" placeholder="Event Venue" required="">
+                    	<input type="text" name="event_venue" placeholder="Event Venue" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
@@ -75,7 +75,7 @@
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Package Selected</span><br>
-                    	<input type="radio" name="package_selected" value="basic" required=""> Basic &nbsp;&nbsp;&nbsp;
+                    	<input type="radio" name="package_selected" value="basic" required="" checked> Basic &nbsp;&nbsp;&nbsp;
                     	<input type="radio" name="package_selected" value="standard" required=""> Standard &nbsp;&nbsp;&nbsp;
                     	<input type="radio" name="package_selected" value="premium" required=""> Premium &nbsp;&nbsp;&nbsp;
 					</div>
@@ -87,22 +87,22 @@
 
 					<div class="col-md-6">
                     	<span class="reg_form">Suggestions</span>
-						<textarea name="suggestions" placeholder="Suggestions" required=""></textarea>
+						<textarea name="suggestions" placeholder="Suggestions"></textarea>
 					</div>
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Mode of Payment</span>
-                    	<input type="text" name="mode_payement" placeholder="Mode of Payment" required="">
+                    	<input type="text" name="mode_payment" placeholder="Mode of Payment" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
-                    	<span class="reg_form">Advance</span>
-                    	<input type="text" name="advance" placeholder="Advance" required="">
+                    	<span class="reg_form">Advance Amount</span>
+                    	<input type="text" name="advance" placeholder="Advance Amount" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Balance Amount</span>
-                    	<input type="text" name="balance_amount" placeholder="Balance Amount" required="">
+                    	<input type="text" name="balance" placeholder="Balance Amount" required="">
 					</div>
 				</div>
 					<div class="col-md-6 blog-grid-left animated wow slideInLeft backgroundDiv " data-wow-delay=".5s">

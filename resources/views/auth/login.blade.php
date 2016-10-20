@@ -38,6 +38,7 @@
         			<input type="checkbox" checked="checked"> Remember Me
     			</div>
     		</form>
-</div>
+			 <button class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</button>
+
 </body>
 </html>
