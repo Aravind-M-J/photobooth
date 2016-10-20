@@ -52,7 +52,9 @@ class RegisterController extends Controller {
       $this->suggestions   = $suggestions;
 
       Mail::send('email.registermail', ['clientname' => $clientname, 'contactnumber' => $contactnumber, 'address' => $address,
-          'email' => $email], function ($message)
+          'email' => $email, 'date' => $date, 'eventdate' => $eventdate, 'eventtype' => $eventtype, 'eventvenue' => $eventvenue,
+          'package' => $package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayement' => $modepayement,
+          'advance' => $advance, 'balance' => $balance], function ($message)
       {
           $message->from($this->email, 'Party Crooks - ' . $this->clientname);
           $message->to('chippymerinmathew05@gmail.com');
