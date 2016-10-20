@@ -21,7 +21,7 @@
 
                         <div class="col-md-6 reg_form">
                             <span class="reg_form">Contact number</span>
-                            {{$clientnumber}}
+                            {{$contactnumber}}
                         </div>
 
                         <div class="col-md-6 reg_form">
