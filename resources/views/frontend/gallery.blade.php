@@ -7,7 +7,7 @@
 			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="{{url('/')}}">Home</a> / <span>Gallery</span></h2>
         </div>
 	</div>
-
+<br><br>
 
 		<script src="{{url('frontend/js/jquery.chocolat.js')}}"> </script>
 		<link rel="stylesheet" href="{{url('frontend/css/chocolat.css')}}" type="text/css" media="screen" charset="utf-8">

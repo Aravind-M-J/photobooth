@@ -16,7 +16,7 @@ class BlogRequest extends Request {
     return [
     'blog_title' => 'required',
     'blog_cont' => 'required',
-    'featured_image' => 'required|mimes:png,jpg,jpeg',
+    'featured_image' => 'required|mimes:png,jpg,jpeg'
   ];
   }
 
