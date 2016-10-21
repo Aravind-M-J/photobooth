@@ -3,6 +3,14 @@
 @section('small_title','Upload')
 @section('event','active')
 @section('body')
+<style>
+    .Enable{
+        box-shadow: 0px 0px 10px #019b06;
+    }
+    .Disable{
+        box-shadow: 0px 0px 5px #bf0f00;
+    }
+</style>
 <div class="box box-success">
 	<div class="box-body">			
 			@if(isset($eventid))
@@ -25,7 +33,7 @@
 </div>
                 @foreach($images as $col)
                     <div class="image col-lg-3 col-md-3 col-sm-6">
-                        <img src="{{url('images/'.$col->name)}}" />
+                        <img src="{{url('images/'.$col->name)}}" class="highlight_{{$col->id}} <?php if($col->deleted_at==null){echo 'Enable';}else{echo 'Disable';} ?>"/>
 
                         <div class="overlay text-center"><br>
 
@@ -54,6 +62,7 @@
                 if(response=='Enable'||response=='Disable'){
                     $('.toggle_button_'+id).text(response);
                     $('.toggle_button_'+id).toggleClass('btn-warning btn-success');
+                    $('.highlight_'+id).toggleClass('Enable Disable');
                 }else{
                     alert('Failed to Update database!');
                 }
