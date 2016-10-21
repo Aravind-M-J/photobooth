@@ -28,4 +28,8 @@ class User extends Authenticatable
     public function getId(){
         return $this->id;
     }
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
 }
