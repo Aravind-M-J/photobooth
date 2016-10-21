@@ -31,7 +31,7 @@ class RegisterController extends Controller {
       $eventtype     = $request->input('event_type');
       $package       = $request->input('package_selected');
       $guests        = $request->input('number_of_guests');
-      $modepayement  = $request->input('mode_payment');
+      $modepayment  = $request->input('mode_payment');
       $advance       = $request->input('advance');
       $balance       = $request->input('balance');
       $suggestions   = $request->input('suggestions');
