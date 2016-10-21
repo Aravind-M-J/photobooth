@@ -1,7 +1,8 @@
+
 <?php
-
-namespace App\Http\Controllers;
-
+ 
+ namespace App\Http\Controllers;
+ 
 use App\Blog;
 use App\Http\Requests;
 use Illuminate\Http\Request;
@@ -9,31 +10,35 @@ use App\Event;
 use App\Images;
 use App\Banner;
 use Illuminate\Support\Facades\DB;
-
+ 
 class HomeController extends Controller
-{
-    public function __construct()
-    {
-        //$this->middleware('auth');
-    }
-
+ {
     /**
-     * Show the application dashboard.
+     * Create a new controller instance.
      *
-     * @return \Illuminate\Http\Response
+     * @return void
      */
-    public function index()
-    {
+     public function __construct()
+     {
+        $this->middleware('auth');
+     }
+ 
+     /**
+      * Show the application dashboard.
+      *
+      * @return \Illuminate\Http\Response
+      */
+     public function index()
+     {
 
-        $title = 'Admin | Home';
-        $data = DB::table('blog')->where('deleted_at', '=', NULL)->count();
-        $eventCount = DB::table('event')->where('deleted_at', '=', NULL)->count();
-       
+       $title = 'Admin | Home';
+       $data = DB::table('blog')->where('deleted_at', '=', NULL)->count();
+       $eventCount = DB::table('event')->where('deleted_at', '=', NULL)->count();
        return view('backend.home')->with('data',$data)->with('eventCount',$eventCount);
        
-    }
-
-    public function root(){
+     }
+  
+public function root(){
         $banner = new Banner;
         $banner = $banner->get();
         $data= new Event;

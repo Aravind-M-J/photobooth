@@ -77,4 +77,15 @@ Route::group(['middleware'=>['auth']],function(){
     Route::get('changePassword','Password@changePassword');
     Route::post('changePassword','Password@changePasswordProcess');
 });
-Route::get('/logout','Auth/AuthController@logout');
+Route::get('/logout','Auth\AuthController@logout');
+Route::get('/reset',function(){
+    return view('auth.passwords.reset');
+});
+Route::post('/reset/password', 'ResetPasswordController@reset');
+Route::post('/reset/verified', 'ResetPasswordController@verify');
+Route::get('/resetPasswordVerification/{token}', 'ResetPasswordController@reset');
+
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
