@@ -85,7 +85,3 @@ Route::post('/reset/password', 'ResetPasswordController@reset');
 Route::post('/reset/verified', 'ResetPasswordController@verify');
 Route::get('/resetPasswordVerification/{token}', 'ResetPasswordController@reset');
 
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');

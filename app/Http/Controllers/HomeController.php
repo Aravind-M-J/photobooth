@@ -19,7 +19,7 @@ class HomeController extends Controller
      */
      public function __construct()
      {
-        $this->middleware('auth');
+        $this->middleware('auth',['only'=>['index']]);
      }
  
      /**
@@ -38,7 +38,7 @@ class HomeController extends Controller
        
     }
 
-public function root(){
+    public function root(){
         $banner = new Banner;
         $banner = $banner->get();
         $data= new Event;

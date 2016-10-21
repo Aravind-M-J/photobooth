@@ -31,8 +31,9 @@
 			@endif
 	</div>
 </div>
+                <div class="row">
                 @foreach($images as $col)
-                    <div class="image col-lg-3 col-md-3 col-sm-6">
+                    <div class="image col-lg-3 col-md-3 col-sm-6" style="margin-bottom: 20px;">
                         <img src="{{url('images/'.$col->name)}}" class="highlight_{{$col->id}} <?php if($col->deleted_at==null){echo 'Enable';}else{echo 'Disable';} ?>"/>
 
                         <div class="overlay text-center"><br>
@@ -49,6 +50,7 @@
                         </div>
                     </div>
 				@endforeach
+                    </div>
 @endsection
 @section('page_scripts')
 <script>
