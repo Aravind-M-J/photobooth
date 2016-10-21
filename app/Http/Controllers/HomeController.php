@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Event;
 use App\Images;
 use App\Banner;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('backend.home');
+
+        $title = 'Admin | Home';
+        $data = DB::table('blog')->where('deleted_at', '=', NULL)->count();
+        $eventCount = DB::table('event')->where('deleted_at', '=', NULL)->count();
+       
+       return view('backend.home')->with('data',$data)->with('eventCount',$eventCount);
+       
     }
 
     public function root(){

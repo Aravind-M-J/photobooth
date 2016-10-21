@@ -1,11 +1,8 @@
 @extends('backend.layouts.layout')
-@section('home','active')
-@section('body')
 
-<?php
-    $user = \Illuminate\Support\Facades\Auth::user();
-?>
-@section('title', 'admin')
+@section('title', $title)
+
+@section('body')
 
     @include('flash')
 
@@ -14,11 +11,12 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>Blog</h3>
-                   {{$data}}
+                  <h3>{{$count['users']}}</h3>
+
+                  <p>Students</p>
                 </div>
                 <div class="icon">
-                  <i class="fa fa-user"></i>
+                  <i class="fa fa-users"></i>
                 </div>
                 {{--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>--}}
               </div>
@@ -28,9 +26,9 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>Event</h3>
-                      {{$eventCount}}
-              
+                  <h3>{{$count['faculty']}}</h3>
+
+                  <p>Faculties</p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-user"></i>
@@ -39,13 +37,20 @@
               </div>
             </div>
             <!-- ./col -->
-           
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                  <h3>{{$count['admins']}}</h3>
+
+                  <p>Admins</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-user-secret"></i>
+                </div>
+                {{--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>--}}
+              </div>
+            </div>
           </div>
 
 @endsection
-<!--<div class="jumbotron">
-        <h1>Admin Page</h1>
-        <p>This page is  admins only!</p>
-</div>-->
-
-    
