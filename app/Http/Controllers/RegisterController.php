@@ -31,7 +31,7 @@ class RegisterController extends Controller {
       $eventtype     = $request->input('event_type');
       $package       = $request->input('package_selected');
       $guests        = $request->input('number_of_guests');
-      $modepayement  = $request->input('mode_payment');
+      $modepayment  = $request->input('mode_payment');
       $advance       = $request->input('advance');
       $balance       = $request->input('balance');
       $suggestions   = $request->input('suggestions');
@@ -46,17 +46,17 @@ class RegisterController extends Controller {
       $this->eventtype     = $eventtype;
       $this->package       = $package;
       $this->guests        = $guests;
-      $this->modepayement  = $modepayement;
+      $this->modepayment  = $modepayment;
       $this->advance       = $advance;
       $this->balance       = $balance;
       $this->suggestions   = $suggestions;
 
       Mail::send('email.registermail', ['clientname' => $clientname, 'contactnumber' => $contactnumber, 'address' => $address,
           'email' => $email, 'date' => $date, 'eventdate' => $eventdate, 'eventtype' => $eventtype, 'eventvenue' => $eventvenue,
-          'package' => $package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayement' => $modepayement,
+          'package' => $package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayment' => $modepayment,
           'advance' => $advance, 'balance' => $balance], function ($message)
       {
-          $message->from($this->email, 'Party Crooks - ' . $this->clientname);
+          $message->from($this->email, 'Party Crooks - Register - ' . $this->clientname);
           $message->to('chippymerinmathew05@gmail.com');
          
       });

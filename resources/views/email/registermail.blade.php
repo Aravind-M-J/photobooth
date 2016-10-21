@@ -1,91 +1,86 @@
 <html>
-<head></head>
+<head>
+    <style>
+       h2 {
+       font-size:42px;
+       }
+
+    </style>
+</head>
     <body>
-        <div class="mail1">
-            <div class="container">
-                <div class="col-md-12 col-sm-12 col-xs-12 abo"><br>
-                    <h2 class="mail_h">Party Crooks <span class="mail_h_col"> Order Form</span></h2>
-                </div>
-            </div>
+        <div>
+            <h2 style="color:#6d6f72;">Party Crooks</h2> <h2 style="color:#e42352;"> Order Form</h2>
         </div>
-        <div class="gallery" id="gallery">
-            <div class="container">
-                <div class="gallery-main">
-                    <div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
+     <table>   
+        <tr>
+            <td>Client Name</td>
+            <td>{{$clientname}}</td>
+        </tr>
+            
+        <tr>
+            <td>Contact number</td>
+            <td>{{$contactnumber}}</td>
+        </tr>
+        
+        <tr>
+            <td>Address</td>
+            <td>{{$address}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Client Name</span>
-                            {{$clientname}}
-                        </div>
+        <tr>
+           <td> Email</td>
+           <td>{{$email}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Contact number</span>
-                            {{$contactnumber}}
-                        </div>
+        <tr>
+            <td>Date</td>
+            <td>{{$date}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Address</span>
-                            {{$address}}
-                        </div>
+        <tr>
+            <td>Event Date</td>
+            <td>{{$eventdate}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form reg_form">
-                            <span class="reg_form">Email</span>
-                            {{$email}}
-                        </div>
+        <tr>
+            <td>Event Venue</td>
+            <td>{{$eventvenue}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Date</span>
-                            {{$date}}
-                        </div>
+        <tr>
+            <td>Event Type</td>
+            <td>{{$eventtype}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Event Date</span>
-                            {{$eventdate}}
-                        </div>
+        <tr>
+            <td>Package Selected</td>
+            <td>{{$package}}</td>
+        </tr>
 
-                        <div class="col-md-6">
-                            <span class="reg_form">Event Venue</span>
-                            {{$eventvenue}}
-                        </div>
+        <tr>
+            <td>Number of Guests</td>
+            <td>{{$guests}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Event Type</span>
-                            {{$eventtype}}
-                        </div>
+        <tr>
+            <td>Suggestions</td>
+            <td>{{$suggestions}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Package Selected</span><br>
-                            {{$package}}
-                        </div>
+        <tr>
+            <td>Mode of Payment</td>
+            <td>{{$modepayment}}</td>
+        </tr>
 
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Number of Guests</span>
-                            {{$guests}}
-                        </div>
+        <tr>
+            <td>Advance Amount</td>
+            <td>{{$advance}}</td>
+        </tr>
 
-                        <div class="col-md-6">
-                            <span class="reg_form">Suggestions</span>
-                            {{$suggestions}}
-                        </div>
-
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Mode of Payment</span>
-                            {{$modepayment}}
-                        </div>
-
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Advance Amount</span>
-                            {{$advance}}
-                        </div>
-
-                        <div class="col-md-6 reg_form">
-                            <span class="reg_form">Balance Amount</span>
-                            {{$balance}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <tr>
+            <td>Balance Amount</td>
+            <td>{{$balance}}</td>
+        </tr>
+     </table>
     </body>
 </html>

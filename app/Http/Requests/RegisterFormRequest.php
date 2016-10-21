@@ -24,7 +24,7 @@ class RegisterFormRequest extends Request {
         'event_type' => 'required',
         'package_selected' => 'required',
         'number_of_guests' => 'required|regex:/^[0-9]+$/',
-        'mode_payement' => 'required',
+        'mode_payment' => 'required',
         'advance' => 'required|regex:/^[0-9]+$/',
         'balance' => 'required|regex:/^[0-9]+$/',
     ];
