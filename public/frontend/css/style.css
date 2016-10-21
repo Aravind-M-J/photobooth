@@ -5,7 +5,7 @@ html, body{
 }
 p{
 	margin:0;
-	font-size:13px;
+	font-size:15px;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Oswald', sans-serif;
@@ -243,7 +243,7 @@ font-size:12px;
 .more a{
 	padding:10px 30px;
 	color:#fff;
-	font-size:13px;
+	font-size:15px;
 	text-decoration:none;
 }
 .more a:hover{
@@ -386,7 +386,7 @@ font-weight:500;
 .wthree_steps_grid p {
 	color:#fff;
 	line-height:1.8em;
-	font-size:13px;
+	font-size:15px;
 	    font-family: sans-serif;
 }
 .wthree_steps_grids{
@@ -529,7 +529,7 @@ color:#6d6f72;
 }
 .wel_text, .abo_text
 {
-font-size:13px;
+font-size:15px;
 color:#858585;
 line-height:2.0;
 text-align:center;
@@ -611,7 +611,7 @@ color:#6d6f72;
 }
 .gal_text
 {
-font-size:13px;
+font-size:15px;
 color:#fff;
 line-height:2.0;
 text-align:center;
@@ -697,7 +697,7 @@ font-weight:500;
 }
 .steps2 p{
 		text-align:center;
-		font-size:13px;
+		font-size:15px;
 		color:#363636;
 		font-family: sans-serif;
 }
@@ -735,7 +735,7 @@ color:#ffc917;
 	margin:0px 0px 20px 0px;
 }
 .about_cont p  a{
-	font-size:13px;
+	font-size:15px;
 	color:#fff;
 	line-height:2;
 	font-family: sans-serif;
@@ -744,7 +744,7 @@ color:#ffc917;
 color:#ffc917;
 }
 .add_cont p {
-	font-size:13px;
+	font-size:15px;
 	color:#fff;
 	line-height:2;
 	font-family: sans-serif;
@@ -763,7 +763,7 @@ color:#ffc917;
     padding: 10px 10px;
     color: #141414;
     border: 1px solid #7d7d7d;
-    font-size: 13px;
+    font-size: 14px;
     outline: none;
     width: 45%;
 	margin:3px 0px 3px 0px;
@@ -1166,7 +1166,7 @@ ul.footer-grid-list li span{
     display: inline-block;
 }
 .panel_text {
-    font-size: 13px;
+    font-size: 15px;
     color: #999;
     line-height: 1.8em;
 	    font-family: sans-serif;
@@ -1238,7 +1238,7 @@ ul.footer-grid-list li span{
     text-align: center;
     line-height: 1.8em;
     color: #999;
-    font-size: 13px;
+    font-size: 15px;
 	    font-family: sans-serif;
 }
 .gallery-main p{
@@ -1247,7 +1247,7 @@ ul.footer-grid-list li span{
     text-align: center;
     line-height: 1.8em;
     color: #999;
-    font-size: 13px;
+    font-size: 15px;
 	    font-family: sans-serif;
 }
 .ser_border{
@@ -1258,7 +1258,7 @@ margin-bottom:25px;
     line-height: 1.8em;
     color: #999;
 	text-align:left !important;
-    font-size: 13px;
+    font-size: 15px;
 }
 /*-- //team --*/
 /*-- pricing-plans --*/
@@ -1300,7 +1300,7 @@ margin-bottom:25px;
 	padding:2em 1em;
 }
 .pricing-plans-grid1 ul li{
-	font-size:13px;
+	font-size:15px;
 	color:#999;
 	line-height:1.8em;
 	margin-bottom:1em;
@@ -1534,7 +1534,7 @@ h2.typoh2{
 		font-size: 1.6em;
 	}
 	.alert, p,ol.breadcrumb li, .grid_3 p,.well, ul.list-group li, li.list-group-item1,a.list-group-item {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.alert {
 		padding: 10px;
@@ -1563,7 +1563,7 @@ h2.typoh2{
     outline: none;
     border: 1px solid #E4E4E4;
     background: #f5f5f5;
-    font-size: 13px;
+    font-size: 15px;
     color: #212121;
     padding: 10px;
     width: 100%;
@@ -1572,7 +1572,7 @@ h2.typoh2{
     outline: none;
     border: 1px solid #E4E4E4;
     background: #f5f5f5;
-    font-size: 13px;
+    font-size: 15px;
     color: #212121;
     padding: 2px;
     width: 100%;
@@ -1609,7 +1609,7 @@ h2.typoh2{
 	outline: none;
     border: 1px solid #E4E4E4;
     background: #f5f5f5;
-    font-size: 13px;
+    font-size: 15px;
     color: #212121;
     padding: 10px;
     width: 100%;
@@ -1667,7 +1667,7 @@ h2.typoh2{
 .mail-grid-right1 ul.phone-mail li{
 	list-style-type:none;
 	margin-bottom:1em;
-	font-size:13px;
+	font-size:15px;
 	color:#FFFFFF;
 	font-family: sans-serif;
 }
@@ -1944,7 +1944,7 @@ p.fugiat{
     padding-left: 3em;
     margin: 1.5em 0;
     color: #999;
-    font-size: 13px;
+    font-size: 15px;
 }
 .categories ul li a {
 	color: #999;
@@ -2494,7 +2494,7 @@ p.fugiat{
 		font-size: 1em;
 	}
 	.services-grids-left-grid h5 {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.services-grids-left-grids {
 		padding-right: 4em;
@@ -2704,7 +2704,7 @@ p.fugiat{
 }
 @media (max-width: 384px){
 	p {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.banner-info h3 {
 		font-size: 1em;
@@ -2969,7 +2969,7 @@ p.fugiat{
     text-align:justify;
     height:auto;
     color:#999;
-    font-size: 13px;
+    font-size: 15px;
 	font-family: sans-serif;
     padding: 6px 2px 5px 2px;
 	line-height: 1.8em;
