@@ -12,13 +12,13 @@
     <div class="row">
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
-              <div class="small-box bg-aqua">
+              <div class="small-box bg-teal" style="height: 110px;">
                 <div class="inner">
                   <h3>Blog</h3>
-                   {{$data}}
+                  <p>{{$data}}</p>
                 </div>
                 <div class="icon">
-                  <i class="fa fa-pencil-square-o"></i>
+                  <i class="fa fa-pencil"></i>
                 </div>
                 {{--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>--}}
               </div>
@@ -26,14 +26,14 @@
             <!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
-              <div class="small-box bg-green">
+              <div class="small-box bg-orange" style="height: 110px;">
                 <div class="inner">
                   <h3>Event</h3>
-                      {{$eventCount}}
+                  <p>{{$eventCount}}</p>
               
                 </div>
                 <div class="icon">
-                  <i class="fa fa-user"></i>
+                  <i class="fa fa-cubes"></i>
                 </div>
                 {{--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>--}}
               </div>
