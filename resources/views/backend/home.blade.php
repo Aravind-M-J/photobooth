@@ -18,7 +18,7 @@
                    {{$data}}
                 </div>
                 <div class="icon">
-                  <i class="fa fa-user"></i>
+                  <i class="fa fa-pencil-square-o"></i>
                 </div>
                 {{--<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>--}}
               </div>
