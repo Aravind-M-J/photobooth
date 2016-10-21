@@ -65,7 +65,7 @@
 			</div>
 			</div>
 			<div class="col-md-12 ser_border blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
-				<h2> Events</h2>
+				<h2 class="ser_heading"> Events</h2>
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-3 col1 gallery-grid">
@@ -194,7 +194,7 @@
 			</div>
 
 			<div class="col-md-12 ser_border blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
-				<h2> Themes</h2>
+				<h2 class="ser_heading"> Themes</h2>
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-3 col1 gallery-grid">

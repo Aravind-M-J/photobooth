@@ -19,8 +19,8 @@
 			<div class="pricing-plans-grids">
 				<div class="col-md-4 pricing-plans-grid animated wow slideInLeft" data-wow-delay=".5s">
 					<div class="pricing-plans-grid1">
-						<h4>Basic package</h4>
-						<h5><sup>$</sup>54 <span>/ Month</span></h5>
+						
+						<h5>Basic package</h5>
 						<ul>
 							<li>Event will be on for 2 hours</li>
 							<li>Photo booth</li>
@@ -44,8 +44,8 @@
 				</div>
 				<div class="col-md-4 pricing-plans-grid animated wow slideInLeft" data-wow-delay=".6s">
 					<div class="pricing-plans-grid1">
-						<h4>Standard package</h4>
-						<h5><sup>$</sup>66 <span>/ Month</span></h5>
+						
+						<h5>Standard package</h5>
 						<ul>
 							<li>Event will be on for 3 hours</li>
 							<li>Custom theme Photo booth</li>
@@ -72,8 +72,8 @@
 				</div>
 				<div class="col-md-4 pricing-plans-grid animated wow slideInLeft" data-wow-delay=".7s">
 					<div class="pricing-plans-grid1">
-						<h4>Premium package</h4>
-						<h5><sup>$</sup>87 <span>/ Month</span></h5>
+					
+						<h5>Premium package</h5>
 						<ul>
 							<li>Event will be on for 5 hours</li>
 							<li>Custom theme Photo booth</li>

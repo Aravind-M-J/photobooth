@@ -1,7 +1,7 @@
 
 html, body{
     font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
 }
 p{
 	margin:0;
@@ -387,6 +387,7 @@ font-weight:500;
 	color:#fff;
 	line-height:1.8em;
 	font-size:13px;
+	    font-family: sans-serif;
 }
 .wthree_steps_grids{
 	margin:3em 0 0;
@@ -534,6 +535,7 @@ line-height:2.0;
 text-align:center;
 font-family:lato;
 padding:10px 10px 15px 0px;
+    font-family: sans-serif;
 }
 .abo, .galp{
 	margin-bottom:30px
@@ -614,6 +616,7 @@ color:#fff;
 line-height:2.0;
 text-align:center;
 padding:10px 10px 15px 0px;
+ font-family: sans-serif;
 }
 .gal_h_col
 {
@@ -696,6 +699,7 @@ font-weight:500;
 		text-align:center;
 		font-size:13px;
 		color:#363636;
+		font-family: sans-serif;
 }
 .eventsgallery-section {
 background-color:#e52252;
@@ -734,6 +738,7 @@ color:#ffc917;
 	font-size:13px;
 	color:#fff;
 	line-height:2;
+	font-family: sans-serif;
 }
 .about_cont p  a:hover{
 color:#ffc917;
@@ -742,6 +747,7 @@ color:#ffc917;
 	font-size:13px;
 	color:#fff;
 	line-height:2;
+	font-family: sans-serif;
 }
 .wel h2{
 	text-align:center;
@@ -781,14 +787,14 @@ text-align:center;
 .img_s{
 text-align:center;
 width:100%;
-height:100%;
+height:200px;
 }
 .a{
 padding-bottom:20px;
 padding-top:20px;
 }
 .img_logo1{
-width:200px;
+width:175px;
  height:80px;
 }
 .eve_gal{
@@ -818,6 +824,12 @@ color:#fff;
 padding-right:2px;
 margin-right:5px;
 }
+.ser_heading{
+font-size:36px;
+font-weight:400;
+color:#e42352;
+}
+
 
 
 
@@ -1157,6 +1169,7 @@ ul.footer-grid-list li span{
     font-size: 13px;
     color: #999;
     line-height: 1.8em;
+	    font-family: sans-serif;
 }
 .about-grids-left h4 {
     font-size: 1.1em;
@@ -1226,6 +1239,7 @@ ul.footer-grid-list li span{
     line-height: 1.8em;
     color: #999;
     font-size: 13px;
+	    font-family: sans-serif;
 }
 .gallery-main p{
 	width: 95%;
@@ -1234,6 +1248,7 @@ ul.footer-grid-list li span{
     line-height: 1.8em;
     color: #999;
     font-size: 13px;
+	    font-family: sans-serif;
 }
 .ser_border{
 border-bottom:1px solid #ccc;
@@ -1290,6 +1305,7 @@ margin-bottom:25px;
 	line-height:1.8em;
 	margin-bottom:1em;
 	list-style-type:none;
+	font-family: sans-serif;
 }
 .pricing-plans-grid1:hover{
 	background:#999;
@@ -1583,6 +1599,7 @@ h2.typoh2{
 .reg_form{
     font-size: 14px;
     padding-top: 20px;
+	font-family: sans-serif;
 }
 /*-- mail --*/
 .mail-grids{
@@ -1596,6 +1613,7 @@ h2.typoh2{
     color: #212121;
     padding: 10px;
     width: 100%;
+	font-family: sans-serif;
 }
 .mail-grid-left input[type="email"]{
 	margin:1em 0;
@@ -1644,13 +1662,14 @@ h2.typoh2{
     color:#FFFFFF;
     margin: .5em 0 0;
 	font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
 }
 .mail-grid-right1 ul.phone-mail li{
 	list-style-type:none;
 	margin-bottom:1em;
 	font-size:13px;
 	color:#FFFFFF;
+	font-family: sans-serif;
 }
 .mail-grid-right1 ul.phone-mail li a{
 	color:#FFFFFF;
@@ -2951,7 +2970,7 @@ p.fugiat{
     height:auto;
     color:#999;
     font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
     padding: 6px 2px 5px 2px;
 	line-height: 1.8em;
 	margin-right:15px;
