@@ -24,7 +24,7 @@
 													
 												</div>
 												<div class="clearfix"> </div>
-												<p class="fugiat">{{$blog->blog_cont}}</p>
+												<p class="fugiat">{!! $blog->blog_cont !!}</p>
 												<!--<ul>
 													<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Jan Mark</a></li>
 													<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 20</a></li>

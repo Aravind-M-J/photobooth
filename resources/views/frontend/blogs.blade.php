@@ -34,8 +34,6 @@
 
                         <h4 class="justify" >{{substr($blog->blog_cont,0,300)}}...</h4>
 
-                        <h4 class="justify" >{{substr($blog->blog_cont,0,300)}}...</h4>
-
                         <br>
 
                     </div>

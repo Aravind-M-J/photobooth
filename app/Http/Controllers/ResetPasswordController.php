@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
+use App\Encrypt;
 use Illuminate\Support\Facades\Mail;
 use App\ResetPassword;
 class ResetPasswordController extends Controller
@@ -23,7 +24,7 @@ class ResetPasswordController extends Controller
 		$reset->user_id = $user->id;
 		$reset->token = $token;
 
-		Mail::send('email.resetToken', ['url' => $token],  function ($message)
+		Mail::send('email.resetToken', ['url' => $url],  function ($message)
       {
           $message->from('partycrooks@mail.com', 'Party Crooks - Password Reset');
           $message->to($this->email);
@@ -38,7 +39,7 @@ class ResetPasswordController extends Controller
 	}
 
 	protected function randomGenerator($length=20){
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_#@$%&*()[]';
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_#@$*()[]';
     $charactersLength = strlen($characters);
     $randomString = '';
     for ($i = 0; $i < $length; $i++) {
@@ -55,12 +56,12 @@ class ResetPasswordController extends Controller
 			->withType('danger');
 		}
 		$id = Encrypt::encrypt($reset->user_id);
-		return view('auth.passwords.verified',['id',$id]);
+		return view('auth.passwords.verified',['id'=>$id]);
 	}
 
 	public function change(Request $request){
 		$id = $request->input('id');
-		$id = Encrypt::decript($id);
+		$id = Encrypt::decrypt($id);
 		if(is_numeric($id)){
 			$user = new User;
 			$user = $user->find($id);
@@ -69,7 +70,7 @@ class ResetPasswordController extends Controller
 				->withFlashMessage('Invalid User or Token Expired!')
 				->withType('danger');
 			}
-			$user->password = Hash::make($request->input('password'));
+			$user->password = \Hash::make($request->input('password'));
 			$user->save();
 			$reset = new ResetPassword;
 			$reset = $reset->where(['user_id'=>$id,'status'=>0])->first();
@@ -84,5 +85,8 @@ class ResetPasswordController extends Controller
 			->withFlashMessage('Password Changed Succesfully!')
 			->withType('success');
 		}
+        return redirect('/reset')
+            ->withFlashMessage('Invalid Token!')
+            ->withType('success');
 	}
 }

@@ -72,6 +72,9 @@ class HomeController extends Controller
         $data = $blogs
             ->orderBy('created_at','DESC')
             ->get();
+        foreach($data as $blog){
+            $blog->blog_cont = strip_tags($blog->blog_cont);
+        }
         return view('frontend.blogs')->with('data',$data);
     }
 }

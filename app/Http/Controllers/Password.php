@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ChangePassword;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Notifications\Notifiable 
+use Illuminate\Notifications\Notifiable;
 
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;

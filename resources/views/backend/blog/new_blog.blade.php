@@ -6,7 +6,7 @@
 <div class="box box-success">
 
 	<div class="box-body">
-		<form role="form" action="store" method="post" enctype="multipart/form-data">
+		<form role="form" action="{{url('blog/store')}}" method="post" enctype="multipart/form-data">
 
          <div class="box-body">
 		<form role="form" action="store" method="post">

@@ -1,6 +1,6 @@
 <html>
 <head></head>
 <body>
-<h1>Your reset password link is {{$url}}</h1>
+<h1>Click <a href="{{$url}}" target="_blank">HERE</a> to reset your password</h1>
 </body>
 </html>

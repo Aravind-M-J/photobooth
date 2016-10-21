@@ -14,11 +14,10 @@
                 <div class="panel-heading">Reset Password</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/reset/password') }}">
-                        {{ csrf_field() }}                        
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/reset/verified') }}">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{$id}}">
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-                                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
