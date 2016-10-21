@@ -44,16 +44,16 @@ class RegisterController extends Controller {
       $this->eventdate     = $eventdate;
       $this->eventvenue    = $eventvenue;
       $this->eventtype     = $eventtype;
-      $this->package       = $package;
+      $this->package       = ucwords($package);
       $this->guests        = $guests;
       $this->modepayment  = $modepayment;
       $this->advance       = $advance;
       $this->balance       = $balance;
       $this->suggestions   = $suggestions;
 
-      Mail::send('email.registermail', ['clientname' => $clientname, 'contactnumber' => $contactnumber, 'address' => $address,
+      Mail::send('email.registermail', ['clientname' => $this->clientname, 'contactnumber' => $contactnumber, 'address' => $address,
           'email' => $email, 'date' => $date, 'eventdate' => $eventdate, 'eventtype' => $eventtype, 'eventvenue' => $eventvenue,
-          'package' => $package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayment' => $modepayment,
+          'package' => $this->package, 'guests' => $guests, 'suggestions' => $suggestions, 'modepayment' => $modepayment,
           'advance' => $advance, 'balance' => $balance], function ($message)
       {
           $message->from($this->email, 'Party Crooks - Register - ' . $this->clientname);
