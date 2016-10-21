@@ -31,13 +31,14 @@ class HomeController extends Controller
      public function index()
      {
 
-       $title = 'Admin | Home';
-       $data = DB::table('blog')->where('deleted_at', '=', NULL)->count();
-       $eventCount = DB::table('event')->where('deleted_at', '=', NULL)->count();
-       return view('backend.home')->with('data',$data)->with('eventCount',$eventCount);
+        $title = 'Admin | Home';
+        $data = DB::table('blog')->where('deleted_at', '=', NULL)->count();
+        $eventCount = DB::table('event')->where('deleted_at', '=', NULL)->count();
        
-     }
-  
+        return view('backend.home')->with('data',$data)->with('eventCount',$eventCount);
+       
+    }
+
 public function root(){
         $banner = new Banner;
         $banner = $banner->get();
