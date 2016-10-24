@@ -25,7 +25,7 @@
 							<li class="menu__item @yield('Packages')"><a href="{{url('Packages')}}" class="menu__link"><span class="menu__helper">Packages</span></a></li>
 							<li class="menu__item @yield('Events')"><a href="{{url('Events')}}" class="menu__link"><span class="menu__helper">Events Gallery</span></a></li>
 							<li class="menu__item @yield('contactUs')"><a href="{{url('contactUs')}}" class="menu__link"><span class="menu__helper">Contact Us</span></a></li>
-							<li class="menu__item @yield('Blogs')"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blog</span></a></li>
+							<li class="menu__item @yield('Blogs')"><a href="{{url('Blogs')}}" class="menu__link"><span class="menu__helper">Blogs</span></a></li>
                             <li class="menu__item @yield('Register')"><a href="{{url('Register')}}" class="menu__link"><span class="menu__helper">Register</span></a></li>
 						</ul>
 					</nav>

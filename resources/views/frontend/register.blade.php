@@ -39,7 +39,7 @@
 					</div>
 
 					<div class="col-md-6 reg_form">
-                    	<span class="reg_form">Contact number</span>
+                    	<span class="reg_form">Contact Number</span>
                     	<input type="text" name="contact_number" placeholder="Contact Number" required="">
 					</div>
 
