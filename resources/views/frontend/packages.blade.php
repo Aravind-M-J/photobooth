@@ -72,7 +72,7 @@
 				</div>
 				<div class="col-md-4 pricing-plans-grid animated wow slideInLeft" data-wow-delay=".7s">
 					<div class="pricing-plans-grid1">
-					
+
 						<h5>Premium package</h5>
 						<ul>
 							<li>Event will be on for 5 hours</li>
@@ -100,10 +100,9 @@
 						</div> -->
 					</div>
 				</div>
-				<div class="container">
-				<div class="pricing-plans-grid1 animated wow slideInLeft" data-wow-delay=".6s"
-				style="float: left; margin-top: 10px; width: 97%; height: 240px; padding: 10px;">
-				Additional Add-On Services:
+            	<div class="col-md-12 pricing-plans-grid animated wow slideInLeft" data-wow-delay=".7s">
+            	<div class="pricing-plans-grid1 pricing-plans-grid2">
+				<h5>Additional Add-On Services</h5>
                     <ul>
                 	    <li>Dj night</li>
                 		<li>Karaoke</li>
