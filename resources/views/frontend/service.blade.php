@@ -26,7 +26,7 @@
 
 
 	<div class="gallery" id="gallery">
-	<div class="container">
+	<div class="container service_page">
 	    <div class="gallery-main">
 			<div class="col-md-12 blog-grid-left animated wow slideInLeft backgroundDiv" data-wow-delay=".5s">
 			<p class="animated wow slideInUp" data-wow-delay=".5s">Party crooks add colour to any event. It provides a great entertainment and fun for all ages. We take pride in the printing quality of our photos. We provide custom designed products. We create a theme according to your dreams.</p>
@@ -44,7 +44,7 @@
 					<p class="ser1_text animated wow slideInUp" data-wow-delay=".5s">
 						•	Custom party cakes <br>
 						•	Fun and entertainment for guests <br>
-						•	Friendly and experienced booth butl<br>
+						•	Friendly and experienced booth butler<br>
 						•	High quality photos and prints <br>
 						•	A professional service from start to finish <br>
 						•	Customised invitation <br>
@@ -68,7 +68,7 @@
 				<h2 class="ser_heading"> Events</h2>
 			</div>
 			<div class="gallery-bott">
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service1.jpg" height="200px" alt="">
@@ -76,7 +76,7 @@
 						<center> Birthday Parties</center>
 					</a>
 				</div>
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service2.jpg" height="200px" alt="">
@@ -84,7 +84,7 @@
 						<center> Get Together </center>
 					</a>
 				</div>
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service4.jpg" height="200px" alt="">
@@ -93,7 +93,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service3.jpg" height="200px" alt="">
@@ -102,7 +102,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service5.jpg" height="200px" alt="">
@@ -111,7 +111,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service8.jpg" height="200px" alt="">
@@ -120,7 +120,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service7.jpg" height="200px" alt="">
@@ -129,7 +129,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service6.jpg" height="200px" alt="">
@@ -138,7 +138,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service9.jpg" height="200px" alt="">
@@ -147,7 +147,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service10.jpg" height="200px" alt="">
@@ -156,7 +156,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service11.jpg" height="200px" alt="">
@@ -165,7 +165,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service12.jpg" height="200px" alt="">
@@ -174,7 +174,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service13.jpg" height="200px" alt="">
@@ -183,7 +183,7 @@
 					</a>
 				</div>
 
-				<div class="col-md-3 col1 gallery-grid">
+				<div class="col-md-3 col2 gallery-grid">
 					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service14.jpg" height="200px" alt="">

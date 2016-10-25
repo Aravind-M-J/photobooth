@@ -19,9 +19,19 @@
 	position: relative;
 	display: block;
 	width:450px;
-	border-radius: 50% 80%;
     height: 200px;
+    border-radius: 50% 80%;
+}
 
+.col2 figure img {
+    position: relative;
+    display: block;
+    width:450px;
+    height: 200px;
+}
+
+.service_page figure{
+    padding: 10px !important;
 }
 .features-grids figure figcaption {
 	padding: 2em;
@@ -43,8 +53,16 @@
 	width: 100%;
 	height: 100%;
 }
-figure.effect-bubba {
+.col2 figure figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.service_page figure.effect-bubba {
 /* 	background:rgba(0, 0, 0, 0.89); */
+    padding: 10px;
 }
 figure.effect-bubba:hover img {
 	opacity: 0.3;
@@ -99,6 +117,7 @@ figure.effect-bubba h4 {
 	color:#fff;
    font-family: 'Lato-Regular';
 	font-size: 1.7em;
+    text-align: center;
 }
 figure.effect-bubba h4.gal {
 	padding-top: 21%;

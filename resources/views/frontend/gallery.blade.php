@@ -27,7 +27,7 @@
 	  <div class="gallery-main">
 		<div class="gallery-bott">
 		@foreach($data as $col)
-			<div class="col-md-4 col1 gallery-grid">
+			<div class="col-md-4 col2 gallery-grid">
 				    <a href="{{url('images/'.$col->name)}}" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="{{url('images/'.$col->name)}}" alt="">
