@@ -14,15 +14,15 @@
 <div class="container">
 			<div class="col-md-12 col-sm-12 col-xs-12 abo">
 
-						<h2 class="abo_h">About <span class="abo_h_col">History</span></h2>
+						<h2 class="abo_h">About <span class="abo_h_col">Us</span></h2>
 					</div>
 
 			<div class="team-grids">
 				<div class="clearfix"> </div>
 				<p class="animated wow slideInUp" data-wow-delay=".5s">
-				Yes! We steal the show in a party....
+				<strong>Yes! We steal the show in a party....</strong><br>
                 From the house of lionmarks, we bring to you a new way of celebration. If you’re ready to have a party that stands out from the same old thing that everyone else does, then impress your guests with the creativity of party crooks. Party crooks are a fun and creative way for everyone to loosen up and interact. Party crooks create an atmosphere constantly surrounded by people who are laughing and creating positive memories at your event, and of course each guest walks away with a tangible photograph in their hand. We develop a unique way to create and capture photographic memories. We aim at celebrating your moments according to your dreams.
-                PARTY CROOKS a complete package of fun and entertainment.
+                <br><strong>PARTY CROOKS a complete package of fun and entertainment.</strong>
 				</p>
 			</div>
 		</div>

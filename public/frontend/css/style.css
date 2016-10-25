@@ -4374,7 +4374,10 @@ figcaption.mask span {
 .pricing-table ul {
   border-bottom: 1px solid #e52252;
   border-top: 1px solid #e52252;
-  height:928px;
+}
+
+.pricing-table.height ul{
+    height:928px;
 }
 
 .pricing-table ul li {

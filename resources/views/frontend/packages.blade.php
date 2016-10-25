@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" >
-                        <div class="pricing-table text-center">
+                        <div class="pricing-table text-center height">
                             <div class="price">
                                 <h2>Basic package</h2>
                             </div>
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="pricing-table text-center">
+                        <div class="pricing-table text-center height">
                             <div class="price">
                                 <h2>Standard package</h2>
                             </div>
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="pricing-table text-center">
+                        <div class="pricing-table text-center height">
                             <div class="price">
                                 <h2>Premium package</h2>
                             </div>
