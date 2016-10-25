@@ -19,9 +19,11 @@
 
 			<div class="team-grids">
 				<div class="clearfix"> </div>
-				<p class="animated wow slideInUp" data-wow-delay=".5s">Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images 
-				to cherish for a lifetime. And while photography continues to change in its style and technology, we stay focused on what really matters... Capturing the essence of your moment and your spirit... 
-				Professional Photo booth service for all party occasions!</p>
+				<p class="animated wow slideInUp" data-wow-delay=".5s">
+				Yes! We steal the show in a party....
+                From the house of lionmarks, we bring to you a new way of celebration. If you’re ready to have a party that stands out from the same old thing that everyone else does, then impress your guests with the creativity of party crooks. Party crooks are a fun and creative way for everyone to loosen up and interact. Party crooks create an atmosphere constantly surrounded by people who are laughing and creating positive memories at your event, and of course each guest walks away with a tangible photograph in their hand. We develop a unique way to create and capture photographic memories. We aim at celebrating your moments according to your dreams.
+                PARTY CROOKS a complete package of fun and entertainment.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -50,34 +52,6 @@
 									Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images 
 				                    to cherish for a lifetime. And while photography continues to change in its style and technology, we stay focused on what really matters... Capturing the essence of your moment and your spirit... 
 									Professional Photo booth service for all party occasions!
-							  </div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading panel-heading-sub" role="tab" id="headingTwo">
-							  <h4 class="panel-title asd">
-								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>Itaque earum rerum
-								</a>
-							  </h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							   <div class="panel-body panel_text">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-							  </div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading panel-heading-sub" role="tab" id="headingThree">
-							  <h4 class="panel-title asd">
-								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>autem accusamus terry richa
-								</a>
-							  </h4>
-							</div>
-							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							   <div class="panel-body panel_text">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
 							  </div>
 							</div>
 						</div>

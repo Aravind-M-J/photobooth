@@ -78,6 +78,10 @@
 
 <!-- for bootstrap working -->
 	<script src="{{url('frontend/js/bootstrap.js')}}"></script>
+	<script src="{{url('backend/plugins/datepicker/datepicker.js')}}"></script>
+	<!-- geocomplete -->
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAiG39Z_lRmAzDjDbpf63jbnogM-QeUc7k&libraries=places"></script>
+	<script src="{{url('backend/plugins/geocomplete/jquery.geocomplete.min.js')}}"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">

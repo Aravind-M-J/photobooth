@@ -54,18 +54,13 @@
 					</div>
 
 					<div class="col-md-6 reg_form">
-                    	<span class="reg_form">Date</span>
-                    	<input type="text" onfocus="(this.type='date')" id="date" name="date" placeholder="Date" required="">
-					</div>
-
-					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Event Date</span>
-                    	<input type="text" onfocus="(this.type='date')" id="date" name="event_date" placeholder="Event Date" required="">
+                    	<input type="text" id="date" name="event_date" placeholder="Event Date" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Event Venue</span>
-                    	<input type="text" name="event_venue" placeholder="Event Venue" required="">
+                    	<input type="text" id="event_venue" name="event_venue" placeholder="Event Venue" required="">
 					</div>
 
 					<div class="col-md-6 reg_form">
@@ -131,4 +126,12 @@
 
 <!-- form end -->
 
+@endsection
+@section('pagescript')
+<script>
+$('#date').datepicker({
+    format:'dd/mm/yyyy'
+});
+$('#event_venue').geocomplete();
+</script>
 @endsection
