@@ -40,7 +40,7 @@
 
 					<div class="col-md-6 reg_form">
                     	<span class="reg_form">Contact Number</span>
-                    	<input type="text" name="contact_number" placeholder="Contact Number" required="">
+                    	<input type="text" name="contact_number" placeholder="Contact Number" required="" maxlength="10">
 					</div>
 
 					<div class="col-md-6 reg_form">

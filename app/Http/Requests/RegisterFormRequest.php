@@ -15,18 +15,17 @@ class RegisterFormRequest extends Request {
   {
     return [
         'client_name' => 'required|regex:/^[(a-zA-Z )]+$/u',
-        'contact_number' =>  'required|regex:/^[0-9]{10}$/',
+        'contact_number' =>  'required|numeric',
         'address' => 'required',
         'email' => 'required|email',
-        'date' => 'required|date',
-        'event_date' => 'required|date',
+        'event_date' => 'required',
         'event_venue' => 'required',
         'event_type' => 'required',
         'package_selected' => 'required',
-        'number_of_guests' => 'required|number',
+        'number_of_guests' => 'required|numeric',
         'mode_payment' => 'required',
-        'advance' => 'required|number',
-        'balance' => 'required|number',
+        'advance' => 'required|numeric',
+        'balance' => 'required|numeric',
     ];
   }
 
