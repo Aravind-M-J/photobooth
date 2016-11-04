@@ -4390,6 +4390,9 @@ figcaption.mask span {
 text-align: left;
 }
 
+.pricing-table ul li .indent {
+    margin-left: 25px;
+}
 .pricing-table ul li:after {
 text-align: left;
   bottom: 0;

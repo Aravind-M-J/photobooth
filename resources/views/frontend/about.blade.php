@@ -49,7 +49,9 @@
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 							  <div class="panel-body panel_text">
-									Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images 
+									party crooks brings life to your event and aims at maximum partcipation of the guests.
+                                    At the end of the event party crooks ensures that the guest would leave the place with 100 percent satisfaction.partycrooks will make your event the most memorable one.
+									Whether it's weddings, special events, or portraits... we make being photographed / video-graphed a comfortable experience so that you have images
 				                    to cherish for a lifetime. And while photography continues to change in its style and technology, we stay focused on what really matters... Capturing the essence of your moment and your spirit... 
 									Professional Photo booth service for all party occasions!
 							  </div>

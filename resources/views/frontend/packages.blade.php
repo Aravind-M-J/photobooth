@@ -32,7 +32,13 @@
 							<li>Photo booth</li>
 							<li>150 photo prints will be available</li>
 							<li>Complimentary gift will be given to the client</li>
-							<li>Props will include:<br>  Fancy hats<br>  Masks of different styles<br>  Fancy hair props<br>Dialog box<br>Fancy glasses<br>Bows
+							<li>Props will include:
+							<div class="indent">Fancy hats</div>
+							<div class="indent">Masks of different styles</div>
+							<div class="indent">Fancy hair props</div>
+							<div class="indent">Dialog box</div>
+							<div class="indent">Fancy glasses</div>
+							<div class="indent">Bows</div>
 							
                             </ul>
                         </div>
@@ -49,7 +55,13 @@
 							<li>300 photo prints will be available</li>
 							<li>Live games will be conducted during the event and winners will be awarded with gifts</li>
 							<li>Complimentary gift will be given to the client</li>
-							<li>Props will include:<br>Fancy hats<br>Masks of different styles<br>Fancy hair props<br>Dialog box<br>Fancy glasses<br>Bows
+							<li>Props will include:
+							<div class="indent">Fancy hats</div>
+							<div class="indent">Masks of different styles</div>
+                            <div class="indent">Fancy hair props</div>
+                            <div class="indent">Dialog box</div>
+                            <div class="indent">Fancy glasses</div>
+                            <div class="indent">Bows</div>
 							<li>*This package will also include custom themed props</li>
 								</ul>
 							</li>
@@ -72,7 +84,13 @@
 							<li>After video smash (maximum duration - 4 minutes)</li>
 							<li>Custom party cake</li>
 							<li>Complimentary gift will be given to the client</li>
-							<li>All Props will be custom themed. It will also include:<br>Fancy hats<br>Masks of different styles<br>Fancy hair props<br>Dialog box<br>Fancy glasses<br>Bows
+							<li>All Props will be custom themed. It will also include:
+							<div class="indent">Fancy hats</div>
+							<div class="indent">Masks of different styles</div>
+							<div class="indent">Fancy hair props</div>
+							<div class="indent">Dialog box</div>
+							<div class="indent">Fancy glasses</div>
+							<div class="indent">Bows</div>
                             </ul>
                         </div>
                     </div>

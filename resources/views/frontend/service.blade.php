@@ -69,7 +69,7 @@
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" class="b-link-stripe b-animate-go  thickbox" rel="title">
+					<a href="" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service1.jpg" height="200px" alt="">
 						</figure>
@@ -77,7 +77,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service2.jpg" height="200px" alt="">
 						</figure>
@@ -85,7 +85,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service4.jpg" height="200px" alt="">
 						</figure>
@@ -94,7 +94,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service3.jpg" height="200px" alt="">
 						</figure>
@@ -103,7 +103,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service5.jpg" height="200px" alt="">
 						</figure>
@@ -112,7 +112,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service8.jpg" height="200px" alt="">
 						</figure>
@@ -121,7 +121,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service7.jpg" height="200px" alt="">
 						</figure>
@@ -130,7 +130,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service6.jpg" height="200px" alt="">
 						</figure>
@@ -139,7 +139,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service9.jpg" height="200px" alt="">
 						</figure>
@@ -148,7 +148,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service10.jpg" height="200px" alt="">
 						</figure>
@@ -157,7 +157,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service11.jpg" height="200px" alt="">
 						</figure>
@@ -166,7 +166,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service12.jpg" height="200px" alt="">
 						</figure>
@@ -175,7 +175,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service13.jpg" height="200px" alt="">
 						</figure>
@@ -184,7 +184,7 @@
 				</div>
 
 				<div class="col-md-3 col2 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/services/service14.jpg" height="200px" alt="">
 						</figure>
@@ -198,7 +198,7 @@
 			</div>
 			<div class="gallery-bott">
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" class="b-link-stripe b-animate-go  thickbox" rel="title">
+					<a href="" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme1.jpg" height="200px" alt="">
 						</figure>
@@ -223,7 +223,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme5.jpg" height="200px" alt="">
 						</figure>
@@ -231,7 +231,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" class="b-link-stripe b-animate-go  thickbox" rel="title">
+					<a href="" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme4.jpg" height="200px" alt="">
 						</figure>
@@ -239,7 +239,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme6.jpg" height="200px" alt="">
 						</figure>
@@ -248,7 +248,7 @@
 				</div>
 
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" class="b-link-stripe b-animate-go  thickbox" rel="title">
+					<a href="" class="b-link-stripe b-animate-go  thickbox" rel="title">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme7.jpg" height="200px" alt="">
 						</figure>
@@ -256,7 +256,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col1 gallery-grid">
-					<a href="#" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					<a href="" rel="title" class="b-link-stripe b-animate-go  thickbox">
 						<figure class="effect-bubba">
 							<img class="img-responsive" src="images/themes/theme8.jpg" height="200px" alt="">
 						</figure>
